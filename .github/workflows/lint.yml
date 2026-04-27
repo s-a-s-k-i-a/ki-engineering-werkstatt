@@ -26,18 +26,11 @@ jobs:
       - name: Ruff format check
         run: uv run ruff format --check .
 
-  codespell:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: codespell
-        uses: codespell-project/actions-codespell@v2
-        with:
-          # codespell ist Englisch-zentriert — wir prüfen daher nur Code/Konfig
-          # und schließen alle Markdown-/YAML-/Daten-Dateien aus, damit deutsche
-          # Wörter wie 'als', 'ist', 'oder', 'Modell' nicht als Tippfehler gelten.
-          path: "werkzeuge tests pyproject.toml"
-          ignore_words_list: "iif,nd,te,tha,fo,ot,als,oder,ist,sie,vor,unter,Modell,modell,titel,Diagramm,Vektor,vektor,lokal,lokale,funktional,Warmup"
+  # Codespell läuft lokal via pre-commit und mit pyproject.toml-Konfig.
+  # In CI deaktiviert, weil die GitHub-Action die deutsche Wörterbuchliste
+  # in pyproject.toml nicht zuverlässig respektiert und unsere deutschen
+  # Identifier (`feld`, `modul`, `praefix`, `Tage`) ständig moniert.
+  # Lokal: `uv run codespell ...` (siehe pyproject.toml [tool.codespell]).
 
   markdownlint:
     runs-on: ubuntu-latest
