@@ -4,7 +4,7 @@
 
 ## Struktur
 
-```
+```text
 datasets/
 ├── README.md            # diese Datei
 ├── samples/             # Mini-Auszüge für Soforttests, < 1 MB pro Datei

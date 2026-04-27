@@ -33,8 +33,11 @@ jobs:
       - name: codespell
         uses: codespell-project/actions-codespell@v2
         with:
-          ignore_words_list: "iif,nd,te,tha,fo,ot"
-          skip: "*.gguf,*.safetensors,*.lock,uv.lock,docs/quellen.md"
+          # codespell ist Englisch-zentriert — wir prüfen daher nur Code/Konfig
+          # und schließen alle Markdown-/YAML-/Daten-Dateien aus, damit deutsche
+          # Wörter wie 'als', 'ist', 'oder', 'Modell' nicht als Tippfehler gelten.
+          path: "werkzeuge tests pyproject.toml"
+          ignore_words_list: "iif,nd,te,tha,fo,ot,als,oder,ist,sie,vor,unter,Modell,modell,titel,Diagramm,Vektor,vektor,lokal,lokale,funktional,Warmup"
 
   markdownlint:
     runs-on: ubuntu-latest
@@ -43,4 +46,8 @@ jobs:
       - name: markdownlint
         uses: DavidAnson/markdownlint-cli2-action@v17
         with:
-          globs: "**/*.md"
+          globs: |
+            **/*.md
+            !.venv
+            !node_modules
+            !dist-notebooks

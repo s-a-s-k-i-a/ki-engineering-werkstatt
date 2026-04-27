@@ -88,7 +88,7 @@ In der Praxis nutzt man eine Vektor-DB (Qdrant, pgvector, LanceDB) — sie mache
 
 ### Prompt-Bau
 
-```
+```text
 Du bist eine hilfreiche Assistenz. Beantworte die Frage NUR auf Basis der
 folgenden Quellen. Wenn die Quellen nicht reichen, sag das.
 

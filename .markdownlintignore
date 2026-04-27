@@ -1,0 +1,9 @@
+.venv/
+node_modules/
+dist-notebooks/
+.git/
+.pytest_cache/
+.ruff_cache/
+.ty_cache/
+.mypy_cache/
+docs/_build/
