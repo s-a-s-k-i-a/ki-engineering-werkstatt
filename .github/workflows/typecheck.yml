@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python 3.13
         run: uv python install 3.13
       - name: Install dev deps
-        run: uv sync --only-dev
+        run: uv sync --extra dev
       - name: Astral Ty type check
         run: uv run ty check werkzeuge/ tests/
         continue-on-error: true  # Ty ist noch alpha, brechen aber nicht den Build
