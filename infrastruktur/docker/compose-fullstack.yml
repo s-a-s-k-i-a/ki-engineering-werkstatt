@@ -1,0 +1,28 @@
+services:
+  qdrant:
+    extends:
+      file: ../vektorstores/qdrant-compose.yml
+      service: qdrant
+
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: ki-werkstatt-pg
+    environment:
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: ki_werkstatt
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ../vektorstores/pgvector-init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  phoenix:
+    image: arizephoenix/phoenix:latest
+    container_name: ki-werkstatt-phoenix
+    ports:
+      - "6006:6006"
+    environment:
+      PHOENIX_PROJECT_NAME: ki-werkstatt
+
+volumes:
+  pg_data:

@@ -1,0 +1,92 @@
+# Geheimnisse — niemals committen
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
+.credentials/
+*.crt
+*.p12
+*.pfx
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# uv
+.uv-cache/
+
+# Marimo / Notebooks
+# Marimo .py ist source-of-truth → committet
+# .ipynb wird in CI generiert → niemals manuell committen
+*.ipynb
+.ipynb_checkpoints/
+.marimo.toml.local
+
+# Tests / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ty_cache/
+.ruff_cache/
+
+# Datasets / Modelle (niemals checken — verweise via manifests/)
+datasets/cache/
+datasets/raw/
+datasets/processed/
+*.parquet
+*.arrow
+models/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.onnx
+weights/
+checkpoints/
+
+# Lokale RAG-DBs / Vektor-Indizes
+*.sqlite
+*.sqlite3
+*.db
+qdrant_storage/
+chroma_db/
+.langchain/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.zed/
+
+# Logs / Tracing
+*.log
+logs/
+.langfuse/
+.phoenix/
+
+# Build-Artefakte für Notebooks (von CI generiert)
+dist-notebooks/
+docs/_build/
+site/

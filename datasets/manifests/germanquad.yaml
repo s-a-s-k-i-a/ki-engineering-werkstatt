@@ -1,0 +1,11 @@
+name: GermanQuAD
+beschreibung: |
+  Deutsches Question-Answering-Dataset von deepset, abgeleitet von SQuAD.
+  Verwendung in Phase 13 (RAG-Eval) und Phase 18 (Bias-Audit).
+quelle: https://huggingface.co/datasets/deepset/germanquad
+lizenz: CC BY 4.0
+groesse_mb: 50
+einsatz_phasen: [13, 18]
+typ: text
+sprache: de
+attribution_pflicht: true

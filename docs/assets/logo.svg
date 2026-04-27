@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="KI-Engineering-Werkstatt Logo">
+  <title>KI-Engineering-Werkstatt</title>
+  <desc>Werkbank mit Prisma, das Licht in drei Strahlen aufteilt: Code, Quellen, Compliance.</desc>
+  <defs>
+    <style>
+      .bg { fill: none; }
+      .ink { fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .strahl-orange { stroke: #FF6B3D; }
+      .strahl-blau   { stroke: #3D8BFF; }
+      .strahl-grau   { stroke: #A8B0BA; }
+      .prisma-fill   { fill: #FF6B3D; opacity: 0.12; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="240" height="240"/>
+
+  <!-- Werkbank-Linie -->
+  <path class="ink" d="M30 200 H210 M50 200 V230 M190 200 V230 M30 200 L50 170 H190 L210 200" />
+
+  <!-- Werkbank-Beine Querverstrebung -->
+  <path class="ink" d="M50 215 H190" />
+
+  <!-- Prisma (Dreieck), zentriert auf Werkbank -->
+  <polygon class="ink prisma-fill" points="120,50 90,140 150,140" />
+
+  <!-- Eingehender Lichtstrahl -->
+  <path class="ink" d="M30 80 L100 100" />
+
+  <!-- Drei Spektralstrahlen aus Prisma -->
+  <path class="ink strahl-orange" d="M150 130 L210 80" />
+  <path class="ink strahl-blau"   d="M150 140 L215 140" />
+  <path class="ink strahl-grau"   d="M150 150 L210 200" />
+
+  <!-- Strahl-Beschriftung als Punkte (lesbar in Light/Dark) -->
+  <circle cx="210" cy="80" r="3" fill="#FF6B3D" />
+  <circle cx="215" cy="140" r="3" fill="#3D8BFF" />
+  <circle cx="210" cy="200" r="3" fill="#A8B0BA" />
+</svg>

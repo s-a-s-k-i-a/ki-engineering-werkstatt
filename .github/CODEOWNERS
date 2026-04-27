@@ -1,0 +1,11 @@
+# Default-Reviewer für alles
+*       @s-a-s-k-i-a
+
+# Compliance-Layer braucht extra Aufmerksamkeit
+/docs/rechtliche-perspektive/   @s-a-s-k-i-a
+/phasen/20-recht-und-governance/ @s-a-s-k-i-a
+/werkzeuge/ai_act_classifier.py @s-a-s-k-i-a
+
+# CI-Konfig nur über Saskia
+/.github/                        @s-a-s-k-i-a
+/pyproject.toml                  @s-a-s-k-i-a

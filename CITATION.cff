@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "KI-Engineering-Werkstatt"
+message: "Wenn du dieses Curriculum in akademischen Arbeiten oder Publikationen zitierst, freue ich mich über folgenden Verweis."
+type: software
+authors:
+  - given-names: Saskia
+    family-names: Teichmann
+    affiliation: "isla WordPress Studio"
+    city: Hannover
+    country: DE
+    website: "https://isla-stud.io"
+    orcid: ""
+repository-code: "https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt"
+url: "https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt"
+abstract: >
+  Deutschsprachiges, Open-Source-Curriculum für KI-Engineering mit DSGVO-,
+  EU-AI-Act- und Urheberrechts-Layer. 20 Phasen von Tokenizer bis Agenten,
+  mit lauffähigen Marimo-Notebooks, deutschen Datasets und EU-LLM-Stack.
+keywords:
+  - "AI Engineering"
+  - "Künstliche Intelligenz"
+  - "Curriculum"
+  - "EU AI Act"
+  - "DSGVO"
+  - "Mittelstand"
+  - "Deutsch"
+  - "DACH"
+license: MIT
+version: 0.1.0
+date-released: "2026-04-27"

@@ -1,0 +1,32 @@
+name: Compliance Schema Check
+on:
+  push:
+    branches: [main]
+    paths:
+      - "phasen/**/compliance.md"
+      - "phasen/**/modul.md"
+      - "werkzeuge/compliance_lint.py"
+  pull_request:
+    branches: [main]
+    paths:
+      - "phasen/**/compliance.md"
+      - "phasen/**/modul.md"
+      - "werkzeuge/compliance_lint.py"
+
+permissions:
+  contents: read
+
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+      - run: uv python install 3.13
+      - run: uv sync
+      - name: Validate compliance.md schema
+        run: uv run python werkzeuge/compliance_lint.py phasen/
+      - name: Validate modul.md frontmatter
+        run: uv run python werkzeuge/compliance_lint.py --modul phasen/

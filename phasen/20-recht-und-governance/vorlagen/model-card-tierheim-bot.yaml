@@ -1,0 +1,54 @@
+# Beispiel-Modell-Karte für ki-act-classifier
+# Nutzung: ki-act-classifier --modell-karte vorlagen/model-card-tierheim-bot.yaml
+
+name: Tierheim-Hannover-Adoptions-Bot
+version: 0.1.0
+beschreibung: >
+  Chatbot, der Adoptions-Anfragen entgegennimmt, Tierprofile vorstellt und
+  Termine im Tierheim Hannover (Burgwedel) bucht. Final-Match wird stets
+  durch Mitarbeiter:in freigegeben (Human-in-the-Loop).
+
+verantwortlich:
+  organisation: Tierschutzverein Hannover und Umgebung e. V.
+  ansprechperson: datenschutz@beispiel-tierheim.de
+
+# Welche Anh.-III-Use-Cases trifft das System?
+# (leere Liste = keiner)
+use_case_kategorien: []
+
+# Art.-50-Transparenz-Trigger (Chatbot, synthetische Inhalte, Deepfake, Emotion)
+transparenz_trigger:
+  - chatbot
+
+# Indikatoren für Art.-5-Verbote
+risiko_indikatoren:
+  social-scoring: false
+  kognitive-manipulation: false
+  ausnutzung-vulnerabler-gruppen: false
+  rueckwirkende-emotionserkennung-arbeit: false
+  biometrische-kategorisierung-sensibel: false
+  wahllose-gesichtserkennung-internet: false
+  predictive-policing-personenbezogen: false
+  echtzeit-rbi-oeffentlich: false
+
+# GPAI-Status
+ist_gpai: false
+training_compute_flops: null
+
+# Genutzte Modelle
+modelle:
+  - name: Aleph-Alpha/Pharia-1-LLM-7B-control
+    rolle: Generator
+    server: Heidelberg
+    avv_status: signiert
+  - name: intfloat/multilingual-e5-large-instruct
+    rolle: Embeddings
+    server: lokal
+    avv_status: n/a
+
+# DSGVO-Hinweise
+datenschutz:
+  rechtsgrundlage: Art. 6 Abs. 1 lit. f (berechtigtes Interesse — Tierschutz)
+  besondere_kategorien: nein
+  drittland_transfer: nein
+  dsfa_erforderlich: nein  # bei reinem FAQ-Bot meist nicht

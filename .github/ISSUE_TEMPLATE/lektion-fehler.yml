@@ -1,0 +1,51 @@
+name: Lektions-Fehler oder Verbesserung
+description: Tippfehler, falsche Erklärung, kaputter Code, schlechte Übung
+labels: ["lektion", "needs-triage"]
+body:
+  - type: input
+    id: lektion
+    attributes:
+      label: Welche Lektion?
+      description: z.B. `phasen/13-rag-tiefenmodul/lektionen/02-hybrid.md`
+      placeholder: phasen/NN-...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: art
+    attributes:
+      label: Art des Problems
+      options:
+        - Tippfehler / Grammatik
+        - Falsche Aussage / falsche Erklärung
+        - Code läuft nicht
+        - Quelle nicht erreichbar (404)
+        - Übung schlecht / unklar
+        - Compliance-Aussage falsch oder veraltet
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: textarea
+    id: was
+    attributes:
+      label: Was ist das Problem?
+      description: Möglichst konkret. Bei Code-Problemen Fehlermeldung.
+    validations:
+      required: true
+
+  - type: textarea
+    id: erwartung
+    attributes:
+      label: Was hattest du erwartet?
+    validations:
+      required: false
+
+  - type: input
+    id: env
+    attributes:
+      label: Umgebung
+      description: Python-Version, OS — nur falls Code-Problem
+      placeholder: Python 3.13.0, macOS 25
+    validations:
+      required: false

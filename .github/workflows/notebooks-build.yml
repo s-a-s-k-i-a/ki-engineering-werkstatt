@@ -1,0 +1,33 @@
+name: Notebooks Build (Marimo → ipynb)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "phasen/**/code/*.py"
+      - "phasen/**/loesungen/*.py"
+      - "werkzeuge/build_notebooks.py"
+      - "werkzeuge/inject_colab_badges.py"
+  pull_request:
+    branches: [main]
+    paths:
+      - "phasen/**/code/*.py"
+      - "phasen/**/loesungen/*.py"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+      - run: uv python install 3.13
+      - run: uv sync --extra tokenizer  # leichtgewichtige Build-Deps
+      - name: Build notebooks
+        run: uv run python werkzeuge/build_notebooks.py --check-only
+      - name: Validate Colab badges
+        run: uv run python werkzeuge/inject_colab_badges.py --check-only

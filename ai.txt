@@ -1,0 +1,73 @@
+# ai.txt — Text & Data Mining-Vorbehalt nach § 44b UrhG / DSM-Richtlinie Art. 4
+# https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt
+# Stand: 2026-04-27
+#
+# Inhalte dieses Repositories sind unter MIT-Lizenz veröffentlicht.
+# Die unten genannten Crawler dürfen die Inhalte für KI-Training NICHT verwenden.
+# Dies ist ein maschinenlesbarer Nutzungsvorbehalt nach § 44b Abs. 3 UrhG.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Perplexity-User
+Disallow: /
+
+User-agent: ByteSpider
+Disallow: /
+
+User-agent: Bytedance
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+# Verbleibend zugelassen sind klassische Such-Crawler, die ausschließlich
+# Indexierung (kein KI-Training) durchführen — diese werden in robots.txt geregelt.

@@ -1,0 +1,58 @@
+name: Notebooks Smoke (E2E headless)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "phasen/**/code/*.py"
+      - "phasen/**/loesungen/*.py"
+      - "werkzeuge/**"
+      - "pyproject.toml"
+      - "uv.lock"
+  pull_request:
+    branches: [main]
+    paths:
+      - "phasen/**/code/*.py"
+      - "phasen/**/loesungen/*.py"
+      - "werkzeuge/**"
+      - "pyproject.toml"
+      - "uv.lock"
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        phase:
+          - "05-deutsche-tokenizer"
+          - "13-rag-tiefenmodul"
+          - "20-recht-und-governance"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+      - run: uv python install 3.13
+      - name: Install per-phase extras
+        run: |
+          case "${{ matrix.phase }}" in
+            05-*) uv sync --extra tokenizer ;;
+            13-*) uv sync --extra rag ;;
+            20-*) uv sync ;;
+            *) uv sync ;;
+          esac
+      - name: Run notebook smoke test
+        env:
+          HF_HUB_DISABLE_TELEMETRY: "1"
+          TRANSFORMERS_OFFLINE: "0"
+        run: |
+          for nb in phasen/${{ matrix.phase }}/code/*.py phasen/${{ matrix.phase }}/loesungen/*.py; do
+            [ -f "$nb" ] || continue
+            echo "→ Smoke: $nb"
+            uv run python werkzeuge/run_notebook_smoke.py "$nb" || exit 1
+          done

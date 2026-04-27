@@ -1,0 +1,161 @@
+[project]
+name = "ki-engineering-werkstatt"
+version = "0.1.0"
+description = "20 Phasen KI-Engineering auf Deutsch — von Tokenizer bis AI Act. Code, Quellen, EU-Compliance."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [{ name = "Saskia Teichmann", email = "google@wp-studio.dev" }]
+keywords = [
+  "ai-engineering",
+  "deutsch",
+  "german",
+  "eu-ai-act",
+  "dsgvo",
+  "gdpr",
+  "llm",
+  "rag",
+  "marimo",
+  "curriculum",
+  "compliance",
+  "pharia",
+  "aleph-alpha",
+  "tokenizer",
+  "agents",
+  "dach",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: German",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Education",
+]
+
+# Pflicht-Dependencies (müssen für jeden Smoke-Test laden)
+dependencies = [
+  "marimo>=0.10.0",
+  "pydantic>=2.9",
+  "pydantic-ai>=0.3",
+  "httpx>=0.27",
+  "pyyaml>=6.0",
+  "rich>=13.9",
+  "click>=8.1",
+]
+
+[project.optional-dependencies]
+# Pro Phase eigene Extras — Lernende installieren nur, was sie brauchen.
+# Schwere ML-Stacks (transformers, torch, sentence-transformers, vLLM) werden
+# bewusst NICHT als Pflicht-Extras geführt — sie kommen erst in den
+# Vollversionen der Lektionen dazu (siehe `phasen/**/lektionen/*.md`).
+tokenizer = [
+  "tokenizers>=0.20",
+  "tiktoken>=0.8",
+  "sentencepiece>=0.2",
+  "matplotlib>=3.9",
+  "pandas>=2.2",
+]
+tokenizer-full = [
+  "ki-engineering-werkstatt[tokenizer]",
+  "transformers>=4.46",
+]
+rag = [
+  "qdrant-client>=1.12",
+  "rank-bm25>=0.2",
+  "langchain-text-splitters>=0.3",
+]
+rag-full = [
+  "ki-engineering-werkstatt[rag]",
+  "sentence-transformers>=3.3",
+  "ragas>=0.2",
+]
+agents = [
+  "langgraph>=0.2",
+  "dspy-ai>=2.5",
+  "mcp>=1.0",
+]
+production = [
+  "litellm>=1.50",
+  "opentelemetry-api>=1.27",
+  "opentelemetry-sdk>=1.27",
+  "arize-phoenix>=5.0",
+]
+
+# Entwickler-Dependencies (CI + lokale Smoke-Tests)
+dev = [
+  "ruff>=0.7",
+  "ty>=0.0.1a8",
+  "pytest>=8.3",
+  "pytest-asyncio>=0.24",
+  "pre-commit>=4.0",
+  "codespell>=2.3",
+  "nbformat>=5.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt"
+Repository = "https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt"
+Issues = "https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/issues"
+Discussions = "https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/discussions"
+
+[project.scripts]
+ki-act-classifier = "werkzeuge.ai_act_classifier:main"
+ki-ai-txt = "werkzeuge.ai_txt_generator:main"
+ki-compliance-lint = "werkzeuge.compliance_lint:main"
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["werkzeuge"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-exclude = ["datasets/raw", "datasets/cache", "site"]
+
+[tool.ruff.lint]
+select = [
+  "E",   # pycodestyle errors
+  "W",   # pycodestyle warnings
+  "F",   # pyflakes
+  "I",   # isort
+  "B",   # bugbear
+  "UP",  # pyupgrade
+  "SIM", # flake8-simplify
+  "N",   # pep8-naming
+  "RUF", # ruff
+]
+ignore = [
+  "E501",   # line too long (Marimo-Cells haben oft lange Strings)
+  "N803",   # camelCase argument names (kommt bei HF-APIs vor)
+  "RUF001", # deutsche Typografie nutzt × (Multiplikation), – (Halbgeviert), „"
+  "RUF002", # docstring-Variante davon
+  "RUF003", # comment-Variante davon
+  "UP042",  # str + Enum bewusst — viele Tools erwarten str-Subklasse
+  "SIM108", # If-Else lesbarer als Ternary in mehrzeiligen Bedingungen
+]
+
+[tool.ruff.lint.per-file-ignores]
+"phasen/**/code/*.py" = ["E402"]      # Marimo-Importe folgen Cell-Grenzen
+"phasen/**/loesungen/*.py" = ["E402"]
+"tests/*" = ["S101"]                  # asserts in Tests sind ok
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+asyncio_mode = "auto"
+addopts = ["-ra", "--strict-markers", "--tb=short"]
+
+[tool.codespell]
+skip = "*.gguf,*.safetensors,*.lock,uv.lock,docs/quellen.md"
+ignore-words-list = "iif,nd,te,tha,fo,ot"
+builtin = "clear,rare,informal,code,names"

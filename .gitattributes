@@ -1,0 +1,19 @@
+* text=auto eol=lf
+
+# Marimo-Notebooks sind Python-Quelldateien (source-of-truth)
+phasen/**/code/*.py linguist-detectable=true linguist-language=Python
+phasen/**/loesungen/*.py linguist-detectable=true linguist-language=Python
+
+# Generierte .ipynb sollten als generated markiert sein, falls doch mal eingecheckt
+*.ipynb linguist-generated=true
+
+# Binärdateien
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.parquet binary
+*.gguf binary
+*.safetensors binary

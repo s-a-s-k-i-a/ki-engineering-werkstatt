@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titel": "DSGVO-Kurzfassung",
+    "thema": "Recht",
+    "text": "Die Datenschutz-Grundverordnung regelt seit dem 25. Mai 2018 EU-weit die Verarbeitung personenbezogener Daten.",
+    "quelle": "Wikipedia DE",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  {
+    "id": 2,
+    "titel": "AI-Act-Kurzfassung",
+    "thema": "Recht",
+    "text": "Die Verordnung 2024/1689 (AI Act) klassifiziert KI-Systeme nach Risikoklassen und regelt Pflichten je nach Einsatzbereich.",
+    "quelle": "Wikipedia DE",
+    "lizenz": "CC BY-SA 4.0"
+  },
+  {
+    "id": 3,
+    "titel": "Tierheim Hannover",
+    "thema": "Charity",
+    "text": "Der Tierschutzverein Hannover und Umgebung e. V. betreibt das Tierheim in Burgwedel und vermittelt jährlich rund 1.500 Tiere in neue Familien.",
+    "quelle": "Wikipedia DE / Vereinsangabe",
+    "lizenz": "CC BY-SA 4.0"
+  }
+]

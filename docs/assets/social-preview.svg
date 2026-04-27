@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-label="KI-Engineering-Werkstatt Social Preview">
+  <title>KI-Engineering-Werkstatt</title>
+  <defs>
+    <style>
+      .bg { fill: #0E1116; }
+      .grid-line { stroke: #1c2230; stroke-width: 1; }
+      .ink { fill: #E6E8EE; }
+      .accent { fill: #FF6B3D; }
+      .blue { fill: #3D8BFF; }
+      .muted { fill: #A8B0BA; }
+      text { font-family: ui-sans-serif, system-ui, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1280" height="640"/>
+
+  <!-- Grid -->
+  <g>
+    <line class="grid-line" x1="0" y1="120" x2="1280" y2="120"/>
+    <line class="grid-line" x1="0" y1="240" x2="1280" y2="240"/>
+    <line class="grid-line" x1="0" y1="360" x2="1280" y2="360"/>
+    <line class="grid-line" x1="0" y1="480" x2="1280" y2="480"/>
+  </g>
+
+  <!-- Logo links -->
+  <g transform="translate(80,180) scale(1.3)">
+    <path d="M0 200 H180 M20 200 V230 M160 200 V230 M0 200 L20 170 H160 L180 200" stroke="#E6E8EE" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="90,50 60,140 120,140" stroke="#E6E8EE" stroke-width="3" fill="#FF6B3D" fill-opacity="0.15"/>
+    <path d="M0 80 L70 100" stroke="#E6E8EE" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M120 130 L180 80" stroke="#FF6B3D" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M120 140 L185 140" stroke="#3D8BFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M120 150 L180 200" stroke="#A8B0BA" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wortmarke + Tagline -->
+  <text class="ink" x="450" y="240" font-size="80" font-weight="800">ki-engineering</text>
+  <text class="accent" x="450" y="320" font-size="80" font-weight="800">werkstatt</text>
+
+  <text class="muted" x="450" y="380" font-size="28">20 Phasen KI-Engineering. Auf Deutsch.</text>
+  <text class="muted" x="450" y="416" font-size="28">Mit Quellen, die Stand halten.</text>
+
+  <!-- Dreifach-Anker -->
+  <g transform="translate(450, 470)">
+    <text class="accent" x="0" y="0" font-size="22" font-weight="700">· Code</text>
+    <text class="blue" x="120" y="0" font-size="22" font-weight="700">· Quellen</text>
+    <text class="muted" x="280" y="0" font-size="22" font-weight="700">· Compliance</text>
+  </g>
+
+  <text class="muted" x="80" y="600" font-size="18">github.com/s-a-s-k-i-a/ki-engineering-werkstatt · MIT-Lizenz · Stand 04/2026</text>
+</svg>

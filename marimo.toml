@@ -1,0 +1,33 @@
+[runtime]
+auto_save = false
+auto_reload = "off"
+on_cell_change = "lazy"
+output_max_bytes = 8_000_000
+std_stream_max_bytes = 1_000_000
+
+[display]
+theme = "system"
+code_editor_font_size = 14
+default_width = "medium"
+cell_output = "above"
+
+[completion]
+activate_on_typing = true
+copilot = false
+
+[formatting]
+line_length = 100
+
+[diagnostics]
+show_in_run_mode = true
+
+[ai]
+# Bewusst leer: kein automatisches AI-Coding für Lehr-Notebooks
+# (Lernende sollen selbst tippen).
+
+[server]
+follow_symlink = false
+browser = "default"
+
+[experimental]
+multi_column = false

@@ -1,0 +1,43 @@
+name: Link Check
+on:
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 6 * * 1"  # jeden Montag 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-redirects 5
+            --max-concurrency 8
+            --retry-wait-time 10
+            --timeout 30
+            --exclude-mail
+            --exclude 'localhost'
+            --exclude '127.0.0.1'
+            --accept '200,202,204,206,301,302,303,307,308,403,429'
+            phasen/ docs/ README.md ROADMAP.md CHANGELOG.md
+          fail: false
+          format: markdown
+          output: ./lychee/out.md
+
+      - name: Open issue on broken links (cron only)
+        if: github.event_name == 'schedule' && steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Linkrot Report (lychee)"
+          content-filepath: ./lychee/out.md
+          labels: linkrot, automated

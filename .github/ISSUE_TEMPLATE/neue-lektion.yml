@@ -1,0 +1,63 @@
+name: Vorschlag für neue Lektion
+description: Eine Lektion fehlt, die deutsche Lernende brauchen
+labels: ["enhancement", "lektion-vorschlag"]
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: In welche Phase?
+      options:
+        - 00-werkzeugkasten
+        - 01-mathematik-grundlagen
+        - 02-klassisches-ml
+        - 03-deep-learning-grundlagen
+        - 04-computer-vision
+        - 05-deutsche-tokenizer
+        - 06-sprache-und-audio
+        - 07-transformer-architektur
+        - 08-generative-modelle
+        - 09-state-space-und-hybride
+        - 10-llm-von-null
+        - 11-llm-engineering
+        - 12-finetuning-und-adapter
+        - 13-rag-tiefenmodul
+        - 14-agenten-und-mcp
+        - 15-autonome-systeme
+        - 16-reasoning-und-test-time
+        - 17-production-und-eu-hosting
+        - 18-ethik-safety-alignment
+        - 19-abschlussprojekte
+        - 20-recht-und-governance
+        - Neue Phase nötig
+    validations:
+      required: true
+
+  - type: input
+    id: titel
+    attributes:
+      label: Vorgeschlagener Titel
+    validations:
+      required: true
+
+  - type: textarea
+    id: lernziele
+    attributes:
+      label: Lernziele (was soll der Lernende danach können?)
+    validations:
+      required: true
+
+  - type: textarea
+    id: warum
+    attributes:
+      label: Warum gehört das ins Curriculum?
+      description: Was ist der DACH-/EU-Mehrwert? Warum jetzt?
+    validations:
+      required: true
+
+  - type: textarea
+    id: quellen
+    attributes:
+      label: Mind. 3 Primärquellen
+      description: Paper, Tech-Reports, EUR-Lex, BfDI etc. — mit Datum
+    validations:
+      required: true

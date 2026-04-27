@@ -1,0 +1,52 @@
+name: Compliance-Update (AI Act, DSGVO, BfDI, EDPB, ...)
+description: Eine Rechtsgrundlage hat sich geändert oder eine wichtige Quelle ist neu
+labels: ["compliance", "needs-review"]
+body:
+  - type: dropdown
+    id: bereich
+    attributes:
+      label: Welcher Bereich?
+      options:
+        - EU AI Act (Verordnung 2024/1689)
+        - DSGVO / GDPR
+        - Urheberrecht / TDM (§ 44b UrhG)
+        - DSA / DMA
+        - NIS2 / Cybersecurity
+        - BSI (AIC4, Grundschutz)
+        - ISO/IEC 42001 / CEN-CENELEC
+        - BaFin / MaRisk
+        - MDR / Medizinprodukte
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: input
+    id: was
+    attributes:
+      label: Was hat sich geändert?
+      placeholder: "Digital Omnibus on AI verabschiedet — Hochrisiko-Frist auf 2027-12-02 verschoben"
+    validations:
+      required: true
+
+  - type: input
+    id: quelle
+    attributes:
+      label: Primärquelle
+      description: EUR-Lex, BfDI, BMJ, BSI, EDSA — mit URL und Datum
+    validations:
+      required: true
+
+  - type: textarea
+    id: betroffen
+    attributes:
+      label: Welche Lektionen / Werkzeuge sind betroffen?
+      description: z.B. `docs/rechtliche-perspektive/ai-act-tracker.md` und `phasen/20-...`
+    validations:
+      required: true
+
+  - type: textarea
+    id: vorschlag
+    attributes:
+      label: Konkreter Änderungs­vorschlag
+    validations:
+      required: false

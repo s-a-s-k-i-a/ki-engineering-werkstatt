@@ -1,0 +1,22 @@
+name: Bank-HR-Screener
+version: 1.0.0
+beschreibung: >
+  KI-System, das Lebensläufe für Bankangestellten-Positionen vorscreent
+  und parallel Kreditscoring für interne Kreditentscheidungen durchführt.
+
+use_case_kategorien:
+  - beschaeftigung-hr
+  - wesentliche-private-dienste
+
+transparenz_trigger: []
+
+risiko_indikatoren: {}
+
+ist_gpai: false
+training_compute_flops: null
+
+datenschutz:
+  rechtsgrundlage: Art. 6 Abs. 1 lit. b/f + AGG
+  besondere_kategorien: prüfen (Geschlecht, Alter, Migrationshintergrund)
+  dsfa_erforderlich: ja
+  art_22_information_pflicht: ja

@@ -1,0 +1,14 @@
+name: 10kGNAD
+beschreibung: |
+  10.000 deutsche Nachrichtenartikel. Standard-Korpus für deutsche
+  Tokenizer-/Klassifikations-Experimente.
+quelle: https://huggingface.co/datasets/10kGNAD
+lizenz: CC BY-NC-SA 4.0
+groesse_mb: 12
+einsatz_phasen: [05, 11]
+typ: text
+sprache: de
+attribution_pflicht: true
+warnung: |
+  CC BY-NC-SA 4.0 = ausschließlich nicht-kommerzielle Nutzung. Für
+  kommerzielle Folgeprojekte bitte alternative Datasets wählen.

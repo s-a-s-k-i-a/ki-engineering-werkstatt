@@ -1,0 +1,55 @@
+KI-Engineering-Werkstatt
+========================
+
+Copyright (c) 2026 Saskia Teichmann (s-a-s-k-i-a, Hannover)
+Lizenziert unter MIT License (siehe LICENSE).
+
+
+Dank an strukturelle Inspirationen
+-----------------------------------
+
+Die Phasen-Gliederung dieses Curriculums orientiert sich an der didaktischen
+Struktur von:
+
+  rohitg00/ai-engineering-from-scratch
+  https://github.com/rohitg00/ai-engineering-from-scratch
+  (MIT-lizenziert)
+
+Inhaltlich ist die KI-Engineering-Werkstatt eigenständig: deutschsprachig,
+DACH-/EU-Compliance-zentriert (DSGVO, AI Act, UrhG), mit lauffähigen
+Marimo-Notebooks, deutschen Datasets und EU-LLM-Stack. Es ist KEINE
+Übersetzung des Originals — sondern eine Neukonzeption für die EU-Realität
+2026.
+
+Dank an die Open-Source-Vorbilder, an deren Pädagogik dieses Repo anknüpft:
+
+  - Sebastian Raschka, "Build a Large Language Model From Scratch"
+    https://github.com/rasbt/LLMs-from-scratch
+  - Andrej Karpathy, "Neural Networks: Zero to Hero" / nanoGPT
+    https://github.com/karpathy/nanoGPT
+  - Hugging Face LLM Course
+    https://huggingface.co/learn/llm-course
+  - fast.ai "Practical Deep Learning"
+    https://course.fast.ai/
+
+Ressourcen mit eigener Lizenz
+-----------------------------
+
+Im Repo verwendete oder verlinkte Datasets behalten ihre jeweiligen Lizenzen.
+Die Lizenz-Snapshots liegen in `datasets/lizenzen/`. Alle Bezüge zu fremden
+Modellgewichten erfolgen ausschließlich per Verweis (HF-Hub, offizielle URLs).
+
+Kein Modell-Gewicht und keine Trainings-Daten werden in diesem Repo selbst
+verteilt.
+
+Marken
+------
+
+Folgende Marken werden im Curriculum referenziert und gehören ihren jeweiligen
+Inhabern: Anthropic / Claude, OpenAI / ChatGPT / GPT, Microsoft / Copilot,
+Google / Gemini, Aleph Alpha / Pharia, Mistral, Alibaba / Qwen, DeepSeek,
+Moonshot / Kimi, Zhipu / GLM, OpenBMB / MiniCPM, LG / EXAONE, Hugging Face,
+NVIDIA, Apple / MLX, Astral / uv / Ruff, Marimo, Qdrant, Black Forest Labs / FLUX,
+DeepL, Tencent / Hunyuan, AI21 / Jamba, AI Singapore / SEA-LION, isla / citelayer.
+
+Die Nennung dient ausschließlich der sachlichen Zuordnung im Lehrkontext.
