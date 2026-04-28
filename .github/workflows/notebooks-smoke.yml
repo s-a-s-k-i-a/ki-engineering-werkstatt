@@ -28,6 +28,7 @@ jobs:
       fail-fast: false
       matrix:
         phase:
+          - "00-werkzeugkasten"
           - "05-deutsche-tokenizer"
           - "13-rag-tiefenmodul"
           - "20-recht-und-governance"
@@ -41,6 +42,7 @@ jobs:
       - name: Install per-phase extras
         run: |
           case "${{ matrix.phase }}" in
+            00-*) uv sync ;;
             05-*) uv sync --extra tokenizer ;;
             13-*) uv sync --extra rag ;;
             20-*) uv sync ;;

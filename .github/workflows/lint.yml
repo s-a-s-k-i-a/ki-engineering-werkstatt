@@ -44,3 +44,4 @@ jobs:
             !.venv
             !node_modules
             !dist-notebooks
+            !CHANGELOG.md

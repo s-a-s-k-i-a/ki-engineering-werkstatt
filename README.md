@@ -243,7 +243,7 @@ $ ki-act-classifier --modell-karte phasen/20-recht-und-governance/vorlagen/model
 flowchart TB
   subgraph G[" 🛠️ Grundlagen "]
     direction LR
-    P00[00 · Werkzeugkasten]:::wip
+    P00[00 · 🛠️ Werkzeugkasten]:::done
     P01[01 · Mathematik]:::planned
     P02[02 · Klassisches ML]:::planned
     P03[03 · Deep Learning]:::planned

@@ -1,6 +1,6 @@
 # Roadmap
 
-> Stand: 2026-04-27 · Dieses Repo wächst iterativ. Was am Launch-Tag fertig ist, was bald kommt, was später.
+> Stand: 2026-04-28 · Dieses Repo wächst iterativ. Was fertig ist, was bald kommt, was später.
 
 ## Status-Legende
 
@@ -12,7 +12,7 @@
 
 | Status | Phase | Titel |
 |---|---|---|
-| 🚧 | 00 | Werkzeugkasten — Hardware, uv, Marimo, EU-Cloud |
+| ✅ | 00 | **Werkzeugkasten** — Hardware, uv, Marimo, EU-Cloud |
 | ⏳ | 01 | Mathematik-Grundlagen |
 | ⏳ | 02 | Klassisches ML |
 | ⏳ | 03 | Deep Learning Grundlagen |
@@ -36,7 +36,7 @@
 
 ## Q2 2026 (Mai – Juli 2026)
 
-- [ ] Phase 00 — vollständig (Hardware-Tabelle, uv-Tutorial, EU-Cloud-Setup)
+- [x] **Phase 00 — vollständig** (Hardware-Tabelle, uv-Tutorial, EU-Cloud-Setup) — abgeschlossen 28.04.2026
 - [ ] Phase 11 — vollständig (Pydantic AI, MCP, Anbieter-Vergleich, Eval)
 - [ ] Phase 14 — vollständig (Charity-Adoptions-Bot)
 - [ ] Phase 17 — vollständig (Pharia auf StackIT, Langfuse, vLLM)

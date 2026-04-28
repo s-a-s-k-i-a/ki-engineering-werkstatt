@@ -7,3 +7,4 @@ dist-notebooks/
 .ty_cache/
 .mypy_cache/
 docs/_build/
+CHANGELOG.md
