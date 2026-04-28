@@ -82,7 +82,7 @@ du startest grade mit KI
 | Output | Wo | Status |
 |---|---|---|
 | **3 voll ausgearbeitete Showcase-Module** mit Marimo-Notebooks, Übungen, Lösungen | [Phasen 05, 13, 20](#-showcase--3-module-sind-am-launch-tag-fertig) | ✅ am Launch |
-| **15 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 01-04, 06-10, 12, 15-19 | [`phasen/`](phasen/) | 🚧 in Arbeit |
+| **14 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 01-04, 06-10, 12, 15-16, 18-19 | [`phasen/`](phasen/) | 🚧 in Arbeit |
 | **3 lauffähige CLI-Werkzeuge** (`ki-act-classifier`, `ki-ai-txt`, `ki-compliance-lint`) | [`werkzeuge/`](werkzeuge/) | ✅ |
 | **DACH-Compliance-Layer** mit AI-Act-Tracker, DSGVO-Checklisten, AVV-Mustern, Asiatischen-LLM-Disclaimer | [`docs/rechtliche-perspektive/`](docs/rechtliche-perspektive/) | ✅ |
 | **EU-Modell-Setups** (Pharia, Mistral, IONOS, Ollama, vLLM) | [`infrastruktur/eu-modelle/`](infrastruktur/eu-modelle/) | ✅ |
@@ -268,7 +268,7 @@ flowchart TB
     P14[14 · 🤖 Agenten & MCP]:::done
     P15[15 · Autonome Systeme]:::planned
     P16[16 · Reasoning]:::planned
-    P17[17 · Production EU]:::planned
+    P17[17 · 🏭 Production EU]:::done
   end
 
   subgraph C[" ⚖️ Compliance "]

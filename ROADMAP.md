@@ -29,7 +29,7 @@
 | ✅ | 14 | **Agenten & MCP** — Pydantic AI, LangGraph, DSPy, Multi-Agent, MCP |
 | ⏳ | 15 | Autonome Systeme |
 | ⏳ | 16 | Reasoning & Test-Time-Compute |
-| ⏳ | 17 | Production & EU-Hosting |
+| ✅ | 17 | **Production & EU-Hosting** — vLLM, LiteLLM, STACKIT, IONOS, OVH, Phoenix, Langfuse |
 | ⏳ | 18 | Ethik, Safety, Alignment |
 | ⏳ | 19 | Capstones |
 | ✅ | 20 | **Recht & Governance** |
@@ -39,7 +39,7 @@
 - [x] **Phase 00 — vollständig** (Hardware-Tabelle, uv-Tutorial, EU-Cloud-Setup) — abgeschlossen 28.04.2026
 - [x] **Phase 11 — vollständig** (Pydantic AI, MCP, Anbieter-Vergleich, Eval) — abgeschlossen 28.04.2026
 - [x] **Phase 14 — vollständig** (Pydantic AI, LangGraph, DSPy, Multi-Agent, MCP, Sicherheit) — abgeschlossen 28.04.2026
-- [ ] Phase 17 — vollständig (Pharia auf StackIT, Langfuse, vLLM)
+- [x] **Phase 17 — vollständig** (vLLM v0.20, LiteLLM v1.83, STACKIT/IONOS/OVH, Phoenix v14, Langfuse v3, Pharia-Hands-on) — abgeschlossen 29.04.2026
 - [ ] Logo + Social Preview als finale PNG-Renderings
 - [ ] Erste echte Marimo-Notebooks mit echten Modell-Aufrufen (gegen Test-Account)
 
