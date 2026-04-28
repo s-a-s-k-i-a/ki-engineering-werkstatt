@@ -80,7 +80,7 @@ LiteLLM löst gleichzeitig:
 docker run -d \
   --name litellm \
   -p 4000:4000 \
-  -e DATABASE_URL=postgresql://litellm:secret@postgres:5432/litellm \
+  -e DATABASE_URL=postgresql://litellm:${POSTGRES_PASSWORD}@postgres:5432/litellm \
   -e LITELLM_MASTER_KEY=sk-prod-... \
   -e ANTHROPIC_API_KEY=sk-ant-... \
   -e IONOS_API_KEY=... \
