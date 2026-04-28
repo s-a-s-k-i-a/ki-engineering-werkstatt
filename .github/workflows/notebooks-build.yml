@@ -5,6 +5,7 @@ on:
     paths:
       - "phasen/**/code/*.py"
       - "phasen/**/loesungen/*.py"
+      - "phasen/**/lektionen/*.md"
       - "werkzeuge/build_notebooks.py"
       - "werkzeuge/inject_colab_badges.py"
   pull_request:
@@ -12,6 +13,8 @@ on:
     paths:
       - "phasen/**/code/*.py"
       - "phasen/**/loesungen/*.py"
+      - "phasen/**/lektionen/*.md"
+  workflow_dispatch:
 
 permissions:
   contents: read
