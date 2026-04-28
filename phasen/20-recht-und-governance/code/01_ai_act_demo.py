@@ -34,7 +34,7 @@ def _(mo):
 
         Wir klassifizieren drei reale KI-System-Beispiele:
 
-        1. **Tierheim-Adoptions-Bot** (Chatbot mit FAQ + Termin-Buchung)
+        1. **Charity-Adoptions-Bot** (Chatbot mit FAQ + Termin-Buchung)
         2. **HR-Screening Kreditbank** (Lebenslauf-Scoring + Kreditscoring)
         3. **Behördliches Social-Scoring** (sollte gar nicht erst gebaut werden)
 
@@ -47,25 +47,25 @@ def _(mo):
 
 @app.cell
 def _(mo):
-    """Beispiel 1: Tierheim-Adoptions-Bot."""
+    """Beispiel 1: Charity-Adoptions-Bot."""
     from werkzeuge.ai_act_classifier import klassifiziere
 
-    karte_tierheim = {
-        "name": "Tierheim-Hannover-Adoptions-Bot",
+    karte_adoption = {
+        "name": "Charity-Adoptions-Bot",
         "version": "0.1.0",
         "use_case_kategorien": [],  # kein Anh. III Use-Case
         "transparenz_trigger": ["chatbot"],  # Art. 50 Abs. 1
         "risiko_indikatoren": {},  # keine Verbote
         "ist_gpai": False,
     }
-    befund = klassifiziere(karte_tierheim)
+    befund = klassifiziere(karte_adoption)
     mo.md(
-        f"## 1) Tierheim-Adoptions-Bot\n\n"
+        f"## 1) Charity-Adoptions-Bot\n\n"
         f"**Risiko**: `{befund.risiko.value}` — {len(befund.pflichten)} Pflichten\n\n"
         f"**Begründung**: {befund.begruendung}\n\n"
         f"**Top-Pflichten**:\n" + "\n".join(f"- {p}" for p in befund.pflichten[:3])
     )
-    return befund, karte_tierheim, klassifiziere
+    return befund, karte_adoption, klassifiziere
 
 
 @app.cell
@@ -120,7 +120,7 @@ def _(mo):
         Dieselben Klassifizierungen über die Kommandozeile:
 
         ```bash
-        ki-act-classifier --modell-karte vorlagen/model-card-tierheim-bot.yaml
+        ki-act-classifier --modell-karte vorlagen/model-card-adoption-bot.yaml
         ki-act-classifier --modell-karte vorlagen/model-card-hr.yaml --als-json
         ```
 

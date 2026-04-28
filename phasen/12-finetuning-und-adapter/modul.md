@@ -27,7 +27,7 @@ lernziele:
 | 12.05 | Trainings-Stack: TRL, axolotl, Unsloth (2× schneller) |
 | 12.06 | Merging vs. Loading at runtime |
 | 12.07 | Multi-LoRA-Inference (vLLM) |
-| 12.08 | Hands-on: QLoRA auf Qwen2.5-7B mit 500 dt. Tierheim-Dialogen |
+| 12.08 | Hands-on: QLoRA auf Qwen2.5-7B mit 500 dt. Charity-Dialogen |
 
 ## Status
 

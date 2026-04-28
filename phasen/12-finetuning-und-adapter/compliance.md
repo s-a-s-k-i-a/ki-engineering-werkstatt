@@ -19,7 +19,7 @@ ai_act_artikel:
 
 ## Trainingsdaten-Einwilligung
 
-Wer eigene Daten zum Finetuning nutzt (Tierheim-Dialoge, Kundengespräche, E-Mails):
+Wer eigene Daten zum Finetuning nutzt (Charity-Dialoge, Kundengespräche, E-Mails):
 
 - **Einwilligung** (Art. 7) oder **berechtigtes Interesse** (Art. 6 lit. f) als Rechtsgrundlage
 - Bei besonderen Kategorien (Gesundheit, Religion): explizite Einwilligung Art. 9

@@ -47,7 +47,7 @@ Falls du noch nie programmiert hast:
 
 ## Pflicht-Phasen
 
-- **00, 01 (Anker), 02, 05, 11, 13, 14, 20** + 1 einfaches Capstone (19.A WP-Plugin-Helfer oder 19.C Tierheim-Bot)
+- **00, 01 (Anker), 02, 05, 11, 13, 14, 20** + 1 einfaches Capstone (19.A WP-Plugin-Helfer oder 19.C Charity-Adoptions-Bot)
 
 ## Zeitplan (~ 60 h über 4-6 Monate)
 

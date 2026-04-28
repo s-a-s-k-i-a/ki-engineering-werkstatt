@@ -82,7 +82,7 @@ def _(mo):
     fragen = [
         "Was regelt die DSGVO seit Mai 2018?",
         "Welche Stufen hat das Inkrafttreten der KI-Verordnung?",
-        "Wie groß ist das Tierheim in Hannover?",
+        "Wie groß ist das Tierschutz-Organisation in Deutschland?",
         "Wann wurde die Berliner Mauer gebaut?",
         "Welche Rolle hat das Bundesverfassungsgericht?",
     ]

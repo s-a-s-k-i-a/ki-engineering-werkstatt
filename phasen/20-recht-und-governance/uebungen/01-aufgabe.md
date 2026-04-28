@@ -9,7 +9,7 @@ Du wendest die AI-Act-Klassifizierung auf ein eigenes (oder Lehrgut-)KI-System a
 ## Aufgabe
 
 1. Wähle ein KI-System (eigenes Projekt oder eines aus Phase 19)
-2. Erstelle eine `model-card.yaml` analog zu `vorlagen/model-card-tierheim-bot.yaml`
+2. Erstelle eine `model-card.yaml` analog zu `vorlagen/model-card-adoption-bot.yaml`
 3. Lasse `ki-act-classifier --modell-karte deine-model-card.yaml` laufen
 4. Notiere das Ergebnis (Risiko-Klasse + Pflichten)
 5. Erstelle die zugehörigen Artefakte:

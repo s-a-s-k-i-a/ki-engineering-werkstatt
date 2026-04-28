@@ -38,7 +38,7 @@
 
 - [ ] Phase 00 — vollständig (Hardware-Tabelle, uv-Tutorial, EU-Cloud-Setup)
 - [ ] Phase 11 — vollständig (Pydantic AI, MCP, Anbieter-Vergleich, Eval)
-- [ ] Phase 14 — vollständig (Tierheim-Adoptions-Bot)
+- [ ] Phase 14 — vollständig (Charity-Adoptions-Bot)
 - [ ] Phase 17 — vollständig (Pharia auf StackIT, Langfuse, vLLM)
 - [ ] Logo + Social Preview als finale PNG-Renderings
 - [ ] Erste echte Marimo-Notebooks mit echten Modell-Aufrufen (gegen Test-Account)

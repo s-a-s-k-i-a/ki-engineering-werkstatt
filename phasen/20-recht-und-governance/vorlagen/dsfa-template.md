@@ -6,7 +6,7 @@
 
 | Feld | Inhalt |
 |---|---|
-| Verfahrensbezeichnung | _z. B. Tierheim-Adoptions-Bot v1.0_ |
+| Verfahrensbezeichnung | _z. B. Charity-Adoptions-Bot v1.0_ |
 | Verantwortlicher | _Organisation, Anschrift_ |
 | Datenschutzbeauftragte:r | _Name, Kontakt_ |
 | Auftragsverarbeiter | _LLM-Provider, Vector-DB-Provider, Hosting_ |

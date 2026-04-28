@@ -39,7 +39,7 @@ Jeder Tool-Call: User-ID + Tool-Name + Argumente + Ergebnis + Zeitstempel — st
 
 ## DSGVO Art. 22 — automatisierte Entscheidungen
 
-Wenn Agent ohne Mensch zu rechtlich/wirtschaftlich relevanten Entscheidungen kommt: Betroffenen-Information, menschlicher Eingriffspfad, Anfechtung. Tierheim-Adoption ist Grenzfall — der finale Match wird vom Mitarbeiter freigegeben (Pattern!).
+Wenn Agent ohne Mensch zu rechtlich/wirtschaftlich relevanten Entscheidungen kommt: Betroffenen-Information, menschlicher Eingriffspfad, Anfechtung. Adoptions-Pattern ist Grenzfall — der finale Match wird vom Mitarbeiter freigegeben (Pattern!).
 
 ## Quellen
 

@@ -86,8 +86,8 @@ def _():
             "text": (
                 "Der Haushund ist ein Haustier und wird als Unterart des Wolfes eingeordnet. "
                 "Hunde leben seit Jahrtausenden mit dem Menschen zusammen und werden in "
-                "Deutschland in Tierheimen, bei privaten Haltern und in Zuchten gehalten. "
-                "Die Adoption aus dem Tierheim ist ein verbreiteter Weg."
+                "Deutschland in Tierschutz-Organisationen, bei privaten Haltern und in Zuchten gehalten. "
+                "Die Adoption aus einer Tierschutz-Organisation ist ein verbreiteter Weg."
             ),
             "quelle": "Wikipedia DE — Hund",
             "lizenz": "CC BY-SA 4.0",
@@ -99,7 +99,7 @@ def _():
             "text": (
                 "Das deutsche Tierschutzgesetz regelt den Schutz des Lebens und Wohlbefindens "
                 "der Tiere. Niemand darf einem Tier ohne vernünftigen Grund Schmerzen, Leiden "
-                "oder Schäden zufügen. Tierheime und Auffangstationen unterliegen den "
+                "oder Schäden zufügen. Tierschutz-Organisationen unterliegen den "
                 "Anforderungen des § 11 TierSchG."
             ),
             "quelle": "Wikipedia DE — Tierschutzgesetz",
@@ -112,7 +112,7 @@ def _():
             "text": (
                 "Hannover ist die Hauptstadt des Landes Niedersachsen und neunte größte Stadt "
                 "Deutschlands. Sitz des Tierschutzvereins Hannover und Umgebung e. V., der das "
-                "größte Tierheim der Region in Burgwedel betreibt. Die Stadt wurde im Zweiten "
+                "größte Tierschutz-Organisation der Region betreibt. Die Stadt wurde im Zweiten "
                 "Weltkrieg stark zerstört und nach 1945 wieder aufgebaut."
             ),
             "quelle": "Wikipedia DE — Hannover",
@@ -229,7 +229,7 @@ def _(chunk_vectors, korpus, mo, np, tfidf_vector, tokenize_de):
         top_idx = np.argsort(-sims)[:top_k]
         return [{**korpus[i], "score": float(sims[i])} for i in top_idx if sims[i] > 0]
 
-    frage = "Wie kann ich einen Hund aus einem Tierheim in Hannover adoptieren?"
+    frage = "Wie kann ich einen Hund aus einem Tierschutz-Organisation in Deutschland adoptieren?"
     treffer = retrieve(frage, top_k=3)
     out = "\n\n".join(
         f"**[{t['id']}] {t['titel']}** (score={t['score']:.3f}, {t['thema']})\n  {t['text']}\n  *Quelle: {t['quelle']} ({t['lizenz']})*"
@@ -264,11 +264,11 @@ Antworte auf Deutsch und nenne die verwendeten Quellen-Nummern."""
 
     # Stub-Antwort für Smoke-Test (kein API-Call)
     stub_antwort = (
-        "Aus den Quellen lässt sich entnehmen, dass es in Hannover ein Tierheim "
+        "Aus den Quellen lässt sich entnehmen, dass es eine deutsche Tierschutz-Organisation "
         "vom Tierschutzverein Hannover und Umgebung e. V. in Burgwedel gibt [5]. "
-        "Adoptionen aus Tierheimen sind nach § 11 Tierschutzgesetz reguliert [4]. "
+        "Adoptionen aus Tierschutz-Organisationen sind nach § 11 Tierschutzgesetz reguliert [4]. "
         "Hunde sind als Haustiere ausdrücklich für die Adoption geeignet [3]. "
-        "Für konkrete Schritte: Tierheim direkt kontaktieren — die Quellen liefern "
+        "Für konkrete Schritte: Tierschutz-Organisation direkt kontaktieren — die Quellen liefern "
         "keine Detail-Anweisungen."
     )
     mo.md(

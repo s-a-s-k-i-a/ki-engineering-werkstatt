@@ -109,11 +109,11 @@ def _():
 
 @app.cell
 def _(log_aufruf, mo, time):
-    """Demo-Logging eines Tierheim-Bot-Aufrufs."""
+    """Demo-Logging eines Charity-Adoptions-Bot-Aufrufs."""
     start = time.perf_counter()
     eintrag = log_aufruf(
         user_id="user-12345@example.de",
-        prompt="Wie kann ich einen Hund aus dem Tierheim Hannover adoptieren?",
+        prompt="Wie kann ich einen Hund aus dem deutsche Tierschutz-Organisation adoptieren?",
         output=(
             "Du kannst dich beim Tierschutzverein Hannover in Burgwedel melden. "
             "Vorab gibt es ein Beratungsgespräch und Hausbesuch."

@@ -57,7 +57,7 @@ def _(mo):
         r"""
         ### Adaptiere für dein eigenes System
 
-        - Kopiere `vorlagen/model-card-tierheim-bot.yaml` und passe es an
+        - Kopiere `vorlagen/model-card-adoption-bot.yaml` und passe es an
         - Lasse `ki-act-classifier` laufen
         - Schreibe deinen 200-Wort-Compliance-Plan
         - Erstelle Issues für jede Pflicht aus dem Klassifizierungs-Output

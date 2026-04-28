@@ -4,82 +4,116 @@
 
 # `ki-engineering-werkstatt`
 
-### **20 Phasen KI-Engineering. Auf Deutsch. Mit Quellen, die Stand halten.**
+### **Lerne, wie man KI-Anwendungen baut, die in der EU rechtlich halten — und auf Deutsch funktionieren.**
 
-*Eine Werkstatt, die in der EU funktioniert — Code, Quellen, Compliance, kein Marketing.*
+*21 Phasen. ~80 Primärquellen. 7 lauffähige Marimo-Notebooks. Kein Marketing.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-FF6B3D?style=for-the-badge)](LICENSE)
 [![Python 3.13](https://img.shields.io/badge/Python-3.13-3D8BFF?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![Marimo](https://img.shields.io/badge/Notebooks-Marimo-FF6B3D?style=for-the-badge)](https://marimo.io)
-![AI Act](https://img.shields.io/badge/AI_Act-Stand_27.04.2026-3D8BFF?style=for-the-badge)
+![AI Act](https://img.shields.io/badge/AI_Act-Stand_28.04.2026-3D8BFF?style=for-the-badge)
 ![Module Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/s-a-s-k-i-a/ki-engineering-werkstatt/main/.github/badge.json&style=for-the-badge)
 [![Beiträge willkommen](https://img.shields.io/badge/Beiträge-willkommen-FF6B3D?style=for-the-badge)](CONTRIBUTING.md)
 
+[**Was ist das?**](#-was-ist-das) ·
+[**So lernst du**](#-so-lernst-du-der-lern-loop) ·
 [**Schnellstart**](#-schnellstart) ·
 [**Showcase**](#-showcase--3-module-sind-am-launch-tag-fertig) ·
-[**Curriculum**](#-curriculum-21-phasen) ·
-[**Lernpfade**](#-lernpfade--w%C3%A4hle-deinen-einstieg) ·
-[**Compliance**](#%EF%B8%8F-dach--eu-compliance-anker) ·
-[**Markt**](#-marktrealit%C3%A4t-dach-stand-recherche-q12026) ·
-[**Quellen**](docs/quellen.md)
+[**Curriculum**](#%EF%B8%8F-curriculum-21-phasen) ·
+[**Wer ich bin**](#-wer-hinter-dem-repo-steht)
 
 </div>
 
 ---
 
+## 🧭 Was ist das?
+
+> Stop hoping no one notices. — Compliance ist 2026 das größte Risiko für KI-Projekte im DACH-Mittelstand.
+
+Die **KI-Engineering-Werkstatt** ist ein Open-Source-Curriculum für Entwickler:innen, IT-Verantwortliche und Compliance-Officer in **Deutschland, Österreich und der Schweiz**. Du lernst Schritt für Schritt, wie man KI-Anwendungen baut, die:
+
+- ✅ **technisch funktionieren** (mit modernem 2026-Stack: Python 3.13, Marimo, Pydantic AI, Qdrant, vLLM)
+- ✅ **rechtssicher sind** (EU AI Act, DSGVO, UrhG-TDM-Schranke, NIS2)
+- ✅ **deutsch verstehen** (Tokenizer, deutsche Datasets, Pharia / Mistral / Llama / Qwen für deutschen Text)
+- ✅ **dokumentiert sind** (~ 80 Primärquellen, alle mit Datum, monatlich gepflegt)
+
 > [!IMPORTANT]
-> **Was dieses Repo nicht ist.** Kein Newsletter-Funnel. Kein Discord. Keine Kurs-Verkaufsseite. Kein „werde KI-Engineer in 30 Tagen". Hier sind **21 Phasen Curriculum, ~80 Primärquellen mit Datum, EU-Compliance-Anker und lauffähiger Code**. Wer Marketing will, liest woanders.
+> **Was dieses Repo nicht ist.** Kein Newsletter-Funnel · Kein Discord · Keine Kurs-Verkaufsseite · Kein „werde KI-Engineer in 30 Tagen". Kein Rechtsrat (siehe [`disclaimer.md`](docs/rechtliche-perspektive/disclaimer.md)). Wer Marketing will, liest woanders.
 
----
-
-## 🔥 Warum dieses Repo?
+### Für wen?
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="25%" valign="top" align="center">
 
-### 🇪🇺 DACH-Lücke geschlossen
+🛠️<br/>**WP- & Backend-Devs**
 
-Englische Curricula erklären Transformers — und ignorieren EU-AI-Act, DSGVO, deutsche Datasets, EU-Hosting. Hier nicht.
-
-</td>
-<td width="33%" valign="top">
-
-### ⚖️ Compliance ist Leitmotiv
-
-Jede Phase hat einen `compliance.md`-Anker mit konkreten Artikel-Referenzen. Vom Tokenizer bis zum Multi-Agent-System.
+du baust LLMs in Plugins, APIs, SaaS
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top" align="center">
 
-### 📚 Belegbar, keine Bauchgefühle
+📊<br/>**Data Scientists**
 
-Alle Markt-Aussagen mit **Bitkom / KfW / VDMA / IfM**-Quelle und Datum. ~80 kuratierte Primärquellen.
+du willst Production-LLMs statt Notebooks
+
+</td>
+<td width="25%" valign="top" align="center">
+
+⚖️<br/>**Compliance / DSB**
+
+du musst KI-Projekte einschätzen
+
+</td>
+<td width="25%" valign="top" align="center">
+
+🌱<br/>**Quereinsteiger:innen**
+
+du startest grade mit KI
 
 </td>
 </tr>
 </table>
 
+→ Vier vorbereitete [**Lernpfade**](docs/lernpfade/) führen dich durch das Curriculum, je nach Profil.
+
+### Was bekommst du konkret?
+
+| Output | Wo | Status |
+|---|---|---|
+| **3 voll ausgearbeitete Showcase-Module** mit Marimo-Notebooks, Übungen, Lösungen | [Phasen 05, 13, 20](#-showcase--3-module-sind-am-launch-tag-fertig) | ✅ am Launch |
+| **18 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 00-04, 06-12, 14-19 | [`phasen/`](phasen/) | 🚧 in Arbeit |
+| **3 lauffähige CLI-Werkzeuge** (`ki-act-classifier`, `ki-ai-txt`, `ki-compliance-lint`) | [`werkzeuge/`](werkzeuge/) | ✅ |
+| **DACH-Compliance-Layer** mit AI-Act-Tracker, DSGVO-Checklisten, AVV-Mustern, Asiatischen-LLM-Disclaimer | [`docs/rechtliche-perspektive/`](docs/rechtliche-perspektive/) | ✅ |
+| **EU-Modell-Setups** (Pharia, Mistral, IONOS, Ollama, vLLM) | [`infrastruktur/eu-modelle/`](infrastruktur/eu-modelle/) | ✅ |
+| **Quellenbibliothek** mit ~ 80 kuratierten Primärquellen, monatlich gepflegt | [`docs/quellen.md`](docs/quellen.md) | ✅ |
+| **CI / Tests** mit 8 Workflows, 23 pytest-Tests, gitleaks, Marimo-Smoke | [`.github/workflows/`](.github/workflows/) | ✅ |
+
 ---
 
-## 📊 By the numbers (Stand 27.04.2026)
+## 🔄 So lernst du — der Lern-Loop
 
-<table>
-<tr>
-<td align="center" width="20%"><strong>21</strong><br/>Phasen-Module</td>
-<td align="center" width="20%"><strong>3 / 21</strong><br/>am Launch komplett</td>
-<td align="center" width="20%"><strong>~80</strong><br/>Primärquellen</td>
-<td align="center" width="20%"><strong>7</strong><br/>lauffähige Marimo-Notebooks</td>
-<td align="center" width="20%"><strong>18</strong><br/>KI-Crawler geblockt</td>
-</tr>
-<tr>
-<td align="center"><strong>4</strong><br/>Persona-Lernpfade</td>
-<td align="center"><strong>8</strong><br/>CI-Workflows</td>
-<td align="center"><strong>23</strong><br/>pytest-Tests</td>
-<td align="center"><strong>5</strong><br/>EU-Modell-Setups</td>
-<td align="center"><strong>0</strong><br/>API-Keys im Repo</td>
-</tr>
-</table>
+Jede Phase folgt dem gleichen Muster. Plane mit ~ 1–4 Stunden pro Lektion (lesen + Übung + Selbstcheck).
+
+```mermaid
+flowchart LR
+    A[📖 Modul-README<br/>lesen] --> B[📚 Lektion lesen<br/>Theorie kompakt]
+    B --> C[💻 Marimo-Notebook<br/>ausführen]
+    C --> D[✏️ Übung machen<br/>eigene Variante]
+    D --> E[🔍 Lösung vergleichen<br/>Referenz-Implementierung]
+    E --> F[✅ Selbstcheck<br/>Checkliste abhaken]
+    F --> G[⚖️ Compliance-Anker<br/>EU-AI-Act / DSGVO]
+    G --> H{Verstanden?}
+    H -->|Ja| Next[📦 nächste Lektion]
+    H -->|Nein| B
+
+    classDef step fill:#FF6B3D,color:#0E1116,stroke:#FF6B3D
+    classDef nav fill:#3D8BFF,color:#FFF,stroke:#3D8BFF
+    class A,B,C,D,E,F,G step
+    class H,Next nav
+```
+
+**Du suchst die ausführliche Anleitung?** → [`GETTING_STARTED.md`](GETTING_STARTED.md): Schritt für Schritt von „git clone" bis „erste gelöste Übung", inklusive Troubleshooting.
 
 ---
 
@@ -100,25 +134,36 @@ just smoke
 just edit 05-deutsche-tokenizer
 ```
 
-> **Voraussetzungen**: Python 3.13, [`uv`](https://docs.astral.sh/uv/), [`just`](https://just.systems/), 8+ GB RAM. Optional: Apple-Silicon-Mac, NVIDIA-GPU oder einer der EU-Cloud-Anbieter aus [`infrastruktur/eu-modelle/`](infrastruktur/eu-modelle/).
-
-> 📖 **Du willst wissen, wie du das Repo Schritt für Schritt durcharbeitest?** Lies [`GETTING_STARTED.md`](GETTING_STARTED.md) — der vollständige Lern-Loop von „git clone" bis zur ersten gelösten Übung in unter 10 Minuten.
+> **Voraussetzungen**: Python 3.13, [`uv`](https://docs.astral.sh/uv/), [`just`](https://just.systems/), 8+ GB RAM. Optional: Apple-Silicon-Mac, NVIDIA-GPU, oder einer der EU-Cloud-Anbieter aus [`infrastruktur/eu-modelle/`](infrastruktur/eu-modelle/).
+>
+> **Kein `just`?** Auch direkter Aufruf ohne Just funktioniert: `uv sync --extra dev --extra tokenizer && uv run pytest tests/ -q`.
 
 ---
 
-## 🎯 Was du in 60 Minuten lernst
+## 📊 Was du am Ende kannst (in Zahlen)
 
-> Stop wasting tokens on German compound words. — drei konkrete Quick-Wins, jeder als ausgearbeitetes Modul.
-
-| ⏱️ | Showcase | Du machst | Du sparst |
-|---|---|---|---|
-| 30 min | [**Phase 05 · Tokenizer-Showdown**](phasen/05-deutsche-tokenizer/) | Vergleiche GPT-5 vs. Pharia auf 10kGNAD | 30 % API-Kosten auf Deutsch |
-| 60 min | [**Phase 13 · Vanilla-RAG**](phasen/13-rag-tiefenmodul/) | Bau ein 4-Schritte-RAG mit Quellen-Attribution | Halluzinations-Risiko |
-| 30 min | [**Phase 20 · AI-Act-Klassifizierung**](phasen/20-recht-und-governance/) | CLI-Klassifizierung deines Use-Cases | Bußgeld bis 35 Mio. € |
+<table>
+<tr>
+<td align="center" width="20%"><strong>21</strong><br/>Phasen-Module</td>
+<td align="center" width="20%"><strong>3 / 21</strong><br/>am Launch komplett</td>
+<td align="center" width="20%"><strong>~ 80</strong><br/>Primärquellen mit Datum</td>
+<td align="center" width="20%"><strong>7</strong><br/>lauffähige Marimo-Notebooks</td>
+<td align="center" width="20%"><strong>4</strong><br/>Persona-Lernpfade</td>
+</tr>
+<tr>
+<td align="center"><strong>23</strong><br/>pytest-Tests in CI</td>
+<td align="center"><strong>8</strong><br/>GitHub-Workflows</td>
+<td align="center"><strong>5</strong><br/>EU-Modell-Setups</td>
+<td align="center"><strong>18</strong><br/>KI-Crawler geblockt</td>
+<td align="center"><strong>0</strong><br/>API-Keys im Repo</td>
+</tr>
+</table>
 
 ---
 
 ## ✨ Showcase — 3 Module sind am Launch-Tag fertig
+
+> Diese drei Module sind komplett: Lektionen, Marimo-Notebook, Übung, Referenz-Lösung, Compliance-Anker, Quellen mit Datum. Du kannst sie heute durcharbeiten.
 
 <table>
 <tr>
@@ -126,29 +171,47 @@ just edit 05-deutsche-tokenizer
 
 ### 🧩 Phase 05<br/>Deutsche Tokenizer
 
-**Token-Effizienz-Showdown** mit GPT-5, Claude 4.7, Llama 4, Mistral Large, Pharia-1, Teuken-7B auf 10kGNAD — inkl. EUR-Kosten-Vergleich.
+> Stop wasting tokens on German compound words.
+
+**Du lernst**: warum dieselbe deutsche Aussage in unterschiedlich vielen Tokens kodiert wird, und wie du den günstigsten Tokenizer für deinen Use-Case wählst.
+
+**Du baust**: einen Token-Effizienz-Showdown mit GPT-5, Claude 4.7, Llama 4, Mistral, Pharia, Teuken auf 10kGNAD-Korpus — inklusive EUR-Kostenvergleich.
+
+**Du sparst**: bis zu 30 % API-Kosten auf deutschem Text.
 
 → [Modul](phasen/05-deutsche-tokenizer/)
 → [Lektion 01](phasen/05-deutsche-tokenizer/lektionen/01-bpe-und-deutsch.md)
-→ [Marimo-Notebook](phasen/05-deutsche-tokenizer/code/01_tokenizer_showdown.py)
+→ [Notebook](phasen/05-deutsche-tokenizer/code/01_tokenizer_showdown.py)
 
 </td>
 <td width="33%" valign="top">
 
 ### 🔍 Phase 13<br/>RAG-Tiefenmodul
 
-**Vanilla → Hybrid → ColBERT → GraphRAG → LazyGraphRAG → Agentic** auf deutschem Wikipedia-Subset mit Pharia-1 + Qdrant.
+> Stop pasting whole documents into prompts.
+
+**Du lernst**: das gesamte RAG-Spektrum 2026 — von Vanilla über Hybrid + Re-Ranking bis GraphRAG / LazyGraphRAG / Agentic.
+
+**Du baust**: vier RAG-Varianten auf demselben deutschen Wikipedia-Subset, vergleichst Ragas-Score, Latenz, EUR-Kosten mit Pharia-1 und Mistral-Large als Generator.
+
+**Du beherrschst**: Quellen-Attribution AI-Act-konform.
 
 → [Modul](phasen/13-rag-tiefenmodul/)
 → [Lektion 01](phasen/13-rag-tiefenmodul/lektionen/01-vanilla-rag.md)
-→ [Marimo-Notebook](phasen/13-rag-tiefenmodul/code/01_vanilla_rag.py)
+→ [Notebook](phasen/13-rag-tiefenmodul/code/01_vanilla_rag.py)
 
 </td>
 <td width="33%" valign="top">
 
 ### ⚖️ Phase 20<br/>Recht & Governance
 
-**AI-Act-CLI**, AVV-Checkliste, DSFA-Template, AI-Literacy-Onboarding, Audit-Logging — alles, was im Original fehlt.
+> Stop hoping no one notices.
+
+**Du lernst**: AI-Act-Risikoklassen, AVV-Pflichten, DSFA-Workflow, AI-Literacy nach Art. 4, Audit-Logging.
+
+**Du baust**: dein eigenes KI-System klassifizieren mit `ki-act-classifier`, eine DSFA-Light schreiben, ai.txt + robots.txt für deine Domain generieren, Audit-Logs strukturieren.
+
+**Du vermeidest**: Bußgelder bis 35 Mio. € / 7 % Jahresumsatz.
 
 → [Modul](phasen/20-recht-und-governance/)
 → [Lektion 01](phasen/20-recht-und-governance/lektionen/01-ai-act-risk.md)
@@ -159,10 +222,10 @@ just edit 05-deutsche-tokenizer
 </table>
 
 ```bash
-# CLI-Demo — lauffähig in CI ohne LLM-Account
-$ ki-act-classifier --modell-karte phasen/20-recht-und-governance/vorlagen/model-card-tierheim-bot.yaml
+# Live-Demo: AI-Act-Klassifizierung in unter 5 Sekunden
+$ ki-act-classifier --modell-karte phasen/20-recht-und-governance/vorlagen/model-card-adoption-bot.yaml
 
-╭─ AI-Act-Klassifizierung — Tierheim-Hannover-Adoptions-Bot ────────────╮
+╭─ AI-Act-Klassifizierung — Charity-Adoptions-Bot ─────────────────────╮
 │ Risikostufe: BEGRENZT                                                  │
 ╰────────────────────────────────────────────────────────────────────────╯
   Begründung: Transparenzpflicht: Art. 50 Abs. 1 — Chatbot-Hinweis
@@ -173,6 +236,8 @@ $ ki-act-classifier --modell-karte phasen/20-recht-und-governance/vorlagen/model
 ---
 
 ## 🗺️ Curriculum (21 Phasen)
+
+> Inspiriert vom englischsprachigen [`rohitg00/ai-engineering-from-scratch`](https://github.com/rohitg00/ai-engineering-from-scratch), aber für die EU-Realität 2026 neu gebaut: deutschsprachig, Compliance-zentriert, mit lauffähigem Code und EU-LLM-Stack.
 
 ```mermaid
 flowchart TB
@@ -222,7 +287,7 @@ flowchart TB
 
 **Legende**: 🟧 ✅ fertig · 🟦 🚧 in Arbeit · ⬛ ⏳ geplant
 
-Vollständige [Roadmap](ROADMAP.md) mit Q2/Q3/Q4-2026-Plan.
+Vollständige [Roadmap](ROADMAP.md) mit Q2 / Q3 / Q4-2026-Plan.
 
 ---
 
@@ -245,7 +310,7 @@ flowchart LR
     WPp --> Cap1[19.A · WP-Plugin-Helfer-RAG]
     DSp --> Cap2[19.B · DSGVO-Compliance-Checker]
     COp --> Cap3[Eigener Use-Case]
-    QEp --> Cap4[19.C · Tierheim-Bot]
+    QEp --> Cap4[19.C · Charity-Adoptions-Bot]
 
     classDef profile fill:#FF6B3D,color:#0E1116
     classDef path fill:#1c2230,color:#A8B0BA
@@ -266,12 +331,12 @@ flowchart LR
 
 ## ⚖️ DACH- / EU-Compliance-Anker
 
-> Stop hoping no one notices. — der größte Differenziator dieses Repos.
+> Der größte Differenziator dieses Repos. Was im Original (rohitg00) komplett fehlt.
 
 | Bereich | Datei |
 |---|---|
 | 📅 EU AI Act Tracker (Inkrafttretens-Stufen, Behörden, Sanktionen) | [`docs/rechtliche-perspektive/ai-act-tracker.md`](docs/rechtliche-perspektive/ai-act-tracker.md) |
-| 🛡️ DSGVO-Checklisten (vor/während/nach Projekt) | [`docs/rechtliche-perspektive/dsgvo-checklisten.md`](docs/rechtliche-perspektive/dsgvo-checklisten.md) |
+| 🛡️ DSGVO-Checklisten (vor / während / nach Projekt) | [`docs/rechtliche-perspektive/dsgvo-checklisten.md`](docs/rechtliche-perspektive/dsgvo-checklisten.md) |
 | 📜 AVV-Mustervorlagen pro Cloud-Anbieter | [`docs/rechtliche-perspektive/avv-musterklauseln.md`](docs/rechtliche-perspektive/avv-musterklauseln.md) |
 | 📚 Urheberrecht & TDM-Opt-out | [`docs/rechtliche-perspektive/urheberrecht-trainingsdaten.md`](docs/rechtliche-perspektive/urheberrecht-trainingsdaten.md) |
 | 🐉 Asiatische LLMs aus DACH-Sicht | [`docs/rechtliche-perspektive/asiatische-llms.md`](docs/rechtliche-perspektive/asiatische-llms.md) |
@@ -279,24 +344,24 @@ flowchart LR
 
 ### Modell-Anbieter im Vergleich
 
-| Modell | Land | Lizenz | EUR/1M Input | DSGVO/AVV | Server |
+| Modell | Land | Lizenz | EUR / 1M Input | DSGVO / AVV | Server |
 |---|---|---|---|---|---|
-| **Aleph Alpha** Pharia-1 | 🇩🇪 DE | proprietär | ~5,00 | ✅ | Heidelberg (BSI C5) |
-| **Mistral** Large 2 | 🇫🇷 FR | proprietär | ~2,00 | ✅ | Frankreich |
-| **IONOS** Llama-4-Maverick | 🇩🇪 DE | Llama CL | ~0,80 | ✅ | Karlsruhe (BSI C5) |
-| **OpenAI** GPT-5 | 🇺🇸 US | proprietär | ~10,00 | DPA + EU-Datazone | USA (Routing) |
-| **Anthropic** Claude 4.7 | 🇺🇸 US | proprietär | ~2,80 | DPA + EU-Datazone Q1/26 | USA (Routing) |
+| **Aleph Alpha** Pharia-1 | 🇩🇪 DE | proprietär | ~ 5,00 | ✅ | Heidelberg (BSI C5) |
+| **Mistral** Large 2 | 🇫🇷 FR | proprietär | ~ 2,00 | ✅ | Frankreich |
+| **IONOS** Llama-4-Maverick | 🇩🇪 DE | Llama CL | ~ 0,80 | ✅ | Karlsruhe (BSI C5) |
+| **OpenAI** GPT-5 | 🇺🇸 US | proprietär | ~ 10,00 | DPA + EU-Datazone | USA (EU-Routing) |
+| **Anthropic** Claude 4.7 | 🇺🇸 US | proprietär | ~ 2,80 | DPA + EU-Datazone Q1 / 26 | USA (EU-Routing) |
 | **Qwen3** | 🇨🇳 CN | Apache 2.0 | je nach Hoster | je nach Hoster | bei Self-Hosting: lokal |
 | **DeepSeek-R1** | 🇨🇳 CN | MIT | je nach Hoster | je nach Hoster | bei Self-Hosting: lokal |
 | **Pharia / Mistral / Llama** lokal | — | — | nur Strom | ✅ | deine Hardware |
 
-> ⚠️ **Asiatische Open-Weights**: lokale Inferenz auf EU-Hardware ist DSGVO-vertraeglich. Offizielle CN-API nicht. Self-Censorship-Audit Pflicht für News/Politik. → Details in [asiatische-llms.md](docs/rechtliche-perspektive/asiatische-llms.md).
+> ⚠️ **Asiatische Open-Weights**: lokale Inferenz auf EU-Hardware ist DSGVO-vertraeglich. Offizielle CN-API nicht. Self-Censorship-Audit Pflicht für News / Politik. → Details in [asiatische-llms.md](docs/rechtliche-perspektive/asiatische-llms.md).
 
 ---
 
-## 📈 Marktrealität DACH (Stand Recherche Q1/2026)
+## 📈 Marktrealität DACH
 
-> Wer KI-Engineering lernt, sollte wissen, wo der Markt steht. Belegt mit Primärquellen aus H2/2025 und Q1/2026 — keine Bauchgefühle.
+> Wer KI-Engineering lernt, sollte wissen, wo der Markt steht. Belegt mit Primärquellen aus H2 / 2025 und Q1 / 2026 — keine Bauchgefühle. **Stand der Zusammenstellung: 28.04.2026.**
 
 <table>
 <tr>
@@ -305,8 +370,8 @@ flowchart LR
 ### 🇩🇪 Adoption Deutschland
 
 - **41 %** der DE-Unternehmen ab 20 MA nutzen KI aktiv ([Bitkom, 15.09.2025](https://www.bitkom.org/Presse/Presseinformation/Durchbruch-Kuenstliche-Intelligenz))
-- **20 %** im echten KMU (~780 k Firmen, [KfW Fokus 533, 11.02.2026](https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-Fokus-Volkswirtschaft/Fokus-2026/Fokus-Nr.-533-Februar-2026-KI-Mittelstand.pdf))
-- **>60 %** der Großunternehmen ≥500 MA
+- **20 %** im echten KMU (~ 780 k Firmen, [KfW Fokus 533, 11.02.2026](https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-Fokus-Volkswirtschaft/Fokus-2026/Fokus-Nr.-533-Februar-2026-KI-Mittelstand.pdf))
+- **> 60 %** der Großunternehmen ≥ 500 MA
 - **43 %** im DACH-Maschinenbau ([VDMA / Strategy& 2025](https://www.vdma.eu/documents/34570/4888559/Studie_GenAI-Implications_Web_DE.pdf))
 
 </td>
@@ -332,16 +397,16 @@ flowchart LR
 - **OpenAI / ChatGPT** führt Web-Traffic (~ 81 %, *Methodik = Web-Traffic, NICHT Enterprise-Lizenzen*)
 - **Microsoft Copilot** dominiert Enterprise via M365-Integration
 - **Anthropic** eröffnet Münchner Office 07.11.2025 — DE in den globalen Top-20 bei Claude-Nutzung pro Kopf ([Anthropic Newsroom](https://www.anthropic.com/news/new-offices-in-paris-and-munich-expand-european-presence))
-- **Aleph Alpha** verlässt Foundation-Model-Rennen, Pivot zu Sovereign-AI; Cohere-Merger 04/2026
+- **Aleph Alpha** verlässt Foundation-Model-Rennen, Pivot zu Sovereign-AI; Cohere-Merger 04 / 2026
 
 </td>
 <td valign="top">
 
 ### 🇦🇹🇨🇭 Österreich + Schweiz
 
-- **AT-KMU** (≥10 MA): nur **8,9 %** nutzen KI (KMU Forschung Austria / WKÖ 2025)
+- **AT-KMU** (≥ 10 MA): nur **8,9 %** nutzen KI (KMU Forschung Austria / WKÖ 2025)
 - **CH-KMU**: **22 % → 34 %** (2024 → 2025, [SECO 05.11.2025](https://www.kmu.admin.ch/kmu/en/home/new/news/2025/ai-gains-ground-swiss-smes.html))
-- **CH-Arbeitsmarkt**: in stark KI-exponierten Berufen seit Nov 2022 +27 % stärkere Arbeitslosenzahl ([KOF ETH Studie 186, 10/2025](https://ethz.ch/content/dam/ethz/special-interest/dual/kof-dam/documents/newsletter/KOF_Studie_KI_Schweizer_Arbeitsmarkt.pdf))
+- **CH-Arbeitsmarkt**: in stark KI-exponierten Berufen seit Nov 2022 + 27 % stärkere Arbeitslosenzahl ([KOF ETH Studie 186, 10 / 2025](https://ethz.ch/content/dam/ethz/special-interest/dual/kof-dam/documents/newsletter/KOF_Studie_KI_Schweizer_Arbeitsmarkt.pdf))
 
 </td>
 </tr>
@@ -402,13 +467,15 @@ flowchart LR
 
 ~ **80 kuratierte Primärquellen**, kategorisiert in 13 Bereiche: Bücher · Foundational Papers · 2024–2026 SOTA · DACH-spezifisch · Recht & Compliance · Tooling-Docs · Datasets · Blogs · Video-Kurse · Markt-Studien DACH · Asiatische LLMs · China-Compliance · Sonstiges Tooling.
 
-→ [`docs/quellen.md`](docs/quellen.md) · **Stand: 27.04.2026**
+→ [`docs/quellen.md`](docs/quellen.md) · **Stand: 28.04.2026**
 
 ---
 
 ## 🔄 Wartungsversprechen
 
 > AI-Act-Tracker monatlich · Curriculum-Module wöchentliche PRs · Quellenbibliothek quartalsweise · Hotfix-Issues bei AI-Act-Stand-Updates binnen 7 Tagen.
+
+Alle Stand-Daten sind in den jeweiligen Dateien als YAML-Frontmatter gepflegt. CI prüft monatlich, dass keine Quelle älter als 180 Tage ist (Warnung).
 
 ---
 
@@ -420,7 +487,7 @@ Vor jedem PR: `just smoke` lokal grün — **Pflicht-Gate**. Details in [`CONTRI
 
 ---
 
-## 👤 Über die Macherin
+## 👤 Wer hinter dem Repo steht
 
 <table>
 <tr>
@@ -429,9 +496,16 @@ Vor jedem PR: `just smoke` lokal grün — **Pflicht-Gate**. Details in [`CONTRI
 </td>
 <td valign="top">
 
-**Saskia Teichmann** baut seit 2010 WordPress- und WooCommerce-Software in Hannover ([isla-stud.io](https://isla-stud.io)) und entwickelt mit [citelayer®](https://citelayer.ai) Tools, die WordPress-Inhalte für LLMs zitierfähig machen.
+**Saskia Teichmann** baut seit **2010** WordPress- und WooCommerce-Software in **Hannover** ([isla-stud.io](https://isla-stud.io)) — über 16 Jahre Praxis im DACH-Mittelstand. Mit [**citelayer®**](https://citelayer.ai) entwickelt sie Tools, die WordPress-Inhalte für LLMs zitierfähig machen.
 
-🛠️ Public Code u. a.: [`devctx`](https://github.com/s-a-s-k-i-a/devctx) · [`openclaw`](https://github.com/s-a-s-k-i-a/openclaw) · [`cloudpanel-mail-addon`](https://github.com/s-a-s-k-i-a/cloudpanel-mail-addon) · [`localized-sitemap-indexes`](https://github.com/s-a-s-k-i-a/localized-sitemap-indexes) · [`freellmapi`](https://github.com/s-a-s-k-i-a/freellmapi)
+🛠️ **Vertrauensanker: aktive Open-Source-Projekte**
+
+- [`devctx`](https://github.com/s-a-s-k-i-a/devctx) — Project-Context-CLI für AI-Agents
+- [`openclaw`](https://github.com/s-a-s-k-i-a/openclaw) — lokaler AI-Assistant
+- [`cloudpanel-mail-addon`](https://github.com/s-a-s-k-i-a/cloudpanel-mail-addon) — DKIM/SPF/DMARC-Addon, real eingesetzt im DACH-Hosting
+- [`localized-sitemap-indexes`](https://github.com/s-a-s-k-i-a/localized-sitemap-indexes) — TranslatePress + Rank Math Sitemap-Bridge
+- [`freellmapi`](https://github.com/s-a-s-k-i-a/freellmapi) — OpenAI-kompatibler Multi-Provider-Proxy
+- [`claude-code-timestamps`](https://github.com/s-a-s-k-i-a/claude-code-timestamps) — Timestamps-Plugin für Claude Code
 
 🐦 Twitter / X: [@SaskiaLund](https://twitter.com/SaskiaLund)
 
@@ -439,13 +513,15 @@ Vor jedem PR: `just smoke` lokal grün — **Pflicht-Gate**. Details in [`CONTRI
 </tr>
 </table>
 
+> Warum vertrauen? — Weil ich nichts verspreche, was ich nicht selbst nutze. citelayer® läuft auf demselben EU-Stack, den ich hier lehre. Die Quellen sind primär (kein Aggregator-Blog, sondern eur-lex, BfDI, Bitkom, KfW, ETH Zürich, Anthropic-Newsroom). Wenn du Fehler findest: Issue oder PR, ich schaue regelmäßig rein.
+
 ---
 
 ## 📄 Lizenz & Attribution
 
 [**MIT**](LICENSE).
 
-Strukturelle Inspiration durch [`rohitg00/ai-engineering-from-scratch`](https://github.com/rohitg00/ai-engineering-from-scratch) (MIT). **Inhaltlich eigenständig**: deutschsprachig, DACH-/EU-Compliance-zentriert, mit lauffähigen Marimo-Notebooks, deutschen Datasets und EU-LLM-Stack.
+Strukturelle Inspiration durch [`rohitg00/ai-engineering-from-scratch`](https://github.com/rohitg00/ai-engineering-from-scratch) (MIT). **Inhaltlich eigenständig**: deutschsprachig, DACH- / EU-Compliance-zentriert, mit lauffähigen Marimo-Notebooks, deutschen Datasets und EU-LLM-Stack.
 
 Vollständige Attribution in [`NOTICE`](NOTICE).
 
@@ -453,12 +529,12 @@ Vollständige Attribution in [`NOTICE`](NOTICE).
 
 ## 🌐 English readers
 
-This repo is German-first by design. Brief English stub: [`README.en.md`](README.en.md). Full English fork planned for Q4/2026.
+This repo is German-first by design. Brief English stub: [`README.en.md`](README.en.md). Full English fork planned for Q4 / 2026.
 
 <div align="center">
 
 ---
 
-*Made in Hannover · MIT-Lizenz · Stand 27.04.2026 · Kein Marketing.*
+*Made in Hannover · MIT-Lizenz · Stand 28.04.2026 · Kein Marketing.*
 
 </div>

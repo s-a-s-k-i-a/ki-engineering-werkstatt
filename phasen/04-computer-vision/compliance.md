@@ -21,7 +21,7 @@ ai_act_artikel:
 
 - **Art. 5 Abs. 1 lit. e**: Aufbau von Gesichtserkennungs-Datenbanken aus Internet-/CCTV-Scraping = **inakzeptables Risiko, verboten** (auch für Lernprojekte!).
 - **Art. 5 Abs. 1 lit. h**: Echtzeit-Gesichtserkennung in öffentlich zugänglichen Räumen für Strafverfolgung = grundsätzlich verboten (eng definierte Ausnahmen).
-- Im Lernprojekt: nutze **Tier**-Bilder (Tierheim Hannover) statt menschliche Gesichter.
+- Im Lernprojekt: nutze **Tier**-Bilder (deutsche Tierschutz-Organisation) statt menschliche Gesichter.
 
 ## DSGVO Art. 9 — biometrische Daten als besondere Kategorie
 

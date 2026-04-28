@@ -1,16 +1,21 @@
 # Beispiel-Modell-Karte für ki-act-classifier
-# Nutzung: ki-act-classifier --modell-karte vorlagen/model-card-tierheim-bot.yaml
+# Nutzung: ki-act-classifier --modell-karte vorlagen/model-card-adoption-bot.yaml
+#
+# Dieses Beispiel zeigt einen typischen Charity-Use-Case: ein
+# Adoptions-Bot für eine deutsche Tierschutz-Organisation. Nicht-Hochrisiko,
+# aber Art.-50-Transparenzpflicht (Chatbot). Final-Match wird stets durch
+# Mitarbeiter:in freigegeben (Human-in-the-Loop).
 
-name: Tierheim-Hannover-Adoptions-Bot
+name: Charity-Adoptions-Bot
 version: 0.1.0
 beschreibung: >
-  Chatbot, der Adoptions-Anfragen entgegennimmt, Tierprofile vorstellt und
-  Termine im Tierheim Hannover (Burgwedel) bucht. Final-Match wird stets
-  durch Mitarbeiter:in freigegeben (Human-in-the-Loop).
+  Chatbot, der Adoptions-Anfragen entgegennimmt, Tier-/Personen-Profile
+  vorstellt und Termin-Wünsche aufnimmt. Konkrete Vermittlung wird stets
+  durch eine:n Mitarbeiter:in freigegeben (Human-in-the-Loop).
 
 verantwortlich:
-  organisation: Tierschutzverein Hannover und Umgebung e. V.
-  ansprechperson: datenschutz@beispiel-tierheim.de
+  organisation: Beispiel-Charity e. V.
+  ansprechperson: datenschutz@beispiel-charity.de
 
 # Welche Anh.-III-Use-Cases trifft das System?
 # (leere Liste = keiner)

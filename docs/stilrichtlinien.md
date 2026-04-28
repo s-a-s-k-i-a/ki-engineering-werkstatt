@@ -15,7 +15,7 @@
 
 - **Knapp, direkt, präzise** — Saskia-Stil
 - **Hooks**: „Stop X from Y." als wiederkehrende Reibungs-Fläche
-- **Real-World**: Beispiele aus Tierheim Hannover, deutschen KMU, isla, citelayer-Ökosystem
+- **Real-World**: Beispiele aus deutsche Tierschutz-Organisation, deutschen KMU, isla, citelayer-Ökosystem
 - **Selbstironisch, nicht zynisch** — Lernende sollen sich willkommen fühlen
 - **Kein Hype**, nichts hochjubeln
 - **Mermaid-Diagramme** statt Adjektivlawinen

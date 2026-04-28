@@ -102,12 +102,12 @@ Alles andere. Keine direkten AI-Act-Pflichten — aber DSGVO bleibt voll anwendb
 
 ```bash
 # Klassifiziere ein KI-System per Modell-Karte
-ki-act-classifier --modell-karte vorlagen/model-card-tierheim-bot.yaml
+ki-act-classifier --modell-karte vorlagen/model-card-adoption-bot.yaml
 ```
 
 Im Notebook [`code/01_ai_act_demo.py`](../code/01_ai_act_demo.py) gehen wir die Klassifizierung Schritt für Schritt durch — mit drei Beispielen:
 
-1. **Tierheim-Adoptions-Bot** → Begrenzt (Chatbot-Transparenz)
+1. **Charity-Adoptions-Bot** → Begrenzt (Chatbot-Transparenz)
 2. **HR-Screening für Kreditbank** → Hochrisiko (Anh. III Nr. 4 + 5)
 3. **Behördliches Social-Scoring** → Inakzeptabel
 

@@ -29,7 +29,7 @@ lernziele:
 | 14.06 | DSPy für Pipeline-Optimierung |
 | 14.07 | Multi-Agent: Supervisor, Hierarchical, Swarm |
 | 14.08 | Sicherheit: Prompt Injection, Tool-Whitelisting, Rate Limiting |
-| 14.09 | Hands-on: Tierheim-Hannover-Adoptions-Bot (DSGVO-konform) |
+| 14.09 | Hands-on: Charity-Adoptions-Bot (DSGVO-konform) |
 
 ## Status
 
