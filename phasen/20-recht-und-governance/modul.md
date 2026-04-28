@@ -19,7 +19,7 @@ lernziele:
 
 **Status**: ✅ Showcase-Modul, vollständig ausgearbeitet · **Dauer**: ~ 12 h · **Schwierigkeit**: mittel
 
-> Im Original (rohitg00) komplett fehlend — **der größte Mehrwert dieses Repos**.
+> Das Compliance-Modul ist das Herzstück der Werkstatt. Hier wird aus „KI-Engineering" *EU-konformes* KI-Engineering — mit CLI-Tools, Templates und Pattern, nicht mit Floskeln.
 
 > [!IMPORTANT]
 > **Dieser Block ist keine juristische Beratung.** Er macht Compliance praktisch — mit CLI-Tools, Templates und Pattern. Bei konkreten Fällen: Datenschutzbeauftragte:n oder Kanzlei einschalten. Disclaimer in [`docs/rechtliche-perspektive/disclaimer.md`](../../docs/rechtliche-perspektive/disclaimer.md).
@@ -58,9 +58,9 @@ flowchart LR
 | 20.03 | DSFA-Workflow am Beispiel „Charity-Adoptions-Bot" | 90 min | [`vorlagen/dsfa-template.md`](vorlagen/dsfa-template.md) ✅ |
 | 20.04 | AI-Literacy-Curriculum (Art. 4) | 60 min | [`vorlagen/ai-literacy-onboarding.md`](vorlagen/ai-literacy-onboarding.md) ✅ |
 | 20.05 | Audit-Logging-Code-Skelett (OpenTelemetry GenAI) | 60 min | [`code/05_audit_logging.py`](code/05_audit_logging.py) ✅ |
-| 20.06 | ai.txt + robots.txt-Generator (UrhG § 44b) | 30 min | _siehe Werkzeug `ki-ai-txt`_ |
-| 20.07 | Lizenz-Scanner für Modelle/Datasets/Deps | 60 min | _geplant_ |
-| 20.08 | Sektor-Special: BaFin (Finance), MDR (Medizin), KritisDachG (KRITIS) | 90 min | _geplant_ |
+| 20.06 | ai.txt + robots.txt-Generator (UrhG § 44b) | 30 min | *siehe Werkzeug `ki-ai-txt`* |
+| 20.07 | Lizenz-Scanner für Modelle/Datasets/Deps | 60 min | *geplant* |
+| 20.08 | Sektor-Special: BaFin (Finance), MDR (Medizin), KritisDachG (KRITIS) | 90 min | *geplant* |
 
 ## 💻 CLI-Werkzeuge (Pflicht-Demo)
 

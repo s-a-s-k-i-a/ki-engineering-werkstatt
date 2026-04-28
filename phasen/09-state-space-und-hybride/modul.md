@@ -16,7 +16,7 @@ lernziele:
 
 > Stop assuming Transformer is the only architecture. — 2026 sind Hybride produktiv.
 
-Im Original (rohitg00) komplett fehlend — 2026 Pflichtstoff.
+State-Space-Modelle und Hybride sind 2026 Pflichtstoff für jeden, der LLMs jenseits der Transformer-Linie verstehen oder bauen will.
 
 ## Inhalts-Übersicht
 

@@ -237,7 +237,7 @@ $ ki-act-classifier --modell-karte phasen/20-recht-und-governance/vorlagen/model
 
 ## 🗺️ Curriculum (21 Phasen)
 
-> Inspiriert vom englischsprachigen [`rohitg00/ai-engineering-from-scratch`](https://github.com/rohitg00/ai-engineering-from-scratch), aber für die EU-Realität 2026 neu gebaut: deutschsprachig, Compliance-zentriert, mit lauffähigem Code und EU-LLM-Stack.
+> 21 Phasen, vier didaktische Bänder: **Grundlagen → Modelle → Anwendung → Compliance**. Jede Phase mit Lernzielen, Marimo-Notebook, Übung, Lösung, Compliance-Anker und Quellen. Curriculum-Stack: Python 3.13, uv, Marimo, Pydantic AI, Qdrant, vLLM, Pharia / Mistral / Llama / Qwen.
 
 ```mermaid
 flowchart TB
@@ -331,7 +331,7 @@ flowchart LR
 
 ## ⚖️ DACH- / EU-Compliance-Anker
 
-> Der größte Differenziator dieses Repos. Was im Original (rohitg00) komplett fehlt.
+> Das Herzstück. Jede Phase hat einen `compliance.md`-Anker, der konkret an EU-AI-Act-Artikeln, DSGVO-Pflichten und UrhG-Schranken hängt — nicht als Anhang, sondern als Leitmotiv durch das gesamte Curriculum.
 
 | Bereich | Datei |
 |---|---|
@@ -517,13 +517,11 @@ Vor jedem PR: `just smoke` lokal grün — **Pflicht-Gate**. Details in [`CONTRI
 
 ---
 
-## 📄 Lizenz & Attribution
+## 📄 Lizenz
 
-[**MIT**](LICENSE).
+[**MIT**](LICENSE) — frei nutzbar, frei forkbar, kommerziell verwendbar.
 
-Strukturelle Inspiration durch [`rohitg00/ai-engineering-from-scratch`](https://github.com/rohitg00/ai-engineering-from-scratch) (MIT). **Inhaltlich eigenständig**: deutschsprachig, DACH- / EU-Compliance-zentriert, mit lauffähigen Marimo-Notebooks, deutschen Datasets und EU-LLM-Stack.
-
-Vollständige Attribution in [`NOTICE`](NOTICE).
+Drittlizenzen (Datasets, Modelle, didaktische Vorbilder) sind in [`NOTICE`](NOTICE) dokumentiert.
 
 ---
 

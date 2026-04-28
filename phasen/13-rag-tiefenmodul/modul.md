@@ -18,7 +18,7 @@ lernziele:
 
 **Status**: ✅ Showcase-Modul, Vanilla-RAG ausgearbeitet, weitere Varianten als Skelett · **Dauer**: ~ 14 h · **Schwierigkeit**: mittel
 
-> Im Original (rohitg00) hat RAG nur eine kurze Sektion. Hier ein vollständiges Vertiefungsmodul mit deutscher Datenbasis.
+> Vollständiges Vertiefungsmodul: deutsche Datenbasis, EU-LLMs als Generator, Quellen-Attribution AI-Act-konform — von Vanilla bis Agentic.
 
 ## 🎯 Was du in diesem Modul lernst
 
@@ -47,14 +47,14 @@ flowchart LR
 | Lektion | Titel | Dauer | Datei |
 |---|---|---|---|
 | 13.01 | Vanilla RAG — Chunk → Embed → Retrieve → Generate | 60 min | [`lektionen/01-vanilla-rag.md`](lektionen/01-vanilla-rag.md) ✅ |
-| 13.02 | Hybrid Retrieval (BM25 + Dense + RRF) | 60 min | _geplant_ |
-| 13.03 | ColBERT / Late-Interaction (jina-colbert-v2) | 60 min | _geplant_ |
-| 13.04 | Re-Ranking mit bge-reranker-v2-m3 | 45 min | _geplant_ |
-| 13.05 | GraphRAG (Microsoft 2024) | 90 min | _geplant_ |
-| 13.06 | LazyGraphRAG — 700× günstiger | 60 min | _geplant_ |
-| 13.07 | Agentic RAG (Self-RAG, Corrective RAG) | 90 min | _geplant_ |
-| 13.08 | Eval mit Ragas: faithfulness, answer-relevancy, context-precision | 60 min | _geplant_ |
-| 13.09 | Quellen-Attribution AI-Act-konform | 30 min | _geplant_ |
+| 13.02 | Hybrid Retrieval (BM25 + Dense + RRF) | 60 min | *geplant* |
+| 13.03 | ColBERT / Late-Interaction (jina-colbert-v2) | 60 min | *geplant* |
+| 13.04 | Re-Ranking mit bge-reranker-v2-m3 | 45 min | *geplant* |
+| 13.05 | GraphRAG (Microsoft 2024) | 90 min | *geplant* |
+| 13.06 | LazyGraphRAG — 700× günstiger | 60 min | *geplant* |
+| 13.07 | Agentic RAG (Self-RAG, Corrective RAG) | 90 min | *geplant* |
+| 13.08 | Eval mit Ragas: faithfulness, answer-relevancy, context-precision | 60 min | *geplant* |
+| 13.09 | Quellen-Attribution AI-Act-konform | 30 min | *geplant* |
 
 ## 💻 Hands-on-Projekt (Pflicht)
 

@@ -46,10 +46,10 @@ flowchart LR
 | Lektion | Titel | Dauer | Datei |
 |---|---|---|---|
 | 05.01 | BPE / WordPiece / SentencePiece — wie funktioniert ein Tokenizer? | 60 min | [`lektionen/01-bpe-und-deutsch.md`](lektionen/01-bpe-und-deutsch.md) ✅ |
-| 05.02 | Komposita & Umlaute — warum Deutsch teurer ist | 45 min | _geplant_ |
+| 05.02 | Komposita & Umlaute — warum Deutsch teurer ist | 45 min | *geplant* |
 | 05.03 | Token-Effizienz-Showdown (Hands-on Marimo-Notebook) | 90 min | [`code/01_tokenizer_showdown.py`](code/01_tokenizer_showdown.py) ✅ |
-| 05.04 | Embeddings für deutsche Texte (e5, bge-m3, Pharia-Luminous) | 60 min | _geplant_ |
-| 05.05 | Tokenizer-Auswahl-Matrix für DACH-Use-Cases | 30 min | _geplant_ |
+| 05.04 | Embeddings für deutsche Texte (e5, bge-m3, Pharia-Luminous) | 60 min | *geplant* |
+| 05.05 | Tokenizer-Auswahl-Matrix für DACH-Use-Cases | 30 min | *geplant* |
 
 ## 💻 Hands-on-Projekt (Pflicht)
 

@@ -16,7 +16,7 @@ lernziele:
 
 > Stop assuming bigger model = better. — länger nachdenken kann mehr bringen als mehr Parameter.
 
-Im Original (rohitg00) kaum vorhanden — 2026 absolut zentrales Thema.
+Reasoning-Modelle (o1, o3, DeepSeek-R1) und Test-Time-Compute sind 2026 die zweite Skalierungsachse neben Modell-Größe. Pflicht-Material für jeden, der über Token-Effizienz hinausdenkt.
 
 ## Inhalts-Übersicht
 

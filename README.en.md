@@ -4,12 +4,11 @@
 >
 > *21 phases of AI Engineering. In German. With sources that hold up.*
 
-This repository is the German-language companion to AI engineering curricula like
-[`rohitg00/ai-engineering-from-scratch`](https://github.com/rohitg00/ai-engineering-from-scratch) — but rebuilt
-for the European reality of 2026: GDPR, EU AI Act, copyright (TDM-Opt-out), German
-datasets, EU LLM hosting (Aleph Alpha, Mistral, IONOS, StackIT), and a frank discussion
-of Asian open-weights (Qwen, DeepSeek, GLM, Kimi, MiniCPM, EXAONE) with their
-self-censorship caveats.
+This repository is a German-first AI Engineering curriculum built for the
+European reality of 2026: GDPR, EU AI Act, copyright (TDM-Opt-out), German
+datasets, EU LLM hosting (Aleph Alpha, Mistral, IONOS, StackIT), and a frank
+discussion of Asian open-weights (Qwen, DeepSeek, GLM, Kimi, MiniCPM, EXAONE)
+with their self-censorship caveats.
 
 The primary reading audience is German-speaking. Most prose, lessons, and
 exercises are in German. Code identifiers are English. An English fork is on
@@ -42,7 +41,7 @@ Requirements: Python 3.13, [uv](https://docs.astral.sh/uv/), [just](https://just
 
 ## License
 
-[MIT](LICENSE). Inspiration credit: [`rohitg00/ai-engineering-from-scratch`](https://github.com/rohitg00/ai-engineering-from-scratch).
+[MIT](LICENSE). Third-party attributions (datasets, models, didactic references) in [NOTICE](NOTICE).
 
 ## Maintainer
 

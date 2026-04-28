@@ -5,23 +5,11 @@ Copyright (c) 2026 Saskia Teichmann (s-a-s-k-i-a, Hannover)
 Lizenziert unter MIT License (siehe LICENSE).
 
 
-Dank an strukturelle Inspirationen
------------------------------------
+Dank an Open-Source-Pädagogik-Vorbilder
+----------------------------------------
 
-Die Phasen-Gliederung dieses Curriculums orientiert sich an der didaktischen
-Struktur von:
-
-  rohitg00/ai-engineering-from-scratch
-  https://github.com/rohitg00/ai-engineering-from-scratch
-  (MIT-lizenziert)
-
-Inhaltlich ist die KI-Engineering-Werkstatt eigenständig: deutschsprachig,
-DACH-/EU-Compliance-zentriert (DSGVO, AI Act, UrhG), mit lauffähigen
-Marimo-Notebooks, deutschen Datasets und EU-LLM-Stack. Es ist KEINE
-Übersetzung des Originals — sondern eine Neukonzeption für die EU-Realität
-2026.
-
-Dank an die Open-Source-Vorbilder, an deren Pädagogik dieses Repo anknüpft:
+Dieses Curriculum knüpft an die didaktische Tradition folgender Werke an,
+ohne deren Code oder Inhalte zu übernehmen:
 
   - Sebastian Raschka, "Build a Large Language Model From Scratch"
     https://github.com/rasbt/LLMs-from-scratch
