@@ -4,7 +4,7 @@
 
 # `ki-engineering-werkstatt`
 
-### **Lerne, wie man KI-Anwendungen baut, die in der EU rechtlich halten — und auf Deutsch funktionieren.**
+### **Von linearer Algebra bis zum Agenten-Schwarm. KI mit KI lernen — und Werkzeuge bauen, die im EU-Rechtsraum funktionieren.**
 
 *21 Phasen. ~80 Primärquellen. 7 lauffähige Marimo-Notebooks. Kein Marketing.*
 

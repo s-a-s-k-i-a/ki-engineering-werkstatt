@@ -1,6 +1,8 @@
 # ki-engineering-werkstatt
 
-> **20 phases of AI Engineering. In German. With sources that hold up.**
+> **From linear algebra to autonomous agent swarms. Learn AI with AI — and ship tools that work under EU law.**
+>
+> *21 phases of AI Engineering. In German. With sources that hold up.*
 
 This repository is the German-language companion to AI engineering curricula like
 [`rohitg00/ai-engineering-from-scratch`](https://github.com/rohitg00/ai-engineering-from-scratch) — but rebuilt
