@@ -8,6 +8,28 @@ Versionierung folgt einer angepassten [Semantic Versioning](https://semver.org/l
 - **MINOR**: neues Modul fertig, neue Phase, neues Werkzeug
 - **PATCH**: einzelne Lektion ergänzt, Compliance-Update, Quellen-Refresh, Bugfix
 
+## 0.1.0 (2026-04-28)
+
+
+### Features
+
+* launch ki-engineering-werkstatt v0.1.0 ([e7cebbd](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/e7cebbd9b9e6b6ac0033a713b52a1f7ce6d98656))
+* **readme:** visuelles Refresh + Stand-Update auf 27.04.2026 ([ea07c1f](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/ea07c1fb8b2196381ac06d96974d1028fd8f5d9e))
+
+
+### Bug Fixes
+
+* **ci:** drop codespell job (zu Englisch-zentriert für deutsche Identifier) ([5892dd9](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/5892dd939405d7e2d72a4ce0ad2393a61ea9d9e7))
+* **ci:** use 'uv sync --extra dev' instead of '--only-dev' so ruff/ty are installed ([7fb9c46](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/7fb9c466d780db6cc92e1806e7717b0780f7b373))
+* **notebooks:** proper E2E smoke + grammar fixes after Tierheim-replacement ([f2c235a](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/f2c235a448aa5d9d262786ab2ddb20d1b7dddb07))
+
+
+### Documentation
+
+* add GETTING_STARTED.md with full learner-loop walk-through ([8b0fb57](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/8b0fb576112d1978ffc1bac728f567c5f5f57222))
+* position repo as standalone — remove rohitg00 comparison framing ([b33b686](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/b33b686620722f0054294fb1e41bab192d666896))
+* **readme:** refine headline — 'Von linearer Algebra bis zum Agenten-Schwarm' ([6b44daa](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/6b44daa69969e82409a7f95bb6b993202ff6f381))
+
 ## [Unreleased]
 
 ## [0.1.0] - 2026-04-27
