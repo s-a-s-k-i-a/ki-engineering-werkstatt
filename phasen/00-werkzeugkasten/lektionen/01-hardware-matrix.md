@@ -16,6 +16,10 @@ compliance_anker:
 colab_badge: false
 ---
 
+<!-- colab-badge:begin -->
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/s-a-s-k-i-a/ki-engineering-werkstatt/blob/main/dist-notebooks/phasen/00-werkzeugkasten/code/01_setup_verifier.ipynb)
+<!-- colab-badge:end -->
+
 ## Worum es geht
 
 > Stop guessing whether your laptop can run a 70B-Modell. — die Antwort ist deterministisch und in 30 Min. ausrechenbar.

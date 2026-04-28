@@ -17,6 +17,10 @@ ai_act_artikel:
   - art-14
 ---
 
+<!-- colab-badge:begin -->
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/s-a-s-k-i-a/ki-engineering-werkstatt/blob/main/dist-notebooks/phasen/14-agenten-und-mcp/code/01_supervisor_agent.ipynb)
+<!-- colab-badge:end -->
+
 ## Worum es geht
 
 > Stop calling everything an „agent". — der Begriff ist 2026 verwässert. Klare Definitionen helfen.

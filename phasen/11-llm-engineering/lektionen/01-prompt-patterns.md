@@ -15,6 +15,10 @@ compliance_anker: []
 colab_badge: false
 ---
 
+<!-- colab-badge:begin -->
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/s-a-s-k-i-a/ki-engineering-werkstatt/blob/main/dist-notebooks/phasen/11-llm-engineering/code/01_anbieter_showdown.ipynb)
+<!-- colab-badge:end -->
+
 ## Worum es geht
 
 > Stop hoping the model „understands" you. — gute Prompts sind Engineering, nicht Magie.
