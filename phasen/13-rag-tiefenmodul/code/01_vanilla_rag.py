@@ -111,8 +111,8 @@ def _():
             "thema": "Geschichte",
             "text": (
                 "Hannover ist die Hauptstadt des Landes Niedersachsen und neunte größte Stadt "
-                "Deutschlands. Sitz des Tierschutzvereins Hannover und Umgebung e. V., der das "
-                "größte Tierschutz-Organisation der Region betreibt. Die Stadt wurde im Zweiten "
+                "Deutschlands. Hier ist u. a. eine der größten regionalen "
+                "Tierschutz-Organisationen Norddeutschlands ansässig. Die Stadt wurde im Zweiten "
                 "Weltkrieg stark zerstört und nach 1945 wieder aufgebaut."
             ),
             "quelle": "Wikipedia DE — Hannover",
@@ -229,7 +229,7 @@ def _(chunk_vectors, korpus, mo, np, tfidf_vector, tokenize_de):
         top_idx = np.argsort(-sims)[:top_k]
         return [{**korpus[i], "score": float(sims[i])} for i in top_idx if sims[i] > 0]
 
-    frage = "Wie kann ich einen Hund aus einem Tierschutz-Organisation in Deutschland adoptieren?"
+    frage = "Wie kann ich einen Hund aus einer deutschen Tierschutz-Organisation adoptieren?"
     treffer = retrieve(frage, top_k=3)
     out = "\n\n".join(
         f"**[{t['id']}] {t['titel']}** (score={t['score']:.3f}, {t['thema']})\n  {t['text']}\n  *Quelle: {t['quelle']} ({t['lizenz']})*"
@@ -264,12 +264,12 @@ Antworte auf Deutsch und nenne die verwendeten Quellen-Nummern."""
 
     # Stub-Antwort für Smoke-Test (kein API-Call)
     stub_antwort = (
-        "Aus den Quellen lässt sich entnehmen, dass es eine deutsche Tierschutz-Organisation "
-        "vom Tierschutzverein Hannover und Umgebung e. V. in Burgwedel gibt [5]. "
-        "Adoptionen aus Tierschutz-Organisationen sind nach § 11 Tierschutzgesetz reguliert [4]. "
-        "Hunde sind als Haustiere ausdrücklich für die Adoption geeignet [3]. "
-        "Für konkrete Schritte: Tierschutz-Organisation direkt kontaktieren — die Quellen liefern "
-        "keine Detail-Anweisungen."
+        "Aus den Quellen lässt sich entnehmen, dass in Hannover regionale "
+        "Tierschutz-Organisationen aktiv sind [5]. Adoptionen aus Tierschutz-Organisationen "
+        "sind nach § 11 Tierschutzgesetz reguliert [4]. Hunde sind als Haustiere "
+        "ausdrücklich für die Adoption geeignet [3]. Für konkrete Schritte: "
+        "Tierschutz-Organisation direkt kontaktieren — die Quellen liefern keine "
+        "Detail-Anweisungen."
     )
     mo.md(
         f"### Prompt (gekürzt)\n```\n{prompt[:300]}...\n```\n\n"

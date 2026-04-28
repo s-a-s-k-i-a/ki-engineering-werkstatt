@@ -57,6 +57,7 @@ tokenizer = [
   "sentencepiece>=0.2",
   "matplotlib>=3.9",
   "pandas>=2.2",
+  "tabulate>=0.9",  # für pandas.DataFrame.to_markdown()
 ]
 tokenizer-full = [
   "ki-engineering-werkstatt[tokenizer]",

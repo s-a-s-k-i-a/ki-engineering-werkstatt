@@ -87,7 +87,10 @@ def _(domaenen, mo):
     ] * 100
     de_tok = Tokenizer(BPE(unk_token="<unk>"))
     de_tok.pre_tokenizer = Whitespace()
-    de_tok.train_from_iterator(de_korpus, BpeTrainer(vocab_size=2_500))
+    de_tok.train_from_iterator(
+        de_korpus,
+        BpeTrainer(vocab_size=2_500, special_tokens=["<unk>", "<pad>", "<s>", "</s>"]),
+    )
 
     tokenizers = {
         "GPT-2 (legacy)": lambda t: len(gpt2.encode(t)),
