@@ -102,6 +102,8 @@ just edit 05-deutsche-tokenizer
 
 > **Voraussetzungen**: Python 3.13, [`uv`](https://docs.astral.sh/uv/), [`just`](https://just.systems/), 8+ GB RAM. Optional: Apple-Silicon-Mac, NVIDIA-GPU oder einer der EU-Cloud-Anbieter aus [`infrastruktur/eu-modelle/`](infrastruktur/eu-modelle/).
 
+> 📖 **Du willst wissen, wie du das Repo Schritt für Schritt durcharbeitest?** Lies [`GETTING_STARTED.md`](GETTING_STARTED.md) — der vollständige Lern-Loop von „git clone" bis zur ersten gelösten Übung in unter 10 Minuten.
+
 ---
 
 ## 🎯 Was du in 60 Minuten lernst
