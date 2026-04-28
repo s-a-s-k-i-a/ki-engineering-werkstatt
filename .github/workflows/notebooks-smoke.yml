@@ -30,6 +30,7 @@ jobs:
         phase:
           - "00-werkzeugkasten"
           - "05-deutsche-tokenizer"
+          - "11-llm-engineering"
           - "13-rag-tiefenmodul"
           - "20-recht-und-governance"
     steps:
@@ -44,6 +45,7 @@ jobs:
           case "${{ matrix.phase }}" in
             00-*) uv sync ;;
             05-*) uv sync --extra tokenizer ;;
+            11-*) uv sync ;;
             13-*) uv sync --extra rag ;;
             20-*) uv sync ;;
             *) uv sync ;;

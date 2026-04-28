@@ -262,7 +262,7 @@ flowchart TB
 
   subgraph A[" 🚀 Anwendung "]
     direction LR
-    P11[11 · LLM-Engineering]:::wip
+    P11[11 · 🚀 LLM-Engineering]:::done
     P12[12 · Finetuning]:::planned
     P13[13 · 🔍 RAG-Tiefenmodul]:::done
     P14[14 · Agenten & MCP]:::wip

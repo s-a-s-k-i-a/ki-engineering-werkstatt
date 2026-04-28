@@ -23,7 +23,7 @@
 | ⏳ | 08 | Generative Modelle |
 | ⏳ | 09 | State-Space & Hybride |
 | ⏳ | 10 | LLM von Null |
-| 🚧 | 11 | LLM-Engineering |
+| ✅ | 11 | **LLM-Engineering** — Pydantic AI, MCP, Anbieter-Vergleich |
 | ⏳ | 12 | Finetuning & Adapter |
 | ✅ | 13 | **RAG-Tiefenmodul** |
 | 🚧 | 14 | Agenten & MCP |
@@ -37,7 +37,7 @@
 ## Q2 2026 (Mai – Juli 2026)
 
 - [x] **Phase 00 — vollständig** (Hardware-Tabelle, uv-Tutorial, EU-Cloud-Setup) — abgeschlossen 28.04.2026
-- [ ] Phase 11 — vollständig (Pydantic AI, MCP, Anbieter-Vergleich, Eval)
+- [x] **Phase 11 — vollständig** (Pydantic AI, MCP, Anbieter-Vergleich, Eval) — abgeschlossen 28.04.2026
 - [ ] Phase 14 — vollständig (Charity-Adoptions-Bot)
 - [ ] Phase 17 — vollständig (Pharia auf StackIT, Langfuse, vLLM)
 - [ ] Logo + Social Preview als finale PNG-Renderings
