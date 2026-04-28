@@ -32,6 +32,7 @@ jobs:
           - "05-deutsche-tokenizer"
           - "11-llm-engineering"
           - "13-rag-tiefenmodul"
+          - "14-agenten-und-mcp"
           - "20-recht-und-governance"
     steps:
       - uses: actions/checkout@v6
@@ -47,6 +48,7 @@ jobs:
             05-*) uv sync --extra tokenizer ;;
             11-*) uv sync ;;
             13-*) uv sync --extra rag ;;
+            14-*) uv sync ;;
             20-*) uv sync ;;
             *) uv sync ;;
           esac

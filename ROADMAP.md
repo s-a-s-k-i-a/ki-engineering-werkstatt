@@ -26,7 +26,7 @@
 | ✅ | 11 | **LLM-Engineering** — Pydantic AI, MCP, Anbieter-Vergleich |
 | ⏳ | 12 | Finetuning & Adapter |
 | ✅ | 13 | **RAG-Tiefenmodul** |
-| 🚧 | 14 | Agenten & MCP |
+| ✅ | 14 | **Agenten & MCP** — Pydantic AI, LangGraph, DSPy, Multi-Agent, MCP |
 | ⏳ | 15 | Autonome Systeme |
 | ⏳ | 16 | Reasoning & Test-Time-Compute |
 | ⏳ | 17 | Production & EU-Hosting |
@@ -38,7 +38,7 @@
 
 - [x] **Phase 00 — vollständig** (Hardware-Tabelle, uv-Tutorial, EU-Cloud-Setup) — abgeschlossen 28.04.2026
 - [x] **Phase 11 — vollständig** (Pydantic AI, MCP, Anbieter-Vergleich, Eval) — abgeschlossen 28.04.2026
-- [ ] Phase 14 — vollständig (Charity-Adoptions-Bot)
+- [x] **Phase 14 — vollständig** (Pydantic AI, LangGraph, DSPy, Multi-Agent, MCP, Sicherheit) — abgeschlossen 28.04.2026
 - [ ] Phase 17 — vollständig (Pharia auf StackIT, Langfuse, vLLM)
 - [ ] Logo + Social Preview als finale PNG-Renderings
 - [ ] Erste echte Marimo-Notebooks mit echten Modell-Aufrufen (gegen Test-Account)
