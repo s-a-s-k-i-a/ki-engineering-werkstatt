@@ -74,7 +74,7 @@ def _(beispieltext, mo):
     from tokenizers.trainers import BpeTrainer
 
     cl100k = tiktoken.get_encoding("cl100k_base")  # GPT-4-Familie
-    o200k = tiktoken.get_encoding("o200k_base")  # GPT-5-/o3-Familie
+    o200k = tiktoken.get_encoding("o200k_base")  # GPT-5.x-/o3-Familie
 
     # Mini-BPE auf rein deutschem Mini-Korpus (Stellvertreter für Pharia-Stil)
     deutsches_mini_korpus = [
@@ -106,7 +106,7 @@ def _(beispieltext, mo):
     ergebnis = {
         "GPT-2 (alt, sehr englisch)": len(tokens_gpt2),
         "GPT-4 cl100k": len(tokens_cl100k),
-        "GPT-5 / o3 o200k": len(tokens_o200k),
+        "GPT-5.x / o3 o200k": len(tokens_o200k),
         "Llama-Stil (Approx.)": len(tokens_llama_stil),
         "Pharia-Stil (DE-only mini-BPE)": len(tokens_pharia_stil),
     }
@@ -121,7 +121,7 @@ def _(ergebnis, mo):
     preise_eur = {
         "GPT-2 (alt, sehr englisch)": 0.00,  # nicht hosted
         "GPT-4 cl100k": 2.00,  # GPT-4-Turbo-Niveau
-        "GPT-5 / o3 o200k": 10.00,
+        "GPT-5.x / o3 o200k": 10.00,
         "Llama-Stil (Approx.)": 0.40,  # Self-hosted oder IONOS
         "Pharia-Stil (DE-only mini-BPE)": 5.00,
     }

@@ -43,7 +43,7 @@ Wenn lokale Inferenz nicht reicht (zu großes Modell, hoher QPS, mehrere User pa
 | **STACKIT** (Schwarz IT) | DE (Neckarsulm, Lübbenau) | Llama 3.1 8B, Mistral Nemo, E5 Mistral 7B | ~ 0,45 In / 0,65 Out (Llama) | **BSI C5 Type 2**, ISO 27001, ISAE 3000/3402 | ✅ |
 | **IONOS AI Model Hub** | DE | Llama 3.1 8B/70B/405B, Mistral Nemo / Small, gpt-oss-120b, Qwen3-Coder-Next 80B, FLUX, LightOnOCR | $ 0,17–1,93 / 1M (€-Preise auf DE-Seite) | **BSI C5, ISO 27001, ISO 50001, GAIA-X**, DSGVO | ✅ (`api.ionos.com/docs/inference-openai/v1`) |
 | **OVHcloud AI Endpoints** | FR / DE | Llama 3.3 70B (€ 0,67 / 1M), Mistral 7B/Nemo, Qwen3-32B, Qwen3.5-9B Vision, Qwen3-Coder-30B, gpt-oss-20B/120B, Whisper, NVIDIA Riva, Stable Diffusion | € 0,01–0,67 / 1M | ISO 27001/27017/27018/27701, BSI C5, **SecNumCloud (Erweiterung läuft)**, HDS | ✅ |
-| **Scaleway Generative APIs** | FR (Paris) | Qwen 3.5-397B, Llama 3.3-70B, Mistral Small 3.2-24B, Pixtral-12B, Qwen 3 Embedding, Whisper-large-v3, Voxtral | Mistral Small € 0,15 In / € 0,35 Out per 1M; **1M Free-Tier** | ISO 27001, **HDS** (Health Data Host); SecNumCloud-Qualifikation läuft | ✅ |
+| **Scaleway Generative APIs** | FR (Paris) | Qwen 3.5-397B, Llama 3.3-70B, Mistral Small 4, Pixtral-12B, Qwen 3 Embedding, Whisper-large-v3, Voxtral | Mistral Small € 0,15 In / € 0,35 Out per 1M; **1M Free-Tier** | ISO 27001, **HDS** (Health Data Host); SecNumCloud-Qualifikation läuft | ✅ |
 
 > Quellen: STACKIT, IONOS, OVHcloud, Scaleway offizielle Pricing-Seiten, Stand 28.04.2026. Pricing kann sich ändern — vor produktivem Einsatz auf Anbieter-Seite verifizieren.
 
@@ -105,8 +105,8 @@ Beachte:
 
 Fälle, in denen du US-Cloud (mit AVV + EU-Datazone + SCC + TIA) brauchst:
 
-- Du brauchst **GPT-5** spezifisch (z. B. Reasoning-Power von o3, der in Europa nicht repliziert ist)
-- Du brauchst **Claude 4.7 Opus** spezifisch (Münchener Anthropic-Office hilft bei DPA, Server bleibt aber USA mit EU-Routing)
+- Du brauchst **GPT-5.5** spezifisch (z. B. Reasoning-Power von o3, der in Europa nicht repliziert ist)
+- Du brauchst **Claude Sonnet 4.6 Opus** spezifisch (Münchener Anthropic-Office hilft bei DPA, Server bleibt aber USA mit EU-Routing)
 - Multimodale State-of-the-Art (Sora-Video, Imagen-Bild) — diese Modelle gibt es 2026 nicht in EU-Cloud
 
 Pattern für US-Cloud mit DSGVO-Schutz:

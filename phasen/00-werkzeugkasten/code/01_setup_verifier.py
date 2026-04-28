@@ -193,7 +193,7 @@ def _(mo):
 
         ### Was du als Nächstes machen kannst
 
-        - **Phase 05 (Deutsche Tokenizer)** — der Token-Effizienz-Showdown mit GPT-5, Claude 4.7, Llama 4, Mistral, Pharia, Teuken auf 10kGNAD
+        - **Phase 05 (Deutsche Tokenizer)** — der Token-Effizienz-Showdown mit GPT-5.5, Claude Sonnet 4.6, Llama 4, Mistral, Pharia, Teuken auf 10kGNAD
         - **Phase 13 (RAG-Tiefenmodul)** — von Vanilla bis Agentic mit Pharia-1 + Qdrant
         - **Phase 20 (Recht & Governance)** — AI-Act-Klassifizierung, AVV-Checkliste, DSFA-Workflow
 

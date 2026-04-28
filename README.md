@@ -175,7 +175,7 @@ just edit 05-deutsche-tokenizer
 
 **Du lernst**: warum dieselbe deutsche Aussage in unterschiedlich vielen Tokens kodiert wird, und wie du den günstigsten Tokenizer für deinen Use-Case wählst.
 
-**Du baust**: einen Token-Effizienz-Showdown mit GPT-5, Claude 4.7, Llama 4, Mistral, Pharia, Teuken auf 10kGNAD-Korpus — inklusive EUR-Kostenvergleich.
+**Du baust**: einen Token-Effizienz-Showdown mit GPT-5.5, Claude Sonnet 4.6, Llama 4, Mistral, Pharia, Teuken auf 10kGNAD-Korpus — inklusive EUR-Kostenvergleich.
 
 **Du sparst**: bis zu 30 % API-Kosten auf deutschem Text.
 
@@ -349,8 +349,8 @@ flowchart LR
 | **Aleph Alpha** Pharia-1 | 🇩🇪 DE | proprietär | ~ 5,00 | ✅ | Heidelberg (BSI C5) |
 | **Mistral** Large 2 | 🇫🇷 FR | proprietär | ~ 2,00 | ✅ | Frankreich |
 | **IONOS** Llama-4-Maverick | 🇩🇪 DE | Llama CL | ~ 0,80 | ✅ | Karlsruhe (BSI C5) |
-| **OpenAI** GPT-5 | 🇺🇸 US | proprietär | ~ 10,00 | DPA + EU-Datazone | USA (EU-Routing) |
-| **Anthropic** Claude 4.7 | 🇺🇸 US | proprietär | ~ 2,80 | DPA + EU-Datazone Q1 / 26 | USA (EU-Routing) |
+| **OpenAI** GPT-5.5 | 🇺🇸 US | proprietär | ~ 10,00 | DPA + EU-Datazone | USA (EU-Routing) |
+| **Anthropic** Claude Sonnet 4.6 | 🇺🇸 US | proprietär | ~ 2,80 | DPA + EU-Datazone Q1 / 26 | USA (EU-Routing) |
 | **Qwen3** | 🇨🇳 CN | Apache 2.0 | je nach Hoster | je nach Hoster | bei Self-Hosting: lokal |
 | **DeepSeek-R1** | 🇨🇳 CN | MIT | je nach Hoster | je nach Hoster | bei Self-Hosting: lokal |
 | **Pharia / Mistral / Llama** lokal | — | — | nur Strom | ✅ | deine Hardware |
@@ -453,7 +453,7 @@ flowchart LR
 </tr>
 <tr>
 <td><strong>US-Modelle</strong> 🇺🇸</td>
-<td>OpenAI GPT-5 · Anthropic Claude 4.7 · Google Gemini 3 (mit AVV / EU-Zone)</td>
+<td>OpenAI GPT-5.5 · Anthropic Claude Sonnet 4.6 · Google Gemini 3 (mit AVV / EU-Zone)</td>
 </tr>
 <tr>
 <td><strong>Asiatische Open-Weights</strong> 🐉</td>

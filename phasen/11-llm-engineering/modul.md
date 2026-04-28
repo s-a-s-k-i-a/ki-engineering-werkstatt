@@ -36,9 +36,9 @@ lernziele:
 | Anbieter | Modell | Input EUR/1M Tok | Output EUR/1M Tok | DSGVO/AVV | Server EU |
 |---|---|---|---|---|---|
 | Aleph Alpha | Pharia-1-LLM-7B-control | ~5,00 | ~10,00 | ✓ | Heidelberg |
-| Mistral | Mistral Large 2 | ~2,00 | ~6,00 | ✓ (FR) | Frankreich |
-| OpenAI | GPT-5 | ~10,00 | ~30,00 | DPA, EU-Datazone | USA (EU-Routing optional) |
-| Anthropic | Claude 4.7 Sonnet | ~2,80 | ~14,00 | DPA | USA (EU-Datazone Q1/26) |
+| Mistral | Mistral Large 3 | ~2,00 | ~6,00 | ✓ (FR) | Frankreich |
+| OpenAI | GPT-5.5 | ~10,00 | ~30,00 | DPA, EU-Datazone | USA (EU-Routing optional) |
+| Anthropic | Claude Sonnet 4.6 | ~2,80 | ~14,00 | DPA | USA (EU-Datazone Q1/26) |
 | IONOS | Llama-4-Maverick | ~0,80 | ~1,60 | ✓ | Deutschland |
 | StackIT | Teuken-7B | gehostet (Flatrate) | – | ✓ | Deutschland |
 | DeepSeek (over EU host) | R1-Distill-70B | ~0,50 | ~1,50 | je nach Hoster | varies |

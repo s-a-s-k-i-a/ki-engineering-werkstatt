@@ -35,7 +35,7 @@ Requirements: Python 3.13, [uv](https://docs.astral.sh/uv/), [just](https://just
 
 ## Showcase modules (fully developed at launch)
 
-- **Phase 05** — German tokenizers: efficiency showdown across GPT-5, Claude 4.7, Llama 4, Mistral Large, Pharia, Teuken with EUR cost comparison
+- **Phase 05** — German tokenizers: efficiency showdown across GPT-5.5, Claude Sonnet 4.6, Llama 4, Mistral Large, Pharia, Teuken with EUR cost comparison
 - **Phase 13** — RAG deep-dive: vanilla → hybrid → ColBERT → GraphRAG → LazyGraphRAG → agentic, all on a German Wikipedia subset
 - **Phase 20** — Law & governance: AI-Act risk classifier CLI, DPA checklist, DPIA template, AI-literacy onboarding, audit logging
 

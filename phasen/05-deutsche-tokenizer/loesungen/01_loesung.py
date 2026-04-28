@@ -95,7 +95,7 @@ def _(domaenen, mo):
     tokenizers = {
         "GPT-2 (legacy)": lambda t: len(gpt2.encode(t)),
         "GPT-4 cl100k": lambda t: len(cl100k.encode(t)),
-        "GPT-5 o200k": lambda t: len(o200k.encode(t)),
+        "GPT-5.x o200k": lambda t: len(o200k.encode(t)),
         "DE-Mini-BPE (Pharia-Stil)": lambda t: len(de_tok.encode(t).ids),
     }
 
@@ -151,11 +151,11 @@ def _(mo):
 
         - **Newsletter / Marketing-Texte** mit hohem Volumen → Pharia-1 / Teuken-7B
           (DE-zentriert, AVV mit Aleph Alpha bzw. StackIT, ≈ 30 % weniger Tokens
-          als GPT-5 auf deutschem Text)
+          als GPT-5.x auf deutschem Text)
         - **Code-Generation für DE-Doku** → Mistral Large oder Llama-3-Instruct
           (mehrsprachiger Tokenizer + starke Code-Performance)
         - **Strikte Compliance / regulierter Sektor** → Pharia-1 als Default;
-          GPT-5 nur mit EU-Datazone und vollständigem AVV
+          GPT-5.x nur mit EU-Datazone und vollständigem AVV
         - **Asiatische Open-Weights** (Qwen3, DeepSeek-R1) sind für deutsche
           Texte effizient und Open-Source — aber siehe DACH-Disclaimer in
           [`docs/rechtliche-perspektive/asiatische-llms.md`](../../../docs/rechtliche-perspektive/asiatische-llms.md).

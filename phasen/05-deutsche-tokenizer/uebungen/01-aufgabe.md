@@ -17,7 +17,7 @@ Du wendest den Showdown auf **deine eigenen Texte** an und triffst eine fundiert
 
 2. **Tokenisiere** jeden Text mit mindestens vier dieser Tokenizer:
    - `tiktoken` `cl100k_base` (GPT-4)
-   - `tiktoken` `o200k_base` (GPT-5/o3)
+   - `tiktoken` `o200k_base` (GPT-5.x/o3)
    - `transformers` `mistralai/Mistral-Large-Instruct-2411`
    - `transformers` `meta-llama/Llama-3-8B`
    - `transformers` `Aleph-Alpha/Pharia-1-LLM-7B-control`
@@ -37,7 +37,7 @@ Du wendest den Showdown auf **deine eigenen Texte** an und triffst eine fundiert
 ## Bonus (für Schnelle)
 
 - Vergleiche Token-Anzahl mit DeepSeek-V3 (`deepseek-ai/DeepSeek-V3-Base`) und Qwen3 (`Qwen/Qwen3-8B`). Übernimm den DACH-Compliance-Disclaimer aus `docs/rechtliche-perspektive/asiatische-llms.md`.
-- Berechne, wie viele Tokens dein durchschnittlicher Newsletter pro Versand spart, wenn du von GPT-5 auf Pharia oder Teuken wechselst — und multipliziere mit deiner Versandfrequenz.
+- Berechne, wie viele Tokens dein durchschnittlicher Newsletter pro Versand spart, wenn du von GPT-5.x auf Pharia oder Teuken wechselst — und multipliziere mit deiner Versandfrequenz.
 
 ## Abgabe
 

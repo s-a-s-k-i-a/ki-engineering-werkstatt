@@ -20,7 +20,7 @@ Nach den 4 h können Teilnehmende:
 ### Stunde 1 — Was KI heute kann (und nicht)
 
 - 10 min: Begrüßung, Erwartungen abfragen
-- 30 min: Kurz-Demo Pharia-1 / GPT-5 / Claude 4.7 — Stärken und Halluzinationen live zeigen
+- 30 min: Kurz-Demo Pharia-1 / GPT-5.4 / Claude Sonnet 4.6 — Stärken und Halluzinationen live zeigen
 - 20 min: Tokenizer & Sprache (warum Deutsch teurer ist)
 
 ### Stunde 2 — AI Act + DSGVO praktisch

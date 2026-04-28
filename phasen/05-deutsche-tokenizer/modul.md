@@ -6,7 +6,7 @@ schwierigkeit: mittel
 stand: 2026-04-28
 lernziele:
   - BPE/WordPiece/SentencePiece-Mechanik mit deutschem Korpus verstehen
-  - Komposita-Problem auf Deutsch erklären können (warum `Donaudampfschifffahrtsgesellschaftskapitän` GPT-5 doppelt so viel kostet wie Pharia-1)
+  - Komposita-Problem auf Deutsch erklären können (warum `Donaudampfschifffahrtsgesellschaftskapitän` GPT-5.x doppelt so viel kostet wie Pharia-1)
   - Token-Effizienz messen und in EUR-Kosten umrechnen
   - Tokenizer für deutsche Use-Cases nach Datenschutz, Effizienz, Kosten auswählen
   - Embedding-Provider mit deutscher Qualität bewerten
@@ -53,7 +53,7 @@ flowchart LR
 
 ## 💻 Hands-on-Projekt (Pflicht)
 
-Du tokenisierst denselben 10kGNAD-Artikel mit sechs Tokenizern (GPT-5 / Claude 4.7 / Llama 4 / Mistral Large / Pharia-1 / Teuken-7B), plottest Tokenanzahl + EUR-Kosten + semantische Granularität.
+Du tokenisierst denselben 10kGNAD-Artikel mit sechs Tokenizern (GPT-5.4 / Claude Sonnet 4.6 / Llama 4 / Mistral Large / Pharia-1 / Teuken-7B), plottest Tokenanzahl + EUR-Kosten + semantische Granularität.
 
 **Quintessenz**: zwischen 0,05 € und 0,15 € für denselben Inhalt — bei Massen-Workloads schnell vierstellige Differenz pro Monat.
 
