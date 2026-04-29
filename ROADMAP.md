@@ -65,7 +65,7 @@ Punkte ohne festen Termin — werden ausgelöst durch externe Trigger oder Saski
 - [ ] **AI-Act-Tracker** auf neuen BNetzA-KI-MIG-Stand aktualisieren (sobald veröffentlicht)
 - [ ] **Logo + Social-Preview** als finale PNG-Renderings (statt SVG-Placeholder)
 - [ ] **Echte Marimo-Notebooks** mit aktiven Modell-Aufrufen (heute Stub-Smoke; live-API-Variante als zweites Notebook pro Phase)
-- [ ] **Workshop-Material**: 4-/8-/16-h-Format aus den 21 Phasen ableiten
+- [x] **Workshop-Material** ✅ — 4-/8-/16-h-Format in [`docs/workshops/`](docs/workshops/) (29.04.2026)
 - [ ] **EN-Schwesterrepo** `ki-engineering-werkstatt-en` mit Cross-Linking (wenn Demand)
 - [ ] **Mehrsprachige Erweiterung** (FR / IT) — abhängig von Community-Bedarf
 

@@ -327,6 +327,18 @@ flowchart LR
 | ⚖️ Compliance-Officer / DSB | 20 → 00 → 11 → 13 → 14 → 17 → 18 | ~ 30 h (Konzept) | [docs/lernpfade/compliance-officer.md](docs/lernpfade/compliance-officer.md) |
 | 🌱 Quereinsteiger:in | 00 → 01 → 02 → 05 → 11 → 13 → 14 → 20 → Capstone | ~ 60 h | [docs/lernpfade/quereinsteigerin.md](docs/lernpfade/quereinsteigerin.md) |
 
+### 🎓 Workshop-Formate (für Trainer:innen + Inhouse-Schulungen)
+
+Drei aus dem Curriculum abgeleitete Workshop-Formate — direkt einsetzbar in KMU-Beratung, Inhouse-Schulung, Hochschul-Lehre. Adaptierbar unter MIT, Attribution erbeten.
+
+| Format | Dauer | Zielgruppe | Datei |
+|---|---|---|---|
+| 🚀 Crashkurs | 4 h | Entscheider:innen, Compliance-Officer, technische Generalist:innen | [`docs/workshops/4h-crashkurs.md`](docs/workshops/4h-crashkurs.md) |
+| 🛠️ Tagesworkshop | 8 h | Backend-Devs (Python, 1+ Jahr) | [`docs/workshops/8h-tagesworkshop.md`](docs/workshops/8h-tagesworkshop.md) |
+| 🏗️ Zweitagesworkshop | 16 h | KI-Engineers, ML-Quereinsteiger:innen | [`docs/workshops/16h-zweitagesworkshop.md`](docs/workshops/16h-zweitagesworkshop.md) |
+
+→ Format-Übersicht + Trainer:innen-Checkliste in [`docs/workshops/`](docs/workshops/).
+
 ---
 
 ## ⚖️ DACH- / EU-Compliance-Anker
