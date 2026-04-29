@@ -1,0 +1,86 @@
+/* KI-Plugin-Helfer — Admin-UI */
+
+.wphr-helfer .wphr-form {
+    max-width: 720px;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.wphr-helfer .wphr-form label {
+    display: block;
+    font-weight: 600;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.wphr-helfer .wphr-form select,
+.wphr-helfer .wphr-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: monospace;
+    border: 1px solid #c3c4c7;
+    border-radius: 3px;
+}
+
+.wphr-helfer .wphr-form button {
+    margin-top: 1rem;
+}
+
+.wphr-ergebnis {
+    max-width: 720px;
+    margin-top: 1.5rem;
+}
+
+.wphr-loading {
+    color: #2271b1;
+    font-style: italic;
+}
+
+.wphr-error {
+    color: #d63638;
+    background: #fef2f2;
+    border: 1px solid #d63638;
+    padding: 0.75rem;
+    border-radius: 3px;
+}
+
+.wphr-konfidenz {
+    font-size: 0.8em;
+    color: #50575e;
+    font-weight: normal;
+}
+
+.wphr-antwort {
+    background: #f6f7f7;
+    padding: 1rem;
+    border-left: 4px solid #ff6b3d;
+    white-space: pre-wrap;
+}
+
+.wphr-quellen {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.wphr-quellen li {
+    margin-bottom: 0.5rem;
+}
+
+.wphr-quellen code {
+    display: block;
+    background: #f0f0f1;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    font-size: 0.85em;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.wphr-disclaimer {
+    margin-top: 1.5rem;
+    color: #50575e;
+    font-size: 0.85em;
+}

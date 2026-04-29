@@ -1,0 +1,59 @@
+# Docker-Compose-Setup für KI-Plugin-Helfer-Sidecar.
+# Starte mit `docker compose up -d` aus diesem Verzeichnis.
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.12.4
+    container_name: wphr-qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"  # REST
+      - "6334:6334"  # gRPC
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    environment:
+      QDRANT__SERVICE__GRPC_PORT: 6334
+      # DSGVO: keine Telemetry an externe Server
+      QDRANT__TELEMETRY_DISABLED: "true"
+
+  ollama:
+    # Optional: lokales LLM-Backend. Auskommentieren wenn vLLM oder externer Provider.
+    image: ollama/ollama:0.22.0
+    container_name: wphr-ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    # GPU-Zugriff: nvidia-runtime aktivieren falls verfügbar
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+
+  sidecar:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wphr-sidecar
+    restart: unless-stopped
+    ports:
+      - "8765:8765"
+    depends_on:
+      - qdrant
+      - ollama
+    environment:
+      QDRANT_URL: http://qdrant:6333
+      LLM_BACKEND: ollama
+      LLM_BASE_URL: http://ollama:11434
+      LLM_MODEL: llama3.3:8b
+      PLUGIN_REPO_PATH: /data/plugins
+    volumes:
+      - ./plugin_repos:/data/plugins:ro
+
+volumes:
+  qdrant_storage:
+  ollama_models:

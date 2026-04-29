@@ -30,6 +30,47 @@ dsgvo_artikel:
 
 > Multilinguales RAG-System für WordPress-Plugin-Entwicklung. Beantwortet Plugin-Doku-Fragen, durchsucht Code-Base, triagiert GitHub-Issues und schlägt PR-Patches vor — alles DSGVO-konform auf EU-Cloud.
 
+## Status v0.1.0 (29.04.2026)
+
+**Was bereits da ist** — du kannst das Plugin lokal aktivieren:
+
+- ✅ **WordPress-Plugin** in [`wordpress-plugin/`](wordpress-plugin/) — Plugin-Header, Admin-UI (Werkzeuge → KI-Plugin-Helfer), Settings-Page, REST-Endpoints `/wp-json/ki-helfer/v1/{frage,health}`, Nonce + Capability-Schutz
+- ✅ **Python-Sidecar** in [`sidecar/`](sidecar/) — FastAPI-App (`POST /frage`, `GET /health`), Pydantic-Schemas, Stub-Modus für Smoke-Tests, Stützstellen für Ollama / vLLM / OpenAI-kompatible Backends
+- ✅ **Docker-Compose** für Qdrant + Ollama + Sidecar als deployable Stack
+- ✅ **Smoke-Test** — `python sidecar.py test` läuft ohne externe Services
+
+**Was noch kommt** (0.2.0+):
+
+- 🚧 **AST-Splitting** für PHP-Code via tree-sitter-php
+- 🚧 **Echte RAG-Pipeline** mit Qdrant-Index + multilingual-e5 / bge-m3 / Pharia-Embedding
+- 🚧 **GitHub-App** mit Webhook für Issue-Auto-Triage
+- 🚧 **PHPUnit-Tests** für Plugin-Seite + pytest für Sidecar
+- 🚧 **End-to-End-Deployment-Guide** für STACKIT / IONOS / OVH
+
+## Schnellstart (lokal, 5 Min.)
+
+```bash
+# 1. Sidecar starten (Stub-Modus, ohne GPU/LLM)
+cd projekte/19-A-wp-plugin-helfer-rag/sidecar
+uv run --with "fastapi,uvicorn,pydantic,httpx" python sidecar.py
+# Server läuft auf http://localhost:8765
+
+# 2. WordPress-Plugin verlinken (oder zip + upload)
+ln -s "$(pwd)/../wordpress-plugin" /pfad/zu/wp-content/plugins/wp-plugin-helfer-rag
+
+# 3. Plugin im WP-Admin aktivieren
+# 4. Einstellungen → KI-Plugin-Helfer → Sidecar-URL bestätigen (Default: http://localhost:8765)
+# 5. Werkzeuge → KI-Plugin-Helfer → Frage stellen
+```
+
+**Mit echtem LLM-Backend** (Ollama lokal):
+
+```bash
+cd sidecar
+docker compose up -d   # startet Qdrant + Ollama + Sidecar
+docker compose exec ollama ollama pull llama3.3:8b
+```
+
 ## Ziel
 
 Du baust ein **vollständiges Production-Tool** für deine eigene WP-Plugin-Entwicklung (oder eine Kunden-Plugin-Familie). Drei Hauptfähigkeiten:
@@ -63,6 +104,37 @@ flowchart TB
     classDef int fill:#3D8BFF,color:#FFF
     class User ext
     class Router,Doku,Code,Issue,Qdrant,Modell,Phoenix int
+```
+
+## Verzeichnisstruktur
+
+```text
+projekte/19-A-wp-plugin-helfer-rag/
+├── README.md                          # diese Datei
+├── wordpress-plugin/                  # ← echtes WP-Plugin (PHP-Seite)
+│   ├── wp-plugin-helfer-rag.php       # Plugin-Header + Bootstrap
+│   ├── readme.txt                     # WordPress-Plugin-Repository-Format
+│   ├── includes/
+│   │   ├── class-plugin.php           # Singleton-Container
+│   │   ├── class-admin.php            # Admin-Menüs + Asset-Loading
+│   │   └── class-rest.php             # REST-Endpoint /ki-helfer/v1/*
+│   ├── admin/
+│   │   ├── helfer.js                  # apiFetch-Client
+│   │   └── helfer.css                 # Admin-UI-Styles
+│   ├── templates/
+│   │   ├── admin-helfer.php           # Werkzeuge → KI-Plugin-Helfer
+│   │   └── admin-settings.php         # Einstellungen → KI-Plugin-Helfer
+│   └── languages/                     # Übersetzungen (DE/EN)
+├── sidecar/                           # ← Python-Backend
+│   ├── sidecar.py                     # FastAPI-App + Stub-RAG-Pipeline
+│   ├── pyproject.toml                 # uv-managed deps
+│   ├── Dockerfile                     # Container-Build
+│   ├── docker-compose.yml             # Qdrant + Ollama + Sidecar
+│   └── .env.example                   # Konfigurations-Template
+├── src/wp_helfer_stub.py              # ursprünglicher Marimo-Notebook-Stub
+├── docs/                              # zusätzliche Architektur-Notizen
+├── daten/                             # Beispiel-Korpus + Test-Fixtures
+└── tests/                             # PHPUnit + pytest (kommen in 0.2.0)
 ```
 
 ## Voraussetzungen
