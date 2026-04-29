@@ -1,36 +1,61 @@
 ---
 id: 2
-titel: Klassisches ML — scikit-learn, XGBoost, SHAP für AI-Act-Hochrisiko
-dauer_stunden: 10
+titel: Klassisches ML — sklearn, XGBoost/LightGBM, SHAP für AI-Act-Hochrisiko
+dauer_stunden: 6
 schwierigkeit: leicht
-stand: 2026-04-27
+stand: 2026-04-29
 lernziele:
-  - 70 % aller KI-Probleme ohne Deep Learning lösen
-  - Train/Val/Test-Splitting korrekt anlegen, Leakage vermeiden
-  - SHAP für Erklärbarkeit nutzen (AI-Act-Pflicht für Hochrisiko)
-  - Erkennen, wann ein Random Forest besser als ein LLM ist
+  - 70 % aller KMU-KI-Probleme ohne Deep Learning lösen
+  - Train/Val/Test sauber splitten, Leakage erkennen
+  - Logistic Regression vs. RF/XGBoost/LightGBM einordnen
+  - SHAP für AI-Act Art. 13 + DSGVO Art. 22
+  - Bias-Audit (Demographic Parity, Equalized Odds) durchführen
 ---
 
-# Klassisches ML
+# Phase 02 · Klassisches ML
 
-> Don't bring an LLM to a Random-Forest fight. — viele Probleme im DACH-Mittelstand brauchen kein Deep Learning.
+> **Don't bring an LLM to a Random-Forest fight.** — Tabular Data, < 1M Samples, gemischte Features → Boosting schlägt Deep Learning konsistent (Grinsztajn et al. 2022). Klassisches ML ist günstiger, erklärbarer und meist AI-Act-konformer.
 
-## Inhalts-Übersicht
+**Status**: ✅ vollständig ausgearbeitet · **Dauer**: ~ 6 h · **Schwierigkeit**: leicht
 
-| Lektion | Titel | Dauer |
+## 🎯 Was du in diesem Modul lernst
+
+- **Splitting-Disziplin**: Stratified-K-Fold, fünf Leakage-Patterns
+- **Modell-Familie**: LogReg → RF → XGBoost / LightGBM / CatBoost
+- **Hyperparameter-Tuning**: GridSearchCV → Optuna
+- **SHAP-Erklärbarkeit**: Lokal + global, DSGVO-Art-22-konform
+- **Bias-Audit**: Demographic Parity + Equalized Odds, AGG-Pflicht
+
+## 📚 Inhalts-Übersicht
+
+| Lektion | Titel | Datei |
 |---|---|---|
-| 02.01 | Train/Val/Test, k-Fold-CV, Leakage | 60 min |
-| 02.02 | Logistische Regression als Baseline | 45 min |
-| 02.03 | Random Forest, XGBoost, LightGBM | 90 min |
-| 02.04 | Feature Engineering auf deutschen Daten | 60 min |
-| 02.05 | Modell-Evaluation: Precision/Recall/F1/AUC | 60 min |
-| 02.06 | SHAP für Erklärbarkeit (AI-Act Art. 13) | 60 min |
-| 02.07 | Hands-on: KMU-Kreditscoring auf deutschem Datensatz | 90 min |
+| 02.01 | Train/Val/Test, K-Fold-CV, Leakage | [`lektionen/01-train-val-test-und-leakage.md`](lektionen/01-train-val-test-und-leakage.md) ✅ |
+| 02.02 | Modell-Auswahl: LogReg → RF → XGBoost/LightGBM | [`lektionen/02-modellauswahl-baseline-bis-boosting.md`](lektionen/02-modellauswahl-baseline-bis-boosting.md) ✅ |
+| 02.03 | SHAP & Bias-Audit für AI-Act-Hochrisiko | [`lektionen/03-shap-und-bias-audit.md`](lektionen/03-shap-und-bias-audit.md) ✅ |
 
-## Praxis-Projekt
+## 💻 Hands-on-Projekt
 
-KMU-Kreditrisiko-Klassifikator auf einem öffentlichen deutschen Bundesbank-Datensatz, mit SHAP-Erklärung pro Vorhersage. **Achtung: AI-Act Hochrisiko nach Anhang III Nr. 5b** — siehe `compliance.md`.
+**Kreditrisiko-Klassifikator**: synthetisches deutsches Bonitäts-Dataset (5 % Default-Rate), Stratified-K-Fold-Vergleich von LogReg / RF / Gradient Boosting, Permutation-Importance + Bias-Audit.
 
-## Status
+```bash
+uv run marimo edit phasen/02-klassisches-ml/code/01_kreditrisiko_klassifikator.py
+```
 
-🚧 Im Aufbau.
+## 🧱 Faustregeln 2026
+
+| Frage | Antwort |
+|---|---|
+| Tabular < 1M Samples? | XGBoost oder LightGBM |
+| Tabular > 10M Samples? | LightGBM (Memory + Speed) |
+| Viele kategoriale Features? | CatBoost |
+| Erste Modell-Runde? | Immer mit Logistic Regression starten |
+| AI-Act-Hochrisiko (Anhang III)? | SHAP + Bias-Audit + DSFA + Konformitätsbewertung |
+
+## ⚖️ DACH-Compliance-Anker
+
+→ [`compliance.md`](compliance.md): AI-Act Anhang III Nr. 5b (Kreditscoring), Art. 9-15 (alle Hochrisiko-Pflichten), DSGVO Art. 22 (Automatisierte Entscheidung), DSGVO Art. 35 (DSFA), AGG (Allgemeines Gleichbehandlungsgesetz).
+
+## 🔄 Wartung
+
+Stand: 29.04.2026 · Reviewer: Saskia Teichmann ([@s-a-s-k-i-a](https://github.com/s-a-s-k-i-a)) · Nächster Review: 10/2026 (BaFin-Fokusrisiken-Update Q3/2026 erwartet).

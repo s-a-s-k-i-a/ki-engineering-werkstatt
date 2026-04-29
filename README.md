@@ -81,8 +81,8 @@ du startest grade mit KI
 
 | Output | Wo | Status |
 |---|---|---|
-| **3 voll ausgearbeitete Showcase-Module** mit Marimo-Notebooks, Übungen, Lösungen | [Phasen 05, 13, 20](#-showcase--3-module-sind-am-launch-tag-fertig) | ✅ am Launch |
-| **4 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 01-03, 07 | [`phasen/`](phasen/) | 🚧 in Arbeit |
+| **21 voll ausgearbeitete Phasen-Module** mit Marimo-Notebooks, Übungen, Lösungen | [`phasen/`](phasen/) | ✅ |
+| **5 Capstone-Projekte** (WP-Plugin-RAG, DSGVO-Checker, Charity-Bot, AktG-RAG, Voice-Agent) | [`projekte/`](projekte/) | ✅ |
 | **3 lauffähige CLI-Werkzeuge** (`ki-act-classifier`, `ki-ai-txt`, `ki-compliance-lint`) | [`werkzeuge/`](werkzeuge/) | ✅ |
 | **DACH-Compliance-Layer** mit AI-Act-Tracker, DSGVO-Checklisten, AVV-Mustern, Asiatischen-LLM-Disclaimer | [`docs/rechtliche-perspektive/`](docs/rechtliche-perspektive/) | ✅ |
 | **EU-Modell-Setups** (Pharia, Mistral, IONOS, Ollama, vLLM) | [`infrastruktur/eu-modelle/`](infrastruktur/eu-modelle/) | ✅ |
@@ -144,10 +144,10 @@ just edit 05-deutsche-tokenizer
 
 <table>
 <tr>
-<td align="center" width="20%"><strong>21</strong><br/>Phasen-Module</td>
-<td align="center" width="20%"><strong>3 / 21</strong><br/>am Launch komplett</td>
+<td align="center" width="20%"><strong>21 / 21</strong><br/>Phasen-Module ✅</td>
+<td align="center" width="20%"><strong>5 / 5</strong><br/>Capstones ✅</td>
 <td align="center" width="20%"><strong>~ 80</strong><br/>Primärquellen mit Datum</td>
-<td align="center" width="20%"><strong>7</strong><br/>lauffähige Marimo-Notebooks</td>
+<td align="center" width="20%"><strong>20+</strong><br/>lauffähige Marimo-Notebooks</td>
 <td align="center" width="20%"><strong>4</strong><br/>Persona-Lernpfade</td>
 </tr>
 <tr>
@@ -244,9 +244,9 @@ flowchart TB
   subgraph G[" 🛠️ Grundlagen "]
     direction LR
     P00[00 · 🛠️ Werkzeugkasten]:::done
-    P01[01 · Mathematik]:::planned
-    P02[02 · Klassisches ML]:::planned
-    P03[03 · Deep Learning]:::planned
+    P01[01 · 📐 Mathematik]:::done
+    P02[02 · 🌳 Klassisches ML]:::done
+    P03[03 · 🧠 Deep Learning]:::done
   end
 
   subgraph M[" 🤖 Modelle "]
@@ -254,7 +254,7 @@ flowchart TB
     P04[04 · 👁️ Computer Vision]:::done
     P05[05 · 🧩 Tokenizer]:::done
     P06[06 · 🎙️ Sprache & Audio]:::done
-    P07[07 · Transformer]:::planned
+    P07[07 · 🧱 Transformer]:::done
     P08[08 · 🎨 Generative]:::done
     P09[09 · 🔀 State-Space]:::done
     P10[10 · 🌱 LLM von Null]:::done

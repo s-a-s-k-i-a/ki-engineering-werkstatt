@@ -1,6 +1,6 @@
 # Roadmap
 
-> Stand: 2026-04-29 · Repo gestartet 2026-04-28. **10 von 21 Phasen + 1 Capstone in 2 Tagen ausgearbeitet.** Iteratives Wachstum, keine festen Quartals-Slots — wir bauen, wenn Zeit ist.
+> Stand: 2026-04-29 · Repo gestartet 2026-04-28. **Alle 21 Phasen + alle 5 Capstones in 2 Tagen ausgearbeitet.** Iteratives Wachstum, keine festen Quartals-Slots — wir bauen, wenn Zeit ist.
 
 ## Status-Legende
 
@@ -13,13 +13,13 @@
 | Status | Phase | Titel |
 |---|---|---|
 | ✅ | 00 | **Werkzeugkasten** — Hardware, uv, Marimo, EU-Cloud |
-| ⏳ | 01 | Mathematik-Grundlagen |
-| ⏳ | 02 | Klassisches ML |
-| ⏳ | 03 | Deep Learning Grundlagen |
+| ✅ | 01 | **Mathematik-Grundlagen** — Vektoren, Cross-Entropy, KL, Gradient Descent, AdamW |
+| ✅ | 02 | **Klassisches ML** — sklearn, XGBoost/LightGBM, SHAP für AI-Act-Hochrisiko |
+| ✅ | 03 | **Deep Learning Grundlagen** — PyTorch 2.7, Autograd, MLP/CNN, MLflow 3 |
 | ✅ | 04 | **Computer Vision** — Qwen3-VL, SigLIP-2, LightOnOCR, MiniCPM-o, jina-clip-v2 |
 | ✅ | 05 | **Deutsche Tokenizer** |
 | ✅ | 06 | **Sprache & Audio** — Whisper-large-v3, Voxtral, F5-TTS (CC-BY-NC!), LiveKit, EU-Hosting |
-| ⏳ | 07 | Transformer-Architektur |
+| ✅ | 07 | **Transformer-Architektur** — Self-Attention, GQA, RoPE, KV-Cache, FlashAttention-3/4 |
 | ✅ | 08 | **Generative Modelle** — FLUX.2 (BFL Freiburg!), LTX-2.3, TRELLIS.2, Watermark-Pflicht |
 | ✅ | 09 | **State-Space & Hybride** — Mamba, Jamba 1.5, Hunyuan-TurboS, Long-Context-Eval |
 | ✅ | 10 | **LLM von Null** — nanochat, litgpt, llm.c, Aleph-Alpha-GermanWeb |
@@ -34,7 +34,7 @@
 | ✅ | 19 | **Capstones** — 19.A WP-Plugin-Helfer-RAG, 19.B DSGVO-Checker, 19.C Charity-Bot, 19.D AktG-RAG, 19.E Voice-Agent |
 | ✅ | 20 | **Recht & Governance** |
 
-**Bilanz**: 17 ✅ · 0 🚧 · 4 ⏳
+**Bilanz**: 21 ✅ · 0 🚧 · 0 ⏳ — alle Phasen + alle Capstones ausgearbeitet
 
 ## Releases
 
@@ -44,43 +44,24 @@ Aktueller Release. Enthält Phasen 00, 05, 11, 12, 13, 14, 16, 17, 18, 20 + Caps
 
 ### v0.3.0 — geplant für nächste Iteration
 
-Wenn alle Capstones (19.B–19.E) und/oder die Foundation-Phasen (10 LLM von Null, 04 Computer Vision, 06 Audio) fertig sind. release-please bündelt automatisch.
+Bündelt alle Block-A-/B-/C-/D-Phasen (Capstones 19.B–E + Foundation 04/06/08/10 + Mid-Stack 09/15 + Grundlagen 01/02/03/07). release-please erzeugt automatisch.
 
 ## Was als nächstes ansteht
 
-Reihenfolge nach Saskia-Use-Case-Relevanz, nicht nach Phasen-Nummer:
+Curriculum-Vollausbau ist abgeschlossen — was bleibt sind **Wartung** und **iterative Erweiterungen**.
 
-### Capstones (Real-World-Portfolio) — alle ausgearbeitet ✅
+### Curriculum-Vollausbau abgeschlossen ✅
 
-- [x] **19.A — WP-Plugin-Helfer-RAG** (Multi-Agent + AST-Splitting + Issue-Triage) — 2026-04-29
-- [x] **19.B — DSGVO-Compliance-Checker** (Playwright-Crawler + DSFA-Light-Bericht) — 2026-04-29
-- [x] **19.C — Charity-Adoptions-Bot** (LangGraph + HITL + Whisper + F5-TTS) — 2026-04-29
-- [x] **19.D — Aktiengesetz-RAG** (Hybrid-RAG + Reasoning + § RDG-Disclaimer) — 2026-04-29
-- [x] **19.E — Mehrsprachiger Voice-Agent** (DE↔EN↔TR mit Auto-Lösch-Pipeline) — 2026-04-29
-
-### Foundation-Phasen (für Quereinsteiger:innen-Lernpfad) — alle ausgearbeitet ✅
-
-- [x] **Phase 04 — Computer Vision** (Qwen3-VL, SigLIP-2, LightOnOCR-2-1B, MiniCPM-o) — 2026-04-29
-- [x] **Phase 06 — Sprache & Audio** (Whisper-large-v3, Voxtral, F5-TTS, LiveKit) — 2026-04-29
-- [x] **Phase 08 — Generative Modelle** (FLUX.2 BFL Freiburg, LTX-2.3, TRELLIS.2) — 2026-04-29
-- [x] **Phase 10 — LLM von Null** (nanochat, litgpt, llm.c, Aleph-Alpha-GermanWeb) — 2026-04-29
-
-### Mid-Stack-Phasen
-
-- [ ] **Phase 09 — State-Space & Hybride** (Mamba/Mamba-2, Jamba 1.5, Hunyuan-TurboS)
-- [ ] **Phase 15 — Autonome Systeme** (Long-Running-Agents, Selbst-Reflexion, Memory-Architekturen)
-
-### Grundlagen-Phasen (Pflicht für „Quereinsteiger:innen"-Pfad)
-
-- [ ] **Phase 01 — Mathematik** (Lineare Algebra, Wahrscheinlichkeit, Calculus für Deep Learning)
-- [ ] **Phase 02 — Klassisches ML** (sklearn, Trees, Boosting, Eval-Metriken)
-- [ ] **Phase 03 — Deep Learning Grundlagen** (PyTorch, Backprop, Optimizer)
-- [ ] **Phase 07 — Transformer-Architektur** (Attention, Multi-Head, FlashAttention)
+- [x] **Block A — Capstones 19.A–E** (Real-World-Portfolio) — 2026-04-29
+- [x] **Block B — Foundation-Phasen 04/06/08/10** (Quereinsteiger:innen-Lernpfad) — 2026-04-29
+- [x] **Block C — Mid-Stack-Phasen 09/15** (State-Space + Autonome Systeme) — 2026-04-29
+- [x] **Block D — Grundlagen-Phasen 01/02/03/07** (Mathematik, Klassisches ML, DL, Transformer) — 2026-04-29
 
 ## Iterative Erweiterungen (nach Bedarf)
 
 Punkte ohne festen Termin — werden ausgelöst durch externe Trigger oder Saskia-Bedarf:
 
+- [ ] **Issue #9 — Fakten-Check-Pass** (Versionen, URLs, Pricings, Statistiken) vor Stakeholder-Outreach
 - [ ] **AI-Act-Tracker** auf neuen BNetzA-KI-MIG-Stand aktualisieren (sobald veröffentlicht)
 - [ ] **Logo + Social-Preview** als finale PNG-Renderings (statt SVG-Placeholder)
 - [ ] **Echte Marimo-Notebooks** mit aktiven Modell-Aufrufen (heute Stub-Smoke; live-API-Variante als zweites Notebook pro Phase)
@@ -93,9 +74,9 @@ Punkte ohne festen Termin — werden ausgelöst durch externe Trigger oder Saski
 | Datum | Output |
 |---|---|
 | 2026-04-28 (Tag 1) | Repo-Setup + Phasen 00, 05, 11, 13, 14, 17, 20 + komplettes Tooling/CI/CD |
-| 2026-04-29 (Tag 2) | Phasen 12, 16, 18 + Capstone 19.A + v0.2.0 Release |
+| 2026-04-29 (Tag 2) | Phasen 01, 02, 03, 04, 06, 07, 08, 09, 10, 12, 15, 16, 18 + Capstones 19.A–E + v0.2.0 Release |
 
-Bei diesem Tempo ist das gesamte Curriculum (alle 21 Phasen + alle 5 Capstones) realistisch in **wenigen weiteren Sessions** fertigstellbar. Die Geschwindigkeit ist allerdings **nicht garantiert** — sie hängt davon ab, wann Saskia Zeit hat. Nichts hier hat ein Liefer-Datum.
+**Resultat**: alle 21 Phasen + alle 5 Capstones in 2 Tagen ausgearbeitet. Smoke-Test-Disziplin und Block-by-Block-Commit-Strategie haben das Tempo getragen. Die Geschwindigkeit ist allerdings **nicht garantiert** — Wartungs-Kadenz unten ist die laufende Verpflichtung.
 
 ## Wartungs-Kadenz (für fertige Phasen)
 

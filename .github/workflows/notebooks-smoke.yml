@@ -32,9 +32,13 @@ jobs:
       matrix:
         phase:
           - "00-werkzeugkasten"
+          - "01-mathematik-grundlagen"
+          - "02-klassisches-ml"
+          - "03-deep-learning-grundlagen"
           - "04-computer-vision"
           - "05-deutsche-tokenizer"
           - "06-sprache-und-audio"
+          - "07-transformer-architektur"
           - "08-generative-modelle"
           - "09-state-space-und-hybride"
           - "10-llm-von-null"
@@ -58,9 +62,13 @@ jobs:
         run: |
           case "${{ matrix.phase }}" in
             00-*) uv sync ;;
+            01-*) uv sync ;;
+            02-*) uv sync ;;
+            03-*) uv sync ;;
             04-*) uv sync ;;
             05-*) uv sync --extra tokenizer ;;
             06-*) uv sync ;;
+            07-*) uv sync ;;
             08-*) uv sync ;;
             09-*) uv sync ;;
             10-*) uv sync ;;
