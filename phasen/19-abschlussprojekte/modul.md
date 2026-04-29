@@ -15,7 +15,7 @@ lernziele:
 
 > **Stop building toy projects.** — wähle einen echten Use-Case mit DACH-Bezug, baue ihn End-to-End, dokumentiere ihn AI-Act-konform.
 
-**Status**: 🚧 1 von 5 Capstones voll ausgearbeitet (19.A) · weitere folgen iterativ.
+**Status**: ✅ alle 5 Capstones ausgearbeitet (Skelette + Stub-Notebooks + Compliance-Doku).
 
 ## 🎯 Was du in diesem Modul baust
 
@@ -26,10 +26,10 @@ Wähle 1 aus 5 Capstones. Jeder 8–15 h, jeweils mit eigener `compliance.md`, A
 | # | Capstone | Status | Schwierigkeit | Phasen-Bezug |
 |---|---|---|---|---|
 | 19.A | **WP-Plugin-Helfer-RAG** | ✅ ausgearbeitet | experte | 11/13/14/17/18/20 |
-| 19.B | DSGVO-Compliance-Checker | ⏳ Skelett | mittel | 11/13/20 |
-| 19.C | Charity-Adoptions-Bot | ⏳ Skelett | fortgeschritten | 11/13/14/17/20 |
-| 19.D | Aktiengesetz-Rechtsfrage-Beantworter | ⏳ Skelett | experte | 13/16/20 |
-| 19.E | Mehrsprachiger Voice-Agent | ⏳ Skelett | experte | 06/14/17 |
+| 19.B | **DSGVO-Compliance-Checker** | ✅ ausgearbeitet | mittel | 11/13/20 |
+| 19.C | **Charity-Adoptions-Bot** | ✅ ausgearbeitet | fortgeschritten | 11/13/14/17/20 |
+| 19.D | **Aktiengesetz-RAG** | ✅ ausgearbeitet | experte | 11/13/16/17/20 |
+| 19.E | **Mehrsprachiger Voice-Agent** | ✅ ausgearbeitet | experte | 06/11/14/17 |
 
 ## 19.A — WP-Plugin-Helfer-RAG ✅
 
@@ -43,45 +43,45 @@ Wähle 1 aus 5 Capstones. Jeder 8–15 h, jeweils mit eigener `compliance.md`, A
 
 → [Capstone 19.A README](../../projekte/19-A-wp-plugin-helfer-rag/README.md)
 
-## 19.B — DSGVO-Compliance-Checker ⏳
+## 19.B — DSGVO-Compliance-Checker ✅
 
 **Ziel**: Webseiten-Crawler analysiert Cookie-Banner, AVV-Links, Tracker → DSFA-Light-Bericht.
 
 **Stack**: Playwright + Pydantic AI + Mistral oder Pharia-1
 
-**Compliance-Bezug**: AI-Act + DSGVO + TTDSG
+**Compliance-Bezug**: AI-Act + DSGVO + TTDSG § 25 + EuGH Planet49
 
-**Status**: Skelett mit `compliance.md` angelegt — Inhalt folgt Q3/Q4 2026.
+**Verzeichnis**: [`projekte/19-B-dsgvo-compliance-checker/`](../../projekte/19-B-dsgvo-compliance-checker/)
 
-## 19.C — Charity-Adoptions-Bot ⏳
+## 19.C — Charity-Adoptions-Bot ✅
 
 **Ziel**: End-to-End-Voice-Chatbot: Adoptionsprozess, Termine buchen, Tierprofile.
 
-**Stack**: Pharia/Mistral + Whisper + Coqui-TTS + LangGraph (HITL)
+**Stack**: Pharia/Mistral + Whisper-large-v3 + F5-TTS + LangGraph mit HITL
 
-**Compliance-Bezug**: vollständige DSGVO-Pipeline (siehe Phase 14.09 als Bauanleitung)
+**Compliance-Bezug**: vollständige DSGVO-Pipeline (Pattern aus Phase 14.09 als Vollausbau)
 
-**Status**: Pattern in Phase 14.09 dokumentiert; Capstone-Skelett angelegt — vollständige Implementation Q3 2026.
+**Verzeichnis**: [`projekte/19-C-charity-adoptions-bot/`](../../projekte/19-C-charity-adoptions-bot/)
 
-## 19.D — Aktiengesetz-Rechtsfrage-Beantworter ⏳
+## 19.D — Aktiengesetz-RAG ✅
 
-**Ziel**: Legal-RAG auf AktG + GermanLegal-Korpus mit Aleph Alpha Pharia, mit Quellen-Attribution + Disclaimer.
+**Ziel**: Legal-RAG auf AktG-Volltext mit Paragraf-genauer Quellen-Attribution + § RDG-Disclaimer.
 
-**Stack**: Pharia-1 + Qdrant + LangGraph + Phoenix
+**Stack**: Pharia-1 oder Opus 4.7 + Qdrant Hybrid (BM25+Dense) + bge-reranker-v2-m3
 
-**Compliance-Bezug**: AI-Act Art. 50.4 (Quellen-Attribution), § RDG-Disclaimer, BAFA-zertifiziertes Modell
+**Compliance-Bezug**: AI-Act Art. 50.4 (Quellen-Pflicht), § RDG, möglicherweise Hochrisiko (Anhang III Nr. 8)
 
-**Status**: Skelett angelegt — Hands-on-Aufbau mit Phasen 13 + 16 + 20.
+**Verzeichnis**: [`projekte/19-D-aktiengesetz-rag/`](../../projekte/19-D-aktiengesetz-rag/)
 
-## 19.E — Mehrsprachiger Voice-Agent ⏳
+## 19.E — Mehrsprachiger Voice-Agent ✅
 
-**Ziel**: DeepL + Whisper + Sesame-Pipeline für DE↔EN↔TR Live-Übersetzung mit Kontext-Memory.
+**Ziel**: DeepL + Whisper + F5-TTS-Pipeline für DE↔EN↔TR Live-Übersetzung mit Kontext-Memory.
 
-**Stack**: Whisper + DeepL + LangGraph + Pharia/Mistral
+**Stack**: Whisper-large-v3 + DeepL Pro + F5-TTS + LangGraph + Postgres-Memory
 
-**Compliance-Bezug**: DSGVO Art. 25 (Privacy by Design für Voice-Daten), Speech-to-Text-Audit-Pipeline
+**Compliance-Bezug**: DSGVO Art. 9 (Voice = biometrisch!), Auto-Lösch-Pipeline, Phase 06 als Voraussetzung
 
-**Status**: Skelett angelegt — Phase 06 (Audio) als Voraussetzung.
+**Verzeichnis**: [`projekte/19-E-voice-agent-multi/`](../../projekte/19-E-voice-agent-multi/)
 
 ## ⚖️ DACH-Compliance-Anker (alle Capstones)
 

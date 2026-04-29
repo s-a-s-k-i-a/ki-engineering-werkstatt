@@ -31,10 +31,10 @@
 | ✅ | 16 | **Reasoning & Test-Time-Compute** — GPT-5.5, Opus 4.7, DeepSeek-R1, GRPO, RLVR |
 | ✅ | 17 | **Production & EU-Hosting** — vLLM, LiteLLM, STACKIT, IONOS, OVH, Phoenix, Langfuse |
 | ✅ | 18 | **Ethik, Safety, Alignment** — Bias-Audit, DPO/GRPO, Constitutional AI, Self-Censorship, Anhang IV |
-| 🚧 | 19 | Capstones (1/5 fertig: 19.A WP-Plugin-Helfer-RAG) |
+| ✅ | 19 | **Capstones** — 19.A WP-Plugin-Helfer-RAG, 19.B DSGVO-Checker, 19.C Charity-Bot, 19.D AktG-RAG, 19.E Voice-Agent |
 | ✅ | 20 | **Recht & Governance** |
 
-**Bilanz**: 10 ✅ · 1 🚧 · 10 ⏳
+**Bilanz**: 11 ✅ · 0 🚧 · 10 ⏳
 
 ## Releases
 
@@ -50,12 +50,13 @@ Wenn alle Capstones (19.B–19.E) und/oder die Foundation-Phasen (10 LLM von Nul
 
 Reihenfolge nach Saskia-Use-Case-Relevanz, nicht nach Phasen-Nummer:
 
-### Capstones (Real-World-Portfolio)
+### Capstones (Real-World-Portfolio) — alle ausgearbeitet ✅
 
-- [ ] **19.B — DSGVO-Compliance-Checker** (Webseiten-Crawler + DSFA-Light-Bericht). KMU-relevant.
-- [ ] **19.C — Charity-Adoptions-Bot** (End-to-End mit Whisper + Coqui-TTS + LangGraph-HITL). Pattern in Phase 14.09 schon dokumentiert.
-- [ ] **19.D — Aktiengesetz-Rechtsfrage-Beantworter** (Legal-RAG auf AktG mit Pharia + Quellen-Attribution).
-- [ ] **19.E — Mehrsprachiger Voice-Agent** (DE↔EN↔TR Live-Übersetzung). Braucht Phase 06 als Voraussetzung.
+- [x] **19.A — WP-Plugin-Helfer-RAG** (Multi-Agent + AST-Splitting + Issue-Triage) — 2026-04-29
+- [x] **19.B — DSGVO-Compliance-Checker** (Playwright-Crawler + DSFA-Light-Bericht) — 2026-04-29
+- [x] **19.C — Charity-Adoptions-Bot** (LangGraph + HITL + Whisper + F5-TTS) — 2026-04-29
+- [x] **19.D — Aktiengesetz-RAG** (Hybrid-RAG + Reasoning + § RDG-Disclaimer) — 2026-04-29
+- [x] **19.E — Mehrsprachiger Voice-Agent** (DE↔EN↔TR mit Auto-Lösch-Pipeline) — 2026-04-29
 
 ### Foundation-Phasen (für Quereinsteiger:innen-Lernpfad)
 
