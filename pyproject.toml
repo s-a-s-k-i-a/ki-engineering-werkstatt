@@ -1,6 +1,6 @@
 [project]
 name = "ki-engineering-werkstatt"
-version = "0.2.0"
+version = "0.3.0"
 description = "20 Phasen KI-Engineering auf Deutsch — von Tokenizer bis AI Act. Code, Quellen, EU-Compliance."
 readme = "README.md"
 requires-python = ">=3.13"

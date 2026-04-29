@@ -8,6 +8,32 @@ Versionierung folgt einer angepassten [Semantic Versioning](https://semver.org/l
 - **MINOR**: neues Modul fertig, neue Phase, neues Werkzeug
 - **PATCH**: einzelne Lektion ergänzt, Compliance-Update, Quellen-Refresh, Bugfix
 
+## [0.3.0](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/compare/v0.2.0...v0.3.0) (2026-04-29)
+
+
+### Features
+
+* **block-b:** Foundation-Phasen 04/06/08/10 voll ausgearbeitet ([99251a9](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/99251a9dcda2247a768a17c8cf159498fa862b7e))
+* **block-c:** Mid-Stack-Phasen 09/15 voll ausgearbeitet ([86cb385](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/86cb385f53e7846d4e979f2e048fc849fa75d676))
+* **block-d:** Grundlagen-Phasen 01/02/03/07 voll ausgearbeitet (Curriculum komplett) ([ad28469](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/ad28469f270b228bc17b36606f2d51256e1fb993))
+* **capstone-19A:** WP-Plugin-Helfer-RAG voll ausgearbeitet ([7ed4fb3](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/7ed4fb348744947df62314f6216c2beb47b733f2))
+* **capstones:** 19.B/C/D/E voll ausgearbeitet (Block A komplett) ([231bae0](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/231bae0dfe2ce95a114a5beaa8f7e40cbdfdea0a))
+* **phase-12:** voll ausgearbeitetes Finetuning-und-Adapter-Modul ([57a52ed](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/57a52ed30a9ea0c6fb3752a9a2b3ec6bc2559d5e))
+* **phase-16:** voll ausgearbeitetes Reasoning-und-Test-Time-Modul ([3f55e6b](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/3f55e6b0ed921d046cac87b1acf0d27199c546d5))
+* **phase-18:** voll ausgearbeitetes Ethik-Safety-Alignment-Modul ([4179171](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/417917198df5cc25efdf7cb65fa2693a8961c01e))
+
+
+### Bug Fixes
+
+* **ci:** N806 in legal_rag_stub + numpy als Pflicht-Dep für Phase 01 ([6e558e6](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/6e558e6788a0222619dba1ef6f0fbdf1e7e2bc1c))
+* **quellen:** Issue [#9](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/issues/9) Welle 1 — Library-Versionen + Aleph-Alpha-Merger-Stand ([e5df16b](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/e5df16be5654bef7f3e816c1f3f92e8052282f99))
+* **quellen:** Issue [#9](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/issues/9) Welle 2 — DOI-Korrektur, Llama Guard 4, GPAI CoP ([b032bb2](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/b032bb2a2ad620eb423f7fc30990087e91037049))
+
+
+### Documentation
+
+* **roadmap:** Quartals-Theater raus, realistische Iterations-Struktur ([6ee8998](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/6ee899820b44ab6644471d71d658c9110971213a))
+
 ## [0.2.0](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/compare/v0.1.0...v0.2.0) (2026-04-28)
 
 
