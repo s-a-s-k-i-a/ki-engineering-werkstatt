@@ -34,6 +34,7 @@ jobs:
           - "12-finetuning-und-adapter"
           - "13-rag-tiefenmodul"
           - "14-agenten-und-mcp"
+          - "16-reasoning-und-test-time"
           - "17-production-und-eu-hosting"
           - "20-recht-und-governance"
     steps:
@@ -52,6 +53,7 @@ jobs:
             12-*) uv sync ;;
             13-*) uv sync --extra rag ;;
             14-*) uv sync ;;
+            16-*) uv sync ;;
             17-*) uv sync ;;
             20-*) uv sync ;;
             *) uv sync ;;

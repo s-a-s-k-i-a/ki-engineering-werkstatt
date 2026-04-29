@@ -28,7 +28,7 @@
 | ✅ | 13 | **RAG-Tiefenmodul** |
 | ✅ | 14 | **Agenten & MCP** — Pydantic AI, LangGraph, DSPy, Multi-Agent, MCP |
 | ⏳ | 15 | Autonome Systeme |
-| ⏳ | 16 | Reasoning & Test-Time-Compute |
+| ✅ | 16 | **Reasoning & Test-Time-Compute** — GPT-5.5, Opus 4.7, DeepSeek-R1, GRPO, RLVR |
 | ✅ | 17 | **Production & EU-Hosting** — vLLM, LiteLLM, STACKIT, IONOS, OVH, Phoenix, Langfuse |
 | ⏳ | 18 | Ethik, Safety, Alignment |
 | ⏳ | 19 | Capstones |
@@ -47,7 +47,7 @@
 
 - [x] **Phase 12 — vollständig** (LoRA/QLoRA/DoRA, Unsloth/axolotl/TRL, dt. Datasets, Multi-LoRA-vLLM, Charity-Hands-on) — abgeschlossen 29.04.2026
 - [ ] Phase 13 — alle 7 RAG-Varianten implementiert
-- [ ] Phase 16 (Reasoning) komplett
+- [x] **Phase 16 — vollständig** (TTC-Patterns, GPT-5.5/Opus 4.7/R1, GRPO-Mathematik, R1-Distillation, Verifier-Loops, Hands-on) — abgeschlossen 29.04.2026
 - [ ] Phase 18 (Ethik) komplett mit Self-Censorship-Audit
 - [ ] Capstone 19.A (WP-Plugin-Helfer-RAG) als reales Repo-Beispiel
 - [ ] AI-Act-Tracker auf BNetzA-KI-MIG-Stand aktualisieren
