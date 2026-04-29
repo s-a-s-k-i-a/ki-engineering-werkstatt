@@ -31,6 +31,7 @@ jobs:
           - "00-werkzeugkasten"
           - "05-deutsche-tokenizer"
           - "11-llm-engineering"
+          - "12-finetuning-und-adapter"
           - "13-rag-tiefenmodul"
           - "14-agenten-und-mcp"
           - "17-production-und-eu-hosting"
@@ -48,6 +49,7 @@ jobs:
             00-*) uv sync ;;
             05-*) uv sync --extra tokenizer ;;
             11-*) uv sync ;;
+            12-*) uv sync ;;
             13-*) uv sync --extra rag ;;
             14-*) uv sync ;;
             17-*) uv sync ;;

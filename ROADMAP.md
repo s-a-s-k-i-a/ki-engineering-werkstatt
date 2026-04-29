@@ -24,7 +24,7 @@
 | ⏳ | 09 | State-Space & Hybride |
 | ⏳ | 10 | LLM von Null |
 | ✅ | 11 | **LLM-Engineering** — Pydantic AI, MCP, Anbieter-Vergleich |
-| ⏳ | 12 | Finetuning & Adapter |
+| ✅ | 12 | **Finetuning & Adapter** — LoRA, QLoRA, Unsloth, axolotl, Multi-LoRA-Inference |
 | ✅ | 13 | **RAG-Tiefenmodul** |
 | ✅ | 14 | **Agenten & MCP** — Pydantic AI, LangGraph, DSPy, Multi-Agent, MCP |
 | ⏳ | 15 | Autonome Systeme |
@@ -45,7 +45,7 @@
 
 ## Q3 2026 (August – Oktober 2026)
 
-- [ ] Phase 12 (Finetuning) komplett — QLoRA-Capstone
+- [x] **Phase 12 — vollständig** (LoRA/QLoRA/DoRA, Unsloth/axolotl/TRL, dt. Datasets, Multi-LoRA-vLLM, Charity-Hands-on) — abgeschlossen 29.04.2026
 - [ ] Phase 13 — alle 7 RAG-Varianten implementiert
 - [ ] Phase 16 (Reasoning) komplett
 - [ ] Phase 18 (Ethik) komplett mit Self-Censorship-Audit
