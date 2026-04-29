@@ -84,43 +84,61 @@ def _(Modell):
     katalog = [
         Modell(
             name="Llama 3.3 70B",
-            n_layers=80, n_q_heads=64, n_kv_heads=8,
-            d_head=128, gewichte_gb=140.0,
+            n_layers=80,
+            n_q_heads=64,
+            n_kv_heads=8,
+            d_head=128,
+            gewichte_gb=140.0,
             license="Llama Community License",
             herkunft="Meta (USA)",
         ),
         Modell(
             name="Mistral Large 3 (123B)",
-            n_layers=88, n_q_heads=96, n_kv_heads=8,
-            d_head=128, gewichte_gb=246.0,
+            n_layers=88,
+            n_q_heads=96,
+            n_kv_heads=8,
+            d_head=128,
+            gewichte_gb=246.0,
             license="Mistral Research / kommerziell",
             herkunft="Mistral (FR/EU)",
         ),
         Modell(
             name="Qwen3-32B",
-            n_layers=64, n_q_heads=32, n_kv_heads=8,
-            d_head=128, gewichte_gb=64.0,
+            n_layers=64,
+            n_q_heads=32,
+            n_kv_heads=8,
+            d_head=128,
+            gewichte_gb=64.0,
             license="Apache 2.0",
             herkunft="Alibaba (CN)",
         ),
         Modell(
             name="Pharia-1 (post-Cohere)",
-            n_layers=27, n_q_heads=36, n_kv_heads=4,
-            d_head=128, gewichte_gb=14.0,
+            n_layers=27,
+            n_q_heads=36,
+            n_kv_heads=4,
+            d_head=128,
+            gewichte_gb=14.0,
             license="Aleph Alpha Community License",
             herkunft="Aleph Alpha + Cohere (DE/CA, post-Merger 04/2026)",
         ),
         Modell(
             name="GPT-OSS-120B",
-            n_layers=96, n_q_heads=96, n_kv_heads=8,
-            d_head=128, gewichte_gb=240.0,
+            n_layers=96,
+            n_q_heads=96,
+            n_kv_heads=8,
+            d_head=128,
+            gewichte_gb=240.0,
             license="Apache 2.0",
             herkunft="OpenAI (USA, Open-Weights 11/2025)",
         ),
         Modell(
             name="DeepSeek-V4-Pro (1.6T MoE — aktive 49B)",
-            n_layers=61, n_q_heads=128, n_kv_heads=128,
-            d_head=128, gewichte_gb=380.0,  # Gesamt-Gewichte
+            n_layers=61,
+            n_q_heads=128,
+            n_kv_heads=128,
+            d_head=128,
+            gewichte_gb=380.0,  # Gesamt-Gewichte
             license="DeepSeek Custom",
             herkunft="DeepSeek (CN) — ⚠️ DSGVO bei API",
         ),
@@ -140,19 +158,15 @@ def _():
         dtype_bytes: int = 2,
     ) -> float:
         """KV-Cache in GB. Faktor 2 = K + V."""
-        return 2 * n_layers * n_kv_heads * d_head * seq_len * dtype_bytes / (1024 ** 3)
-
+        return 2 * n_layers * n_kv_heads * d_head * seq_len * dtype_bytes / (1024**3)
 
     def gesamt_vram_gb(modell, seq_len: int, dtype_bytes: int = 2) -> float:
         return modell.gewichte_gb + kv_cache_gb(
             modell.n_layers, modell.n_kv_heads, modell.d_head, seq_len, dtype_bytes
         )
 
-
     def kv_cache_ohne_gqa_gb(modell, seq_len: int, dtype_bytes: int = 2) -> float:
-        return kv_cache_gb(
-            modell.n_layers, modell.n_q_heads, modell.d_head, seq_len, dtype_bytes
-        )
+        return kv_cache_gb(modell.n_layers, modell.n_q_heads, modell.d_head, seq_len, dtype_bytes)
 
     return gesamt_vram_gb, kv_cache_gb, kv_cache_ohne_gqa_gb
 
@@ -180,8 +194,7 @@ def _(gesamt_vram_gb, katalog, kv_cache_gb, kv_cache_ohne_gqa_gb, mo):
         "Sequenz-Längen: 4k / 32k / 128k\n\n"
         "| Modell | Q/KV-Heads (GQA-Faktor) | KV 4k GB | KV 32k GB | KV 128k GB | "
         "KV 128k *ohne GQA* | **Gesamt 128k** |\n"
-        "|---|---|---|---|---|---|---|\n" + "\n".join(rows_kv)
-        + "\n\n"
+        "|---|---|---|---|---|---|---|\n" + "\n".join(rows_kv) + "\n\n"
         "**Beobachtung**: GQA reduziert KV-Cache typisch um Faktor 4-12×. "
         "Ohne GQA wäre Long-Context (128k) auf einer einzelnen GPU oft "
         "**unmöglich**."
@@ -210,16 +223,15 @@ def _(gesamt_vram_gb, katalog, mo):
             else:
                 anzahl = -(-need // gpu_klassen["B200 192GB"])  # ceil
                 empfehlung = f"{int(anzahl)}× B200 (TP)"
-            rows_gpu.append(
-                f"| {m_gpu.name} | {seq:,} | {need:.0f} GB | {empfehlung} |"
-            )
+            rows_gpu.append(f"| {m_gpu.name} | {seq:,} | {need:.0f} GB | {empfehlung} |")
 
     mo.md(
         "## 2. GPU-Klasse-Empfehlung (bf16, kein Quantization)\n\n"
         "| Modell | Seq-Länge | Total VRAM | Min. GPU |\n"
-        "|---|---|---|---|\n" + "\n".join(rows_gpu)
+        "|---|---|---|---|\n"
+        + "\n".join(rows_gpu)
         + "\n\n*TP = Tensor-Parallelism. Mit 4-bit-Quantization halbiert sich "
-          "der Gewichte-Anteil ungefähr — Phase 17 vertieft.*"
+        "der Gewichte-Anteil ungefähr — Phase 17 vertieft.*"
     )
     return
 

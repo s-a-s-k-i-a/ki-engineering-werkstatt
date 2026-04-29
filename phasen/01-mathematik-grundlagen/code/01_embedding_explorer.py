@@ -142,9 +142,10 @@ def _(mo, np):
         "## 2. Cross-Entropy-Demo\n\n"
         "Wahres Token an Index 0 (Wahrscheinlichkeitsverteilung One-Hot).\n\n"
         "| Modell-Konfidenz | Verteilung | CE-Loss | Perplexität |\n"
-        "|---|---|---|---|\n" + "\n".join(rows_ce)
+        "|---|---|---|---|\n"
+        + "\n".join(rows_ce)
         + "\n\n**Beobachtung**: hohe Konfidenz für **falsches** Token = "
-          "deutlich höherer Loss als unsichere Verteilung."
+        "deutlich höherer Loss als unsichere Verteilung."
     )
     return cross_entropy, perplexitaet
 
@@ -186,9 +187,10 @@ def _(mo, np):
         "Toy-Loss `(w₀ - 3)² + (w₁ + 1)²`, Minimum bei `(3, -1)`. "
         "Start in `(0, 0)`.\n\n"
         "| Lauf | Schritte | End-Position | End-Loss |\n"
-        "|---|---|---|---|\n" + "\n".join(rows_gd)
+        "|---|---|---|---|\n"
+        + "\n".join(rows_gd)
         + "\n\n**Beobachtung**: η = 0.10 konvergiert sauber, "
-          "η = 0.50 oszilliert, η = 1.05 divergiert."
+        "η = 0.50 oszilliert, η = 1.05 divergiert."
     )
     return
 
