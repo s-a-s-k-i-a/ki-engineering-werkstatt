@@ -8,6 +8,21 @@ Versionierung folgt einer angepassten [Semantic Versioning](https://semver.org/l
 - **MINOR**: neues Modul fertig, neue Phase, neues Werkzeug
 - **PATCH**: einzelne Lektion ergänzt, Compliance-Update, Quellen-Refresh, Bugfix
 
+## [0.2.0](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/compare/v0.1.0...v0.2.0) (2026-04-28)
+
+
+### Features
+
+* **phase-00:** voll ausgearbeitetes Werkzeugkasten-Modul ([6d1c3a8](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/6d1c3a88fe8c19183f761738a14e2b789b3235d5))
+* **phase-11:** voll ausgearbeitetes LLM-Engineering-Modul ([92b0246](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/92b0246766e21c4d4b8322188207c67ac0b62672))
+* **phase-14:** voll ausgearbeitetes Agenten-und-MCP-Modul ([e542b94](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/e542b94e4f6be7dc74879684c1d9fce2f4f67d5b))
+* **phase-17:** voll ausgearbeitetes Production-und-EU-Hosting-Modul ([402b9df](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/402b9df6468b8d5393ad6924ad73c2f2c9ee0b8b))
+
+
+### Bug Fixes
+
+* **modelle:** Modellnamen aktualisiert auf Stand 28.04.2026 ([3ccc096](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/3ccc096460aa352d48d5dcbb253ccb94df3ad3cc))
+
 ## 0.1.0 (2026-04-28)
 
 
