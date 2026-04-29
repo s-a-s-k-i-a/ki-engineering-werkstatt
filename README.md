@@ -82,7 +82,7 @@ du startest grade mit KI
 | Output | Wo | Status |
 |---|---|---|
 | **3 voll ausgearbeitete Showcase-Module** mit Marimo-Notebooks, Übungen, Lösungen | [Phasen 05, 13, 20](#-showcase--3-module-sind-am-launch-tag-fertig) | ✅ am Launch |
-| **12 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 01-04, 06-10, 15, 18-19 | [`phasen/`](phasen/) | 🚧 in Arbeit |
+| **11 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 01-04, 06-10, 15, 19 | [`phasen/`](phasen/) | 🚧 in Arbeit |
 | **3 lauffähige CLI-Werkzeuge** (`ki-act-classifier`, `ki-ai-txt`, `ki-compliance-lint`) | [`werkzeuge/`](werkzeuge/) | ✅ |
 | **DACH-Compliance-Layer** mit AI-Act-Tracker, DSGVO-Checklisten, AVV-Mustern, Asiatischen-LLM-Disclaimer | [`docs/rechtliche-perspektive/`](docs/rechtliche-perspektive/) | ✅ |
 | **EU-Modell-Setups** (Pharia, Mistral, IONOS, Ollama, vLLM) | [`infrastruktur/eu-modelle/`](infrastruktur/eu-modelle/) | ✅ |
@@ -273,7 +273,7 @@ flowchart TB
 
   subgraph C[" ⚖️ Compliance "]
     direction LR
-    P18[18 · Ethik & Alignment]:::planned
+    P18[18 · 🛡️ Ethik & Alignment]:::done
     P19[19 · Capstones]:::planned
     P20[20 · ⚖️ Recht & Governance]:::done
   end

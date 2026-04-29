@@ -36,6 +36,7 @@ jobs:
           - "14-agenten-und-mcp"
           - "16-reasoning-und-test-time"
           - "17-production-und-eu-hosting"
+          - "18-ethik-safety-alignment"
           - "20-recht-und-governance"
     steps:
       - uses: actions/checkout@v6
@@ -55,6 +56,7 @@ jobs:
             14-*) uv sync ;;
             16-*) uv sync ;;
             17-*) uv sync ;;
+            18-*) uv sync ;;
             20-*) uv sync ;;
             *) uv sync ;;
           esac
