@@ -137,7 +137,7 @@ def _(AktGParagraph):
 def _(RechtsAntwort, aktg_korpus):
     """Stub-RAG-Pipeline."""
 
-    DISCLAIMER = (
+    rdg_disclaimer = (
         "⚠️ Kein Rechtsrat (§ 2 RDG). Dieses Tool gibt Recherche-Ergebnisse "
         "auf Basis des AktG-Wortlauts. Für rechtsverbindliche Beratung im "
         "konkreten Fall konsultieren Sie bitte zugelassene Anwält:innen."
@@ -205,7 +205,7 @@ def _(RechtsAntwort, aktg_korpus):
             rechtsgebiet=rechtsgebiet,
             konfidenz=min(0.6 + len(top3) * 0.1, 0.9),
             multi_hop=multi_hop,
-            disclaimer=DISCLAIMER,
+            disclaimer=rdg_disclaimer,
         )
 
     return (stub_rag,)
