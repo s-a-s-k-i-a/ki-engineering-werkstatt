@@ -149,7 +149,7 @@ Stand 04/2026 (voll wirksam ab 02.08.2026):
 
 - **KI-erstellte Bilder müssen maschinenlesbar markiert sein**
 - Implementations: **C2PA-Manifest** + **unsichtbares Watermark** (Stable Signature, AudioSeal-Image-Variante)
-- Code of Practice (2. Entwurf März 2026, Finalisierung Juni 2026): **Mehrschicht-Pflicht**
+- GPAI Code of Practice (finalisiert 10.07.2025 durch das EU AI Office, [code-of-practice.ai](https://code-of-practice.ai/)): **Mehrschicht-Pflicht** für Watermark + Quellen-Attribution; Enforcement startet 02.08.2026
 
 ### § 201b StGB-Entwurf (Deepfakes)
 

@@ -8,7 +8,7 @@ stand: 2026-04-29
 voraussetzungen: [18.07]
 lernziele:
   - NeMo Guardrails für Input/Output-Filter
-  - Llama Guard 3 (8B) als Output-Klassifikator
+  - Llama Guard 4 (12B, multimodal) als Output-Klassifikator
   - Wann welches Framework
   - DACH-spezifische Custom-Policies
 compliance_anker:
@@ -19,9 +19,9 @@ ai_act_artikel:
 
 ## Worum es geht
 
-> Stop hoping the model is safe. — Safety-Frameworks sind die **letzte Verteidigungslinie**: Input-Filter + Output-Filter + Dialog-Constraints. Diese Lektion zeigt NeMo Guardrails (NVIDIA) und Llama Guard 3 (Meta) im praktischen Einsatz.
+> Stop hoping the model is safe. — Safety-Frameworks sind die **letzte Verteidigungslinie**: Input-Filter + Output-Filter + Dialog-Constraints. Diese Lektion zeigt NeMo Guardrails (NVIDIA) und Llama Guard 4 (Meta, 12B multimodal) im praktischen Einsatz.
 
-> ⚠️ **Stand 04/2026**: **Llama Guard 4** ist nicht eindeutig veröffentlicht. **Llama Guard 3 (8B)** ist die produktive Version Stand jetzt — bei Bedarf [meta-llama/Llama-Guard-3-8B](https://huggingface.co/meta-llama/Llama-Guard-3-8B). Falls Llama Guard 4 inzwischen verfügbar ist, gleiches Setup mit neuem Modell-Namen.
+> **Stand 04/2026**: Aktuelle Version ist **Llama Guard 4** (12B, multimodal, [meta-llama/Llama-Guard-4-12B](https://huggingface.co/meta-llama/Llama-Guard-4-12B), Release 30.04.2025). Vereint die Funktionen von Llama Guard 3-8B (Text) und Llama Guard 3-11B-vision (Bild) und unterstützt mehrere Bilder pro Prompt. Aligned auf MLCommons-Hazards-Taxonomie.
 
 ## Voraussetzungen
 
@@ -126,13 +126,13 @@ response = await rails.generate_async(
 
 NeMo Guardrails läuft self-hosted, kein Zwangs-Cloud-Call. Telemetrie abschaltbar. **Kein eigenes BSI-/DSGVO-Zertifikat**, aber DPA/AVV-fähig wenn LLM-Backend selbst DSGVO-konform.
 
-### Llama Guard 3 (Meta)
+### Llama Guard 4 (Meta)
 
-URL: <https://huggingface.co/meta-llama/Llama-Guard-3-8B>
+URL: <https://huggingface.co/meta-llama/Llama-Guard-4-12B>
 
-8B-Modell, klassifiziert Inputs/Outputs in **MLCommons-Taxonomie**:
+12B-Modell, klassifiziert Inputs/Outputs (text + image, mehrere Bilder pro Prompt) in **MLCommons-Taxonomie**. Konsolidiert Llama Guard 3-8B und Llama Guard 3-11B-vision in einem multimodalen Klassifikator.
 
-#### Kategorien (Llama Guard 3)
+#### Kategorien (Llama Guard 4)
 
 ```text
 S1: Violent Crimes
@@ -158,11 +158,11 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
 modell = AutoModelForCausalLM.from_pretrained(
-    "meta-llama/Llama-Guard-3-8B",
+    "meta-llama/Llama-Guard-4-12B",
     torch_dtype=torch.bfloat16,
     device_map="auto",
 )
-tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-Guard-3-8B")
+tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-Guard-4-12B")
 
 
 def klassifiziere_input(user_input: str) -> dict:
@@ -200,7 +200,7 @@ async def safe_generate(user_input: str) -> str:
 
 #### DE-Tauglichkeit
 
-Llama Guard 3 hat multilinguale Trainings-Daten. **DE-Performance solide** auf Standard-Kategorien. **Aber**: deutsche Spezifika (§ 86a StGB Volksverhetzung, NS-Symbolik, deutsche Hassrede-Patterns) sind **nicht** speziell trainiert — Custom-Policy via Prompt erforderlich.
+Llama Guard 4 hat multilinguale Trainings-Daten. **DE-Performance solide** auf Standard-Kategorien. **Aber**: deutsche Spezifika (§ 86a StGB Volksverhetzung, NS-Symbolik, deutsche Hassrede-Patterns) sind **nicht** speziell trainiert — Custom-Policy via Prompt erforderlich.
 
 ```python
 custom_policy = """
@@ -214,7 +214,7 @@ Q-Anon-DE-Variante).
 
 ### Wann welches Framework
 
-| Anforderung | NeMo Guardrails | Llama Guard 3 |
+| Anforderung | NeMo Guardrails | Llama Guard 4 |
 |---|---|---|
 | **Input-Filter** | YAML-Config-First | Modell-basiert (LLM-Aufruf) |
 | **Output-Filter** | regex + LLM-Judge | Modell-basiert |
@@ -254,7 +254,7 @@ Bei einem 100-User-pro-Stunde-Stack mit Standard-Compose (siehe Phase 17.05):
 | Modell ohne Safety | 800 ms | 100 req/min |
 | + NeMo Guardrails (regex-only) | 850 ms | 95 req/min |
 | + NeMo Guardrails (LLM-Judge) | 1.500 ms | 60 req/min |
-| + Llama Guard 3 (input + output) | 1.200 ms | 70 req/min |
+| + Llama Guard 4 (input + output) | 1.400 ms | 65 req/min |
 | Beide kombiniert | 2.000 ms | 50 req/min |
 
 > Trade-off: Sicherheit kostet Latenz. Bei Hochrisiko-Systemen (AI-Act Art. 9) **pflichtbewusst**.
@@ -291,7 +291,7 @@ Pflicht-Custom-Policies für DACH 2026:
 
 ## Hands-on
 
-1. Llama Guard 3 lokal aufsetzen (8B reicht auf 24-GB-GPU)
+1. Llama Guard 4 lokal aufsetzen (12B passt auf 24-GB-GPU mit bf16; 16-GB-GPU braucht 4-bit-Quantization)
 2. Bau ein Test-Set aus 30 dt. Sicherheits-Probes (10 Hass, 10 Beratungs, 10 PII)
 3. Klassifikations-Accuracy + False-Positive-Rate dokumentieren
 4. NeMo Guardrails mit DACH-Custom-Policy aufsetzen
@@ -300,7 +300,7 @@ Pflicht-Custom-Policies für DACH 2026:
 ## Selbstcheck
 
 - [ ] Du nennst die fünf NeMo-Rails-Typen.
-- [ ] Du klassifizierst mit Llama Guard 3 in MLCommons-Taxonomie.
+- [ ] Du klassifizierst mit Llama Guard 4 in MLCommons-Taxonomie.
 - [ ] Du baust DACH-Custom-Policies für StGB-Tatbestände.
 - [ ] Du kombinierst NeMo + Llama Guard für Defense in Depth.
 - [ ] Du loggst Audit-Events pflichtbewusst.
@@ -315,7 +315,7 @@ Pflicht-Custom-Policies für DACH 2026:
 
 - NeMo Guardrails — <https://github.com/NVIDIA/NeMo-Guardrails>
 - NeMo Guardrails Docs — <https://docs.nvidia.com/nemo/guardrails/>
-- Llama Guard 3 — <https://huggingface.co/meta-llama/Llama-Guard-3-8B>
+- Llama Guard 4 (12B multimodal) — <https://huggingface.co/meta-llama/Llama-Guard-4-12B>
 - MLCommons AI-Safety-Taxonomie — <https://mlcommons.org/working-groups/ai-safety/>
 - StGB § 130 — <https://www.gesetze-im-internet.de/stgb/__130.html>
 - StGB § 86a — <https://www.gesetze-im-internet.de/stgb/__86a.html>

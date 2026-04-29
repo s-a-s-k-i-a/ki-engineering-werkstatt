@@ -8,7 +8,7 @@
 - **DeepSeek-Math (GRPO)** (Shao et al. 2024) — <https://arxiv.org/abs/2402.03300>
 - **DPO-Paper** (Rafailov et al. 2023) — <https://arxiv.org/abs/2305.18290>
 - **PPO-Paper** (Schulman et al. 2017) — <https://arxiv.org/abs/1707.06347>
-- **DeepSeek-R1 (Nature 08/2025)** — <https://www.nature.com/articles/s41586-025-08000-x>
+- **DeepSeek-R1 (Nature 08/2025)** — <https://www.nature.com/articles/s41586-025-09422-z>
 - **Hinton et al. „Distilling the Knowledge"** (2015) — <https://arxiv.org/abs/1503.02531>
 
 ## Reasoning-Modelle 2026

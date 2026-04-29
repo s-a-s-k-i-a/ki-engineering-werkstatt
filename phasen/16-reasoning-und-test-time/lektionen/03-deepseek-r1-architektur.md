@@ -180,7 +180,7 @@ Aus dem DeepSeek Tech Report (Nature 08/2025):
 
 ## Quellen
 
-- DeepSeek-R1 Tech Report (Nature 08/2025) — <https://www.nature.com/articles/s41586-025-08000-x>
+- DeepSeek-R1 Tech Report (Nature 08/2025) — <https://www.nature.com/articles/s41586-025-09422-z>
 - DeepSeek-R1 HF — <https://huggingface.co/deepseek-ai/DeepSeek-R1>
 - DeepSeek-V4 HF — <https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro>
 - DeepSeek-Prover-V2 — <https://huggingface.co/deepseek-ai/DeepSeek-Prover-V2-7B>

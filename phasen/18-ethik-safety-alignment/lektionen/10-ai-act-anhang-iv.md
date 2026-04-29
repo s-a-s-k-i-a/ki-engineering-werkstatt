@@ -202,8 +202,8 @@ modelle:
     version: "1.0"
     lizenz: "open-aleph-license"
     sha256_weights: "abc..."
-  - name: "Llama-Guard-3-8B (Output-Filter)"
-    version: "3.0"
+  - name: "Llama-Guard-4-12B (Output-Filter)"
+    version: "4.0"
     lizenz: "Llama-Community-License"
 
 trainings_daten:
@@ -238,14 +238,13 @@ unterzeichnet_durch:
 
 ### EU AI Office — GPAI Code of Practice
 
-Stand 04/2026: das **EU AI Office** ([digital-strategy.ec.europa.eu/en/policies/ai-office](https://digital-strategy.ec.europa.eu/en/policies/ai-office)) entwickelt den **GPAI Code of Practice** für General-Purpose-AI. Wichtige Aspekte:
+Stand 04/2026: das **EU AI Office** ([digital-strategy.ec.europa.eu/en/policies/ai-office](https://digital-strategy.ec.europa.eu/en/policies/ai-office)) hat den **GPAI Code of Practice** am **10.07.2025 finalisiert** ([Final Version](https://code-of-practice.ai/)) und am **01.08.2025** durch Kommission + AI Board (Adäquanzentscheidung) gebilligt. GPAI-Pflichten gelten seit **02.08.2025**; Kommissions-Enforcement (Auskunfts­ersuchen, Modell-Zugriffe, Recalls) startet **02.08.2026**. Drei Kapitel:
 
-- **Transparency-Pflichten** für Foundation-Modelle
-- **Trainings-Daten-Zusammenfassung** öffentlich
-- **Cybersecurity-Standards** für GPAI
-- **Systemic-Risk-Anbieter** (>10²⁵ FLOPs) zusätzliche Pflichten
+- **Transparency** — Modell-Karte + Trainings-Daten-Zusammenfassung öffentlich
+- **Copyright** — TDM-Opt-out-Respekt (UrhG § 44b), Lizenzkette dokumentiert
+- **Safety & Security** — nur für **Systemic-Risk-Anbieter** (>10²⁵ FLOPs): Risk-Assessment, Cybersecurity, Incident-Reporting
 
-> Für DACH-Anbieter, die **eigene** Foundation-Modelle bauen, ist der Code of Practice Pflicht. Für Anbieter, die nur GPAI **nutzen**, gelten Anhang IV-Pflichten für das eigene Hochrisiko-System.
+> Der CoP ist **freiwillig**, aber faktisch State-of-the-Art-Compliance-Beleg. Wer ihn unterzeichnet, signalisiert AI-Act-Konformität. Für DACH-Anbieter, die **eigene** Foundation-Modelle bauen, ist er die einfachste Compliance-Schiene; Bereitsteller (Anbieter, die GPAI nur nutzen) haben Anhang IV-Pflichten für das eigene Hochrisiko-System.
 
 ### Konkrete BSI-Vorlage Stand 04/2026
 

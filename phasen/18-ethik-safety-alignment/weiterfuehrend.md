@@ -24,7 +24,7 @@
 
 - **NeMo Guardrails** — <https://github.com/NVIDIA/NeMo-Guardrails>
 - **NeMo Guardrails Docs** — <https://docs.nvidia.com/nemo/guardrails/>
-- **Llama Guard 3 (8B)** — <https://huggingface.co/meta-llama/Llama-Guard-3-8B>
+- **Llama Guard 4 (12B, multimodal)** — <https://huggingface.co/meta-llama/Llama-Guard-4-12B>
 - **MLCommons AI-Safety-Taxonomie** — <https://mlcommons.org/working-groups/ai-safety/>
 - **safe-rlhf** (PKU) — <https://github.com/PKU-Alignment/safe-rlhf>
 - **Anthropic-evals** — <https://github.com/anthropics/evals>
@@ -50,7 +50,7 @@
 
 - **Enkrypt-AI DeepSeek-R1-Studie** — <https://www.enkryptai.com/blog/deepseek-r1-redteaming>
 - **NewsGuard AI-Tracking** — <https://www.newsguardtech.com/special-reports/ai-tracking-center/>
-- **DeepSeek-R1 Tech Report (Nature)** — <https://www.nature.com/articles/s41586-025-08000-x>
+- **DeepSeek-R1 Tech Report (Nature)** — <https://www.nature.com/articles/s41586-025-09422-z>
 - **PromptFoo CN-Models-Reports** — <https://www.promptfoo.dev/docs/red-team/>
 
 ## Recht & Compliance

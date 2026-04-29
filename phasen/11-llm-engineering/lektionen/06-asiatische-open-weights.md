@@ -161,7 +161,7 @@ print(r.output)
 
 ## Quellen
 
-- DeepSeek-R1 Nature-Publikation (08/2025) — <https://www.nature.com/articles/s41586-025-08000-x>
+- DeepSeek-R1 Nature-Publikation (08/2025) — <https://www.nature.com/articles/s41586-025-09422-z>
 - Qwen3 Technical Report — <https://arxiv.org/abs/2505.09388>
 - GLM-5 Tech Report (Z.ai) — <https://z.ai/>
 - Kimi K2.6 Release Blog — <https://moonshot.cn/>

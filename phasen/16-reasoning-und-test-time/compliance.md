@@ -32,6 +32,6 @@ Test-Time-Compute = vielfacher Token-Verbrauch. AI-Act Art. 13 (Hochrisiko): Ene
 
 ## Quellen
 
-- [DeepSeek-R1 Nature-Publikation 08/2025](https://www.nature.com/articles/s41586-025-08000-x)
+- [DeepSeek-R1 Nature-Publikation 08/2025](https://www.nature.com/articles/s41586-025-09422-z)
 - [Shao et al. GRPO Paper](https://arxiv.org/abs/2402.03300)
 - [OpenAI o3 System Card](https://openai.com/index/openai-o3/)

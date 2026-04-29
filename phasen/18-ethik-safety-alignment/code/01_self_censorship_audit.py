@@ -322,7 +322,7 @@ def _(mo):
         ## Quellen
 
         - Enkrypt-AI DeepSeek-R1-Studie — <https://www.enkryptai.com/blog/deepseek-r1-redteaming>
-        - DeepSeek-R1 (Nature) — <https://www.nature.com/articles/s41586-025-08000-x>
+        - DeepSeek-R1 (Nature) — <https://www.nature.com/articles/s41586-025-09422-z>
         - NewsGuard AI-Audit — <https://www.newsguardtech.com/special-reports/ai-tracking-center/>
         - Promptfoo Red-Team — <https://www.promptfoo.dev/docs/red-team/>
         """

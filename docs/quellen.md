@@ -39,7 +39,7 @@ Kuratierte Primärquellen für die KI-Engineering-Werkstatt. Lektionen verweisen
 
 | Code | Werk |
 |---|---|
-| C.1 | DeepSeek-R1 (2025). *Tech Report* (Nature 08/2025). <https://www.nature.com/articles/s41586-025-08000-x> |
+| C.1 | DeepSeek-R1 (2025). *Tech Report* (Nature 08/2025). <https://www.nature.com/articles/s41586-025-09422-z> |
 | C.2 | Microsoft Research (2024). *GraphRAG*. <https://arxiv.org/abs/2404.16130> |
 | C.3 | Microsoft Research (2024). *LazyGraphRAG*. <https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/> |
 | C.4 | Gu & Dao (2023). *Mamba*. <https://arxiv.org/abs/2312.00752> |
@@ -168,7 +168,7 @@ Kuratierte Primärquellen für die KI-Engineering-Werkstatt. Lektionen verweisen
 
 | Code | Werk |
 |---|---|
-| L.1 | DeepSeek-R1 (Nature 08/2025). <https://www.nature.com/articles/s41586-025-08000-x> |
+| L.1 | DeepSeek-R1 (Nature 08/2025). <https://www.nature.com/articles/s41586-025-09422-z> |
 | L.2 | Qwen3 Technical Report. <https://huggingface.co/Qwen> |
 | L.3 | GLM-5 Tech Report (Z.ai). <https://github.com/THUDM> |
 | L.4 | Kimi K2.6 Release Blog (Moonshot). <https://moonshot.cn/> |

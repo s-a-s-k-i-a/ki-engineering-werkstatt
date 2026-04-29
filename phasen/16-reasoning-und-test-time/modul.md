@@ -105,7 +105,7 @@ Phasen-spezifisch:
 
 ## 📖 Quellen (Auswahl)
 
-- DeepSeek-R1 Tech Report — <https://www.nature.com/articles/s41586-025-08000-x>
+- DeepSeek-R1 Tech Report — <https://www.nature.com/articles/s41586-025-09422-z>
 - GRPO-Paper — <https://arxiv.org/abs/2402.03300>
 - TRL GRPOTrainer — <https://huggingface.co/docs/trl/grpo_trainer>
 - OpenAI GPT-5.5 — <https://developers.openai.com/api/docs/models/gpt-5.5>

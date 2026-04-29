@@ -143,7 +143,7 @@ Jede Lektion mit asiatischem Modell enthält:
 
 ## Quellen
 
-- [DeepSeek-R1 Nature 08/2025](https://www.nature.com/articles/s41586-025-08000-x)
+- [DeepSeek-R1 Nature 08/2025](https://www.nature.com/articles/s41586-025-09422-z)
 - [Qwen3 Technical Report (HF)](https://huggingface.co/Qwen)
 - [Aleph Alpha vs. Qwen-Vergleich (heise.de)](https://www.heise.de/)
 - [Mayer Brown — China CSL-Novelle 01.01.2026](https://www.mayerbrown.com/)

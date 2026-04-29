@@ -276,7 +276,7 @@ Aus dem DeepSeek Tech Report:
 
 ## Quellen
 
-- DeepSeek-R1 Tech Report — <https://www.nature.com/articles/s41586-025-08000-x>
+- DeepSeek-R1 Tech Report — <https://www.nature.com/articles/s41586-025-09422-z>
 - R1-Distill-Familie auf HF — <https://huggingface.co/deepseek-ai>
 - Hinton et al. „Distilling the Knowledge in a Neural Network" (2015) — <https://arxiv.org/abs/1503.02531>
 - TRL SFTTrainer — <https://huggingface.co/docs/trl/sft_trainer>

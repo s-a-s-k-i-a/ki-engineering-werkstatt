@@ -11,7 +11,7 @@ lernziele:
   - Constitutional AI als Anthropic-Pattern + DACH-Verfassung
   - Red-Teaming auf Deutsch (Jailbreaks, Prompt Injection, Datenextraktion)
   - Self-Censorship-Audit asiatischer Modelle auf 50 dt. Geopolitik-Prompts
-  - Safety-Frameworks: NeMo Guardrails + Llama Guard 3 + DACH-StGB-Policies
+  - Safety-Frameworks: NeMo Guardrails + Llama Guard 4 + DACH-StGB-Policies
   - AI-Act Anhang IV — Konformitätsbewertung praktisch
 ---
 
@@ -29,7 +29,7 @@ lernziele:
 - **Constitutional AI**: Anthropic-Pattern + eigene DACH-Verfassung
 - **Red-Teaming**: Garak, PyRIT, promptfoo, eigenes DACH-Set
 - **Self-Censorship-Audit**: 50 dt. Geopolitik-Prompts gegen DeepSeek, Qwen, GLM, Kimi
-- **Safety-Frameworks**: NeMo Guardrails (5 Rails-Typen) + Llama Guard 3 + DACH-StGB-Policies
+- **Safety-Frameworks**: NeMo Guardrails (5 Rails-Typen) + Llama Guard 4 (12B multimodal) + DACH-StGB-Policies
 - **AI-Act Anhang IV**: Konformitätsbewertung praktisch + Bridge zu BSI AIC4 / ISO 42001
 
 ## 🧭 Wie du diese Phase nutzt
@@ -66,7 +66,7 @@ flowchart LR
 | 18.06 | Constitutional AI (Anthropic) | 60 min | [`lektionen/06-constitutional-ai.md`](lektionen/06-constitutional-ai.md) ✅ |
 | 18.07 | **Red-Teaming auf Deutsch** | 75 min | [`lektionen/07-red-teaming.md`](lektionen/07-red-teaming.md) ✅ |
 | 18.08 | **Self-Censorship-Audit** (DeepSeek, Qwen, GLM, Kimi) | 90 min | [`lektionen/08-self-censorship-audit.md`](lektionen/08-self-censorship-audit.md) ✅ |
-| 18.09 | Safety-Frameworks (NeMo + Llama Guard 3) | 60 min | [`lektionen/09-safety-frameworks.md`](lektionen/09-safety-frameworks.md) ✅ |
+| 18.09 | Safety-Frameworks (NeMo + Llama Guard 4) | 60 min | [`lektionen/09-safety-frameworks.md`](lektionen/09-safety-frameworks.md) ✅ |
 | 18.10 | **AI-Act Anhang IV** — Konformitätsbewertung | 60 min | [`lektionen/10-ai-act-anhang-iv.md`](lektionen/10-ai-act-anhang-iv.md) ✅ |
 
 ## 💻 Hands-on-Projekt
@@ -119,11 +119,11 @@ Phasen-spezifisch:
 - Constitutional AI — <https://arxiv.org/abs/2212.08073>
 - AI Act Anhang IV — <https://eur-lex.europa.eu/eli/reg/2024/1689/oj>
 - BSI AIC4 — <https://www.bsi.bund.de/AIC4>
-- Llama Guard 3 — <https://huggingface.co/meta-llama/Llama-Guard-3-8B>
+- Llama Guard 4 (12B multimodal) — <https://huggingface.co/meta-llama/Llama-Guard-4-12B>
 - NeMo Guardrails — <https://github.com/NVIDIA/NeMo-Guardrails>
 - Garak — <https://github.com/leondz/garak>
 - Vollständig in [`weiterfuehrend.md`](weiterfuehrend.md).
 
 ## 🔄 Wartung
 
-Stand: 29.04.2026 · Reviewer: Saskia Teichmann ([@s-a-s-k-i-a](https://github.com/s-a-s-k-i-a)) · Nächster Review: 07/2026 (Llama Guard 4 Verfügbarkeit, Self-Censorship-Audit-Refresh, BSI AIC4-Updates). **Audit-Methodik entwickelt sich quartalsweise** — bei Production-Einsatz Audit-Stand pflichtbewusst dokumentiert.
+Stand: 29.04.2026 · Reviewer: Saskia Teichmann ([@s-a-s-k-i-a](https://github.com/s-a-s-k-i-a)) · Nächster Review: 07/2026 (Self-Censorship-Audit-Refresh, BSI AIC4-Updates, NeMo Guardrails-Versions-Refresh). **Audit-Methodik entwickelt sich quartalsweise** — bei Production-Einsatz Audit-Stand pflichtbewusst dokumentiert.
