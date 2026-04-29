@@ -16,13 +16,13 @@
 | ⏳ | 01 | Mathematik-Grundlagen |
 | ⏳ | 02 | Klassisches ML |
 | ⏳ | 03 | Deep Learning Grundlagen |
-| ⏳ | 04 | Computer Vision |
+| ✅ | 04 | **Computer Vision** — Qwen3-VL, SigLIP-2, LightOnOCR, MiniCPM-o, jina-clip-v2 |
 | ✅ | 05 | **Deutsche Tokenizer** |
-| ⏳ | 06 | Sprache & Audio |
+| ✅ | 06 | **Sprache & Audio** — Whisper-large-v3, Voxtral, F5-TTS (CC-BY-NC!), LiveKit, EU-Hosting |
 | ⏳ | 07 | Transformer-Architektur |
-| ⏳ | 08 | Generative Modelle |
+| ✅ | 08 | **Generative Modelle** — FLUX.2 (BFL Freiburg!), LTX-2.3, TRELLIS.2, Watermark-Pflicht |
 | ⏳ | 09 | State-Space & Hybride |
-| ⏳ | 10 | LLM von Null |
+| ✅ | 10 | **LLM von Null** — nanochat, litgpt, llm.c, Aleph-Alpha-GermanWeb |
 | ✅ | 11 | **LLM-Engineering** — Pydantic AI, MCP, Anbieter-Vergleich |
 | ✅ | 12 | **Finetuning & Adapter** — LoRA, QLoRA, Unsloth, axolotl, Multi-LoRA-Inference |
 | ✅ | 13 | **RAG-Tiefenmodul** |
@@ -34,7 +34,7 @@
 | ✅ | 19 | **Capstones** — 19.A WP-Plugin-Helfer-RAG, 19.B DSGVO-Checker, 19.C Charity-Bot, 19.D AktG-RAG, 19.E Voice-Agent |
 | ✅ | 20 | **Recht & Governance** |
 
-**Bilanz**: 11 ✅ · 0 🚧 · 10 ⏳
+**Bilanz**: 15 ✅ · 0 🚧 · 6 ⏳
 
 ## Releases
 
@@ -58,12 +58,12 @@ Reihenfolge nach Saskia-Use-Case-Relevanz, nicht nach Phasen-Nummer:
 - [x] **19.D — Aktiengesetz-RAG** (Hybrid-RAG + Reasoning + § RDG-Disclaimer) — 2026-04-29
 - [x] **19.E — Mehrsprachiger Voice-Agent** (DE↔EN↔TR mit Auto-Lösch-Pipeline) — 2026-04-29
 
-### Foundation-Phasen (für Quereinsteiger:innen-Lernpfad)
+### Foundation-Phasen (für Quereinsteiger:innen-Lernpfad) — alle ausgearbeitet ✅
 
-- [ ] **Phase 04 — Computer Vision** (CLIP, SigLIP, Qwen3-VL, MiniCPM-o)
-- [ ] **Phase 06 — Sprache & Audio** (Whisper-large-v3, Voxtral, Coqui-TTS, Sesame, F5-TTS)
-- [ ] **Phase 08 — Generative Modelle** (Stable Diffusion 3.5/4, FLUX, Sora-Stil, Veo)
-- [ ] **Phase 10 — LLM von Null** (nano-GPT-Pipeline, eigener Tokenizer, Pretraining auf 1M Tokens)
+- [x] **Phase 04 — Computer Vision** (Qwen3-VL, SigLIP-2, LightOnOCR-2-1B, MiniCPM-o) — 2026-04-29
+- [x] **Phase 06 — Sprache & Audio** (Whisper-large-v3, Voxtral, F5-TTS, LiveKit) — 2026-04-29
+- [x] **Phase 08 — Generative Modelle** (FLUX.2 BFL Freiburg, LTX-2.3, TRELLIS.2) — 2026-04-29
+- [x] **Phase 10 — LLM von Null** (nanochat, litgpt, llm.c, Aleph-Alpha-GermanWeb) — 2026-04-29
 
 ### Mid-Stack-Phasen
 

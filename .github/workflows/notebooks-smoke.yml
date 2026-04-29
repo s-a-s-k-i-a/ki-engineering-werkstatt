@@ -32,7 +32,11 @@ jobs:
       matrix:
         phase:
           - "00-werkzeugkasten"
+          - "04-computer-vision"
           - "05-deutsche-tokenizer"
+          - "06-sprache-und-audio"
+          - "08-generative-modelle"
+          - "10-llm-von-null"
           - "11-llm-engineering"
           - "12-finetuning-und-adapter"
           - "13-rag-tiefenmodul"
@@ -52,7 +56,11 @@ jobs:
         run: |
           case "${{ matrix.phase }}" in
             00-*) uv sync ;;
+            04-*) uv sync ;;
             05-*) uv sync --extra tokenizer ;;
+            06-*) uv sync ;;
+            08-*) uv sync ;;
+            10-*) uv sync ;;
             11-*) uv sync ;;
             12-*) uv sync ;;
             13-*) uv sync --extra rag ;;

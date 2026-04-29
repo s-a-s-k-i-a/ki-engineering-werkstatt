@@ -82,7 +82,7 @@ du startest grade mit KI
 | Output | Wo | Status |
 |---|---|---|
 | **3 voll ausgearbeitete Showcase-Module** mit Marimo-Notebooks, Übungen, Lösungen | [Phasen 05, 13, 20](#-showcase--3-module-sind-am-launch-tag-fertig) | ✅ am Launch |
-| **10 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 01-04, 06-10, 15 | [`phasen/`](phasen/) | 🚧 in Arbeit |
+| **6 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 01-03, 07, 09, 15 | [`phasen/`](phasen/) | 🚧 in Arbeit |
 | **3 lauffähige CLI-Werkzeuge** (`ki-act-classifier`, `ki-ai-txt`, `ki-compliance-lint`) | [`werkzeuge/`](werkzeuge/) | ✅ |
 | **DACH-Compliance-Layer** mit AI-Act-Tracker, DSGVO-Checklisten, AVV-Mustern, Asiatischen-LLM-Disclaimer | [`docs/rechtliche-perspektive/`](docs/rechtliche-perspektive/) | ✅ |
 | **EU-Modell-Setups** (Pharia, Mistral, IONOS, Ollama, vLLM) | [`infrastruktur/eu-modelle/`](infrastruktur/eu-modelle/) | ✅ |
@@ -251,13 +251,13 @@ flowchart TB
 
   subgraph M[" 🤖 Modelle "]
     direction LR
-    P04[04 · Computer Vision]:::planned
+    P04[04 · 👁️ Computer Vision]:::done
     P05[05 · 🧩 Tokenizer]:::done
-    P06[06 · Sprache & Audio]:::planned
+    P06[06 · 🎙️ Sprache & Audio]:::done
     P07[07 · Transformer]:::planned
-    P08[08 · Generative]:::planned
+    P08[08 · 🎨 Generative]:::done
     P09[09 · State-Space]:::planned
-    P10[10 · LLM von Null]:::planned
+    P10[10 · 🌱 LLM von Null]:::done
   end
 
   subgraph A[" 🚀 Anwendung "]
