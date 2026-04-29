@@ -2,12 +2,12 @@
 
 ## Frameworks (Primärquellen, geprüft 28.04.2026)
 
-- **Pydantic AI Docs** — <https://ai.pydantic.dev/> (aktuell v1.66.0)
+- **Pydantic AI Docs** — <https://ai.pydantic.dev/> (aktuell v1.85.1, 22.04.2026)
 - **Pydantic AI Multi-Agent Examples** — <https://ai.pydantic.dev/multi-agent/>
 - **LangGraph Docs** — <https://langchain-ai.github.io/langgraph/> (aktuell v1.1.9)
 - **LangGraph Supervisor** — <https://github.com/langchain-ai/langgraph/tree/main/libs/langgraph-supervisor>
 - **LangGraph HITL** — <https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/>
-- **DSPy Docs** — <https://dspy.ai/> (aktuell v3.1.3)
+- **DSPy Docs** — <https://dspy.ai/> (aktuell v3.2.0, 21.04.2026)
 - **OpenAI Agents SDK** — <https://platform.openai.com/docs/guides/agents>
 - **MCP Spec 2025-11-25** — <https://modelcontextprotocol.io/specification/latest>
 - **MCP Python SDK** — <https://github.com/modelcontextprotocol/python-sdk> (aktuell v1.27.0)

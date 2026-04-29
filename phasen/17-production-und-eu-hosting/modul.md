@@ -9,7 +9,7 @@ lernziele:
   - vLLM v0.20.0 (Stand 04/2026) und SGLang v0.5.10 produktiv aufsetzen
   - EU-Cloud-Stack im Detail (STACKIT BSI C5 Type 2, IONOS BSI C5, OVHcloud SecNumCloud, Scaleway HDS, Hetzner)
   - Docker-Compose und Helm/K8s mit GPU-Operator deployen
-  - LiteLLM Proxy v1.83.10 als Multi-Provider-Gateway mit Cost-Tracking + EU-Routing
+  - LiteLLM Proxy v1.83.14 als Multi-Provider-Gateway mit Cost-Tracking + EU-Routing
   - Observability: OTel GenAI + Phoenix v14 + Langfuse v3
   - Cost-Monitoring (Grafana, AlertManager) + Caching (Anthropic Prompt-Cache, Redis-Semantic, Qdrant-Semantic)
   - Hands-on End-to-End: Pharia-1 auf STACKIT mit vLLM + LiteLLM + Langfuse + Compliance-Verifikation
@@ -119,7 +119,7 @@ Phasen-spezifisch:
 
 - vLLM v0.20.0 — <https://docs.vllm.ai/>
 - SGLang v0.5.10 — <https://docs.sglang.io/>
-- LiteLLM v1.83.10-stable — <https://docs.litellm.ai/>
+- LiteLLM v1.83.14-stable — <https://docs.litellm.ai/>
 - Phoenix v14.15 — <https://arize.com/docs/phoenix/>
 - Langfuse v3.171 — <https://langfuse.com/>
 - STACKIT AI Model Serving — <https://stackit.com/en/products/data-ai/stackit-ai-model-serving>

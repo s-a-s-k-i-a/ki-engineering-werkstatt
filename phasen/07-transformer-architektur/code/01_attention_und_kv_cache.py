@@ -118,7 +118,7 @@ def _(Modell):
             herkunft="OpenAI (USA, Open-Weights 11/2025)",
         ),
         Modell(
-            name="DeepSeek-V4 (1.6T MoE — aktive 37B)",
+            name="DeepSeek-V4-Pro (1.6T MoE — aktive 49B)",
             n_layers=61, n_q_heads=128, n_kv_heads=128,
             d_head=128, gewichte_gb=380.0,  # Gesamt-Gewichte
             license="DeepSeek Custom",

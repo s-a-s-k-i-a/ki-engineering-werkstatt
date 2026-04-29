@@ -7,7 +7,7 @@ schwierigkeit: mittel
 stand: 2026-04-28
 voraussetzungen: [11.05, 17.05]
 lernziele:
-  - LiteLLM Proxy v1.83.10 (Stand 04/2026) als Multi-Provider-Gateway aufsetzen
+  - LiteLLM Proxy v1.83.14 (Stand 04/2026) als Multi-Provider-Gateway aufsetzen
   - Cost-Tracking pro User / Tag / Modell mit Budget-Alerts
   - EU-Routing-Switch (Default = EU, Fallback = US mit Logging-Marker)
   - Caching-Layer (In-Memory, Redis, Redis-Semantic, Qdrant-Semantic)
@@ -27,7 +27,7 @@ dsgvo_artikel:
 
 ## Worum es geht
 
-> Stop scattering API-keys across services. — LiteLLM Proxy ist die zentrale Schaltstelle für Multi-Provider-LLM-Apps: ein OpenAI-kompatibler Endpoint, hinter dem 50+ Provider routen, mit Cost-Tracking, Caching, Rate-Limits und EU-Default-Routing. Stand 28.04.2026: **v1.83.10-stable** ([Releases](https://github.com/BerriAI/litellm/releases)).
+> Stop scattering API-keys across services. — LiteLLM Proxy ist die zentrale Schaltstelle für Multi-Provider-LLM-Apps: ein OpenAI-kompatibler Endpoint, hinter dem 50+ Provider routen, mit Cost-Tracking, Caching, Rate-Limits und EU-Default-Routing. Stand 28.04.2026: **v1.83.14-stable** ([Releases](https://github.com/BerriAI/litellm/releases)).
 
 ## Voraussetzungen
 
@@ -260,7 +260,7 @@ response = litellm.completion(
 
 ### Caching-Layer
 
-LiteLLM unterstützt Stand v1.83.10:
+LiteLLM unterstützt Stand v1.83.14:
 
 | Backend | Wann |
 |---|---|
@@ -287,7 +287,7 @@ litellm_settings:
 
 ### Audit-Logging + Slack-Alerts
 
-Stand v1.83.10:
+Stand v1.83.14:
 
 ```yaml
 litellm_settings:
@@ -345,7 +345,7 @@ Stand 04/2026 ist der LiteLLM-Helm-Chart offiziell ([docs.litellm.ai/docs/proxy/
 
 ## Quellen
 
-- LiteLLM Releases (v1.83.10-stable 19.04.2026) — <https://github.com/BerriAI/litellm/releases>
+- LiteLLM Releases (v1.83.14-stable 26.04.2026) — <https://github.com/BerriAI/litellm/releases>
 - LiteLLM Cost Tracking — <https://docs.litellm.ai/docs/proxy/cost_tracking>
 - LiteLLM Prompt Caching — <https://docs.litellm.ai/docs/completion/prompt_caching>
 - LiteLLM Production Deployment — <https://docs.litellm.ai/docs/proxy/prod>

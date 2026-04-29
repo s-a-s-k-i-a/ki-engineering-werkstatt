@@ -21,7 +21,7 @@ ai_act_artikel:
 
 > Stop hand-tuning prompts. — DSPy macht aus Prompt-Engineering ein Optimierungs-Problem mit messbarer Metrik.
 
-**DSPy** (Repo-Lockfile: `dspy-ai 3.1.3`, vom 05.02.2026) ist ein Stanford-NLP-Projekt von Omar Khattab. Idee: du schreibst **deklarative Signaturen** + **Module** + eine **Metrik**, und ein **Optimizer** kompiliert automatisch optimale Few-Shot-Demos und Instruktionen aus deinen Trainingsdaten.
+**DSPy** (PyPI `dspy 3.2.0`, vom 21.04.2026) ist ein Stanford-NLP-Projekt von Omar Khattab. Idee: du schreibst **deklarative Signaturen** + **Module** + eine **Metrik**, und ein **Optimizer** kompiliert automatisch optimale Few-Shot-Demos und Instruktionen aus deinen Trainingsdaten.
 
 Slogan: **„Programming, not Prompting"**.
 
@@ -196,7 +196,7 @@ Optimiere einen FAQ-Klassifikator:
 ## Quellen
 
 - DSPy Docs — <https://dspy.ai/> (Zugriff 2026-04-28)
-- DSPy GitHub — <https://github.com/stanfordnlp/dspy> (verifiziert: v3.1.3)
+- DSPy GitHub — <https://github.com/stanfordnlp/dspy> (aktuell: v3.2.0, 21.04.2026)
 - DSPy Tutorials — <https://dspy.ai/tutorials/>
 - MIPROv2-Paper — <https://arxiv.org/abs/2406.11695>
 - Khattab et al. (2024) „DSPy" — <https://arxiv.org/abs/2310.03714>

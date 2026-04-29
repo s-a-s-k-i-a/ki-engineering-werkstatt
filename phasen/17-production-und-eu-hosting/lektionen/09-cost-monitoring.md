@@ -60,7 +60,7 @@ flowchart LR
 
 ### LiteLLM Prometheus Metrics
 
-Stand v1.83.10 ([LiteLLM Prometheus](https://docs.litellm.ai/docs/proxy/prometheus)):
+Stand v1.83.14 ([LiteLLM Prometheus](https://docs.litellm.ai/docs/proxy/prometheus)):
 
 | Metrik | Bedeutung |
 |---|---|

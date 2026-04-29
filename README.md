@@ -397,7 +397,7 @@ flowchart LR
 - **OpenAI / ChatGPT** führt Web-Traffic (~ 81 %, *Methodik = Web-Traffic, NICHT Enterprise-Lizenzen*)
 - **Microsoft Copilot** dominiert Enterprise via M365-Integration
 - **Anthropic** eröffnet Münchner Office 07.11.2025 — DE in den globalen Top-20 bei Claude-Nutzung pro Kopf ([Anthropic Newsroom](https://www.anthropic.com/news/new-offices-in-paris-and-munich-expand-european-presence))
-- **Aleph Alpha** verlässt Foundation-Model-Rennen, Pivot zu Sovereign-AI; Cohere-Merger 04 / 2026
+- **Aleph Alpha** pivotierte zu Sovereign-AI / PhariaAI-Suite; **Cohere-Übernahme angekündigt 24.04.2026** (Schwarz-Gruppe als Hauptbacker, „Command-Pharia 1" für Q4/2026 geplant)
 
 </td>
 <td valign="top">

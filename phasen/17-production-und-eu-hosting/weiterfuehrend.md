@@ -15,7 +15,7 @@
 
 ## Multi-Provider-Gateway
 
-- **LiteLLM Proxy** — <https://docs.litellm.ai/> (aktuell v1.83.10-stable, 19.04.2026)
+- **LiteLLM Proxy** — <https://docs.litellm.ai/> (aktuell v1.83.14-stable, 26.04.2026)
 - **LiteLLM Releases** — <https://github.com/BerriAI/litellm/releases>
 - **LiteLLM Cost-Tracking** — <https://docs.litellm.ai/docs/proxy/cost_tracking>
 - **LiteLLM Caching** — <https://docs.litellm.ai/docs/proxy/caching>

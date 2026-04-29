@@ -29,7 +29,7 @@ Phase 11 hat dir Pydantic AI für **Single-Output-Calls** gezeigt. Diese Lektion
 
 - Lektion 11.02 (Pydantic AI Structured Outputs)
 - Lektion 14.01 (Agent-Definition)
-- Repo-Lockfile: `pydantic-ai 1.66.0` verifiziert.
+- Aktuell: `pydantic-ai 1.85.1` (PyPI, Stand 22.04.2026).
 
 ## Konzept
 
@@ -214,7 +214,7 @@ Erweitere den Agent aus Lektion 11.02:
 ## Quellen
 
 - Pydantic AI Docs — <https://ai.pydantic.dev/> (Zugriff 2026-04-28)
-- Pydantic AI Releases — <https://github.com/pydantic/pydantic-ai/releases> (verifiziert: 1.66.0)
+- Pydantic AI Releases — <https://github.com/pydantic/pydantic-ai/releases> (aktuell: 1.85.1, 22.04.2026)
 - Pydantic AI MCP-Doc — <https://ai.pydantic.dev/mcp/>
 - Migration Guide v0 → v1 — <https://ai.pydantic.dev/migration/>
 

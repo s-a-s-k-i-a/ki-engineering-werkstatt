@@ -60,7 +60,7 @@ Quellen: [VDMA/Strategy& 2025](https://www.vdma.eu/documents/34570/4888559/Studi
 - **OpenAI/ChatGPT**: führt im DE-Web-Traffic mit ~81 % (xpert.digital 2025; Methodik = Web-Traffic, NICHT Enterprise-Lizenzen).
 - **Microsoft Copilot**: dominiert Enterprise via M365-Integration; aktive Nutzungsquote ~30 % nach 12 Monaten bei lizenzierten Mitarbeitenden (BornCity 12/2025).
 - **Anthropic**: München-Office angekündigt 07.11.2025, Anthropic Germany GmbH (HRB 300701) im Münchner Handelsregister; Claude-Nutzung pro Kopf: DE in den globalen Top-20 ([Anthropic Newsroom](https://www.anthropic.com/news/new-offices-in-paris-and-munich-expand-european-presence)).
-- **Aleph Alpha**: Foundation-Model-Rennen Ende 2025 verlassen, Pivot zu Sovereign-AI-Infrastruktur; Cohere-Merger angekündigt 04/2026.
+- **Aleph Alpha**: Pivot 2024 zu Sovereign-AI-Infrastruktur und PhariaAI-Suite (Enterprise / öffentliche Hand); **Cohere-Übernahme angekündigt 24.04.2026** mit Schwarz-Gruppe als Hauptbacker (~ 20 Mrd. USD Bewertung, gemeinsame Roadmap „Command-Pharia 1" Q4/2026, [TechCrunch 24./25.04.2026](https://techcrunch.com/2026/04/24/cohere-acquires-merges-with-german-based-startup-to-create-a-transatlantic-ai-powerhouse/)).
 - **Mistral / DeepL / Black Forest Labs**: jeweils EU-basiert, im DACH-Mittelstand bisher kaum sichtbar bzw. punktuell (DeepL für Übersetzung sehr verbreitet).
 
 **Nicht belegt — bitte mit Vorsicht zitieren:** Konkrete DACH-Enterprise-Marktanteile bei Foundation-Modellen jenseits der M365-/Workspace-Integration. Wer dazu eine repräsentative Studie hat, bitte als Issue eintragen.

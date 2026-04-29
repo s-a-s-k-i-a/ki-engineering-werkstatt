@@ -110,7 +110,7 @@ Die Stärke von MCP zeigt sich, wenn du **mehrere Server gleichzeitig** anschlie
 
 Claude Desktop spawnt drei MCP-Server, mergt deren Tools und Resources, und das LLM hat Zugriff auf alle.
 
-In **Pydantic AI** (Stand 1.66+):
+In **Pydantic AI** (Stand 1.85+):
 
 ```python
 from pydantic_ai import Agent
