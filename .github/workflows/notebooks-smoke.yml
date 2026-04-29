@@ -5,6 +5,7 @@ on:
     paths:
       - "phasen/**/code/*.py"
       - "phasen/**/loesungen/*.py"
+      - "projekte/**/src/*.py"
       - "werkzeuge/**"
       - "pyproject.toml"
       - "uv.lock"
@@ -13,9 +14,11 @@ on:
     paths:
       - "phasen/**/code/*.py"
       - "phasen/**/loesungen/*.py"
+      - "projekte/**/src/*.py"
       - "werkzeuge/**"
       - "pyproject.toml"
       - "uv.lock"
+  workflow_dispatch:
 
 permissions:
   contents: read
