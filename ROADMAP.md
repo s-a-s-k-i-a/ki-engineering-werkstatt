@@ -21,20 +21,20 @@
 | ✅ | 06 | **Sprache & Audio** — Whisper-large-v3, Voxtral, F5-TTS (CC-BY-NC!), LiveKit, EU-Hosting |
 | ⏳ | 07 | Transformer-Architektur |
 | ✅ | 08 | **Generative Modelle** — FLUX.2 (BFL Freiburg!), LTX-2.3, TRELLIS.2, Watermark-Pflicht |
-| ⏳ | 09 | State-Space & Hybride |
+| ✅ | 09 | **State-Space & Hybride** — Mamba, Jamba 1.5, Hunyuan-TurboS, Long-Context-Eval |
 | ✅ | 10 | **LLM von Null** — nanochat, litgpt, llm.c, Aleph-Alpha-GermanWeb |
 | ✅ | 11 | **LLM-Engineering** — Pydantic AI, MCP, Anbieter-Vergleich |
 | ✅ | 12 | **Finetuning & Adapter** — LoRA, QLoRA, Unsloth, axolotl, Multi-LoRA-Inference |
 | ✅ | 13 | **RAG-Tiefenmodul** |
 | ✅ | 14 | **Agenten & MCP** — Pydantic AI, LangGraph, DSPy, Multi-Agent, MCP |
-| ⏳ | 15 | Autonome Systeme |
+| ✅ | 15 | **Autonome Systeme** — Autonomie-Stufen, Long-Running-Memory, HITL, AI-Act Art. 14 |
 | ✅ | 16 | **Reasoning & Test-Time-Compute** — GPT-5.5, Opus 4.7, DeepSeek-R1, GRPO, RLVR |
 | ✅ | 17 | **Production & EU-Hosting** — vLLM, LiteLLM, STACKIT, IONOS, OVH, Phoenix, Langfuse |
 | ✅ | 18 | **Ethik, Safety, Alignment** — Bias-Audit, DPO/GRPO, Constitutional AI, Self-Censorship, Anhang IV |
 | ✅ | 19 | **Capstones** — 19.A WP-Plugin-Helfer-RAG, 19.B DSGVO-Checker, 19.C Charity-Bot, 19.D AktG-RAG, 19.E Voice-Agent |
 | ✅ | 20 | **Recht & Governance** |
 
-**Bilanz**: 15 ✅ · 0 🚧 · 6 ⏳
+**Bilanz**: 17 ✅ · 0 🚧 · 4 ⏳
 
 ## Releases
 

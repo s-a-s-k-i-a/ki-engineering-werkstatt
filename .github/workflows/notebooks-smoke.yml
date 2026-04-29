@@ -36,11 +36,13 @@ jobs:
           - "05-deutsche-tokenizer"
           - "06-sprache-und-audio"
           - "08-generative-modelle"
+          - "09-state-space-und-hybride"
           - "10-llm-von-null"
           - "11-llm-engineering"
           - "12-finetuning-und-adapter"
           - "13-rag-tiefenmodul"
           - "14-agenten-und-mcp"
+          - "15-autonome-systeme"
           - "16-reasoning-und-test-time"
           - "17-production-und-eu-hosting"
           - "18-ethik-safety-alignment"
@@ -60,11 +62,13 @@ jobs:
             05-*) uv sync --extra tokenizer ;;
             06-*) uv sync ;;
             08-*) uv sync ;;
+            09-*) uv sync ;;
             10-*) uv sync ;;
             11-*) uv sync ;;
             12-*) uv sync ;;
             13-*) uv sync --extra rag ;;
             14-*) uv sync ;;
+            15-*) uv sync ;;
             16-*) uv sync ;;
             17-*) uv sync ;;
             18-*) uv sync ;;

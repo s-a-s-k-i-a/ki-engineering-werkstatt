@@ -82,7 +82,7 @@ du startest grade mit KI
 | Output | Wo | Status |
 |---|---|---|
 | **3 voll ausgearbeitete Showcase-Module** mit Marimo-Notebooks, Übungen, Lösungen | [Phasen 05, 13, 20](#-showcase--3-module-sind-am-launch-tag-fertig) | ✅ am Launch |
-| **6 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 01-03, 07, 09, 15 | [`phasen/`](phasen/) | 🚧 in Arbeit |
+| **4 Skelett-Module** mit Lernzielen + Compliance-Anker für Phasen 01-03, 07 | [`phasen/`](phasen/) | 🚧 in Arbeit |
 | **3 lauffähige CLI-Werkzeuge** (`ki-act-classifier`, `ki-ai-txt`, `ki-compliance-lint`) | [`werkzeuge/`](werkzeuge/) | ✅ |
 | **DACH-Compliance-Layer** mit AI-Act-Tracker, DSGVO-Checklisten, AVV-Mustern, Asiatischen-LLM-Disclaimer | [`docs/rechtliche-perspektive/`](docs/rechtliche-perspektive/) | ✅ |
 | **EU-Modell-Setups** (Pharia, Mistral, IONOS, Ollama, vLLM) | [`infrastruktur/eu-modelle/`](infrastruktur/eu-modelle/) | ✅ |
@@ -256,7 +256,7 @@ flowchart TB
     P06[06 · 🎙️ Sprache & Audio]:::done
     P07[07 · Transformer]:::planned
     P08[08 · 🎨 Generative]:::done
-    P09[09 · State-Space]:::planned
+    P09[09 · 🔀 State-Space]:::done
     P10[10 · 🌱 LLM von Null]:::done
   end
 
@@ -266,7 +266,7 @@ flowchart TB
     P12[12 · 🧪 Finetuning]:::done
     P13[13 · 🔍 RAG-Tiefenmodul]:::done
     P14[14 · 🤖 Agenten & MCP]:::done
-    P15[15 · Autonome Systeme]:::planned
+    P15[15 · 🤖 Autonome Systeme]:::done
     P16[16 · 🧠 Reasoning]:::done
     P17[17 · 🏭 Production EU]:::done
   end
