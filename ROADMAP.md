@@ -49,7 +49,7 @@
 - [ ] Phase 13 — alle 7 RAG-Varianten implementiert
 - [x] **Phase 16 — vollständig** (TTC-Patterns, GPT-5.5/Opus 4.7/R1, GRPO-Mathematik, R1-Distillation, Verifier-Loops, Hands-on) — abgeschlossen 29.04.2026
 - [x] **Phase 18 — vollständig** (Bias-Audit, DPO/GRPO/CAI, Red-Team, Self-Censorship-Audit, Safety-Frameworks, AI-Act Anhang IV) — abgeschlossen 29.04.2026
-- [ ] Capstone 19.A (WP-Plugin-Helfer-RAG) als reales Repo-Beispiel
+- [x] **Capstone 19.A — vollständig** (WP-Plugin-Helfer-RAG mit Multi-Agent + AST-Splitting + Issue-Triage) — abgeschlossen 29.04.2026
 - [ ] AI-Act-Tracker auf BNetzA-KI-MIG-Stand aktualisieren
 
 ## Q4 2026 (November 2026 – Januar 2027)

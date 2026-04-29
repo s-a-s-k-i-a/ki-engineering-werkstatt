@@ -70,3 +70,22 @@ jobs:
             echo "→ Smoke: $nb"
             uv run python werkzeuge/run_notebook_smoke.py "$nb" || exit 1
           done
+
+  capstones:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - run: uv python install 3.13
+      - run: uv sync
+      - name: Run capstone smoke tests
+        run: |
+          for nb in projekte/*/src/*.py; do
+            [ -f "$nb" ] || continue
+            echo "→ Smoke: $nb"
+            uv run python werkzeuge/run_notebook_smoke.py "$nb" || exit 1
+          done
