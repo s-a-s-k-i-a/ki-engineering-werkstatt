@@ -28,11 +28,9 @@
 
 ## 🎯 Für wen ist das?
 
-Du **baust** oder **berätst zu** KI-Anwendungen — und du arbeitest in **Deutschland, Österreich oder der Schweiz**. Das hier ist dein Ort, wenn du diese Frage hörst und eine ehrliche Antwort brauchst:
+Du **baust** oder **berätst zu** KI-Anwendungen — und du arbeitest in **Deutschland, Österreich oder der Schweiz**. 
 
-> *„Können wir das mit ChatGPT bauen — oder kommt da ein Bußgeld?"*
-
-Kein Marketing-Funnel, kein „werde KI-Engineer in 30 Tagen". Stattdessen: **21 Phasen Curriculum + 5 Real-World-Capstones**, EU-Stack-First, jede Aussage mit Quelle und Datum, alles MIT-lizenziert.
+Dieses Repo ist kein Marketing-Funnel oder irgendein Crashkurs ala „werde KI-Engineer in 30 Tagen". Stattdessen: **21 Phasen Curriculum + 5 Real-World-Capstones**, EU-Stack-First, jede Aussage mit Quelle und Datum, alles MIT-lizenziert.
 
 <table>
 <tr>
@@ -67,7 +65,7 @@ du startest grade mit KI von Null
 </tr>
 </table>
 
-→ Vier vorbereitete [**Lernpfade**](#-w%C3%A4hle-deinen-einstieg) führen dich durch das Curriculum, je nach Profil. Plus drei [**Workshop-Formate**](#-workshop-formate) für Trainer:innen.
+→ Vier vorbereitete [**Lernpfade**](#-w%C3%A4hle-deinen-einstieg) führen dich je nach Profil durch das Curriculum. Plus drei [**Workshop-Formate**](#-workshop-formate) für Trainer:innen.
 
 ---
 
