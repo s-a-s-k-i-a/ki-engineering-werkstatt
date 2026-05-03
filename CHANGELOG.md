@@ -8,6 +8,20 @@ Versionierung folgt einer angepassten [Semantic Versioning](https://semver.org/l
 - **MINOR**: neues Modul fertig, neue Phase, neues Werkzeug
 - **PATCH**: einzelne Lektion ergänzt, Compliance-Update, Quellen-Refresh, Bugfix
 
+## [0.4.0](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/compare/v0.3.0...v0.4.0) (2026-05-03)
+
+
+### Features
+
+* **capstone-19A:** echtes WordPress-Plugin + Python-Sidecar (Session 1) ([0e2f9e8](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/0e2f9e8b8dbd99514def21b33a1b06f9611f1802))
+* **uebungen:** 10 fehlende Phasen-Übungen + Lösungs-Skelette ([e6ba4fe](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/e6ba4fe0da18ab915594d6f138403fcc0367026f))
+
+
+### Documentation
+
+* **readme:** nutzerzentriert + Stand v0.3.0 + Capstones prominenter ([5085b81](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/5085b816bf0b59a9d6d9e514a973397b2fe93a23))
+* **workshops:** 4h-/8h-/16h-Format aus 21 Phasen abgeleitet ([6f3e82f](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/commit/6f3e82fe9c236728e135369ee826951ab6015346))
+
 ## [0.3.0](https://github.com/s-a-s-k-i-a/ki-engineering-werkstatt/compare/v0.2.0...v0.3.0) (2026-04-29)
 
 
